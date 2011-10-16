@@ -1,0 +1,45 @@
+/*
+Theme Name: Fresh Journey
+Theme URI: http://westarete.com
+Description: First West Arete's website wordpress theme
+Author: Matt Simpson
+Author URI: http://westarete.com
+Template: thematic
+Version: 0.3
+.
+This is the first theme for the West Arete Computing, Inc. website.
+I'm sure it will be an ongoing development with changes throughout.
+.
+
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('styles/default.css');
+
+/* Apply basic typography styles */
+@import url('styles/typography.css');
+
+/* Template */
+@import url('styles/template.css');
+
+/* Apply basic image styles */
+@import url('styles/images.css');
+
+/* Apply navigation styles */
+@import url('styles/navigation.css');
+
+/* Prepare theme for plugins */
+@import url('styles/plugins.css');
+
+/* import modular styles */
+@import url('styles/modules.css');
+
+/* Page Specific Styles */
+@import url('styles/pages.css');
+
+/* Homeless styles test */
+@import url('styles/misc.css');

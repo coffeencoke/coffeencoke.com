@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://coffeencoke.development/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/2.8.6" -->
+<!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.1.9" -->
+<!-- generated-on="November 26, 2009 3:22 pm" -->
+<!-- Debug: Total comment count: 25 -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>http://coffeencoke.development/</loc>
+		<lastmod>2009-10-29T19:04:33+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+<!-- Debug: Start Postings -->
+	<url>
+		<loc>http://coffeencoke.development/about-me/</loc>
+		<lastmod>2009-11-26T03:15:53+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://coffeencoke.development/contact/</loc>
+		<lastmod>2009-11-26T03:15:44+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://coffeencoke.development/portfolio/</loc>
+		<lastmod>2009-11-20T07:41:59+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://coffeencoke.development/about-me/links/</loc>
+		<lastmod>2009-11-18T07:15:06+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://coffeencoke.development/about-me/archives/</loc>
+		<lastmod>2009-11-18T07:15:01+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 200: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/10/29/planning-allows-destination/</loc>
+		<lastmod>2009-10-29T19:04:33+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 173: Comments: 1 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/10/27/profound-like-oreos/</loc>
+		<lastmod>2009-10-29T18:40:24+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 190: Comments: 1 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/10/29/destined-planning/</loc>
+		<lastmod>2009-10-29T18:38:57+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 169: Comments: 3 of 25 = 0.1 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/10/24/bad-experiences-for-good/</loc>
+		<lastmod>2009-10-24T05:47:36+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 158: Comments: 1 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/10/03/first-of-many-was-amazing/</loc>
+		<lastmod>2009-10-09T19:07:05+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 165: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/10/07/awesome-things-in-this-city/</loc>
+		<lastmod>2009-10-07T05:30:39+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 163: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/10/04/warm-that-house-up/</loc>
+		<lastmod>2009-10-04T07:58:07+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 152: Comments: 1 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/09/27/house-of-worship/</loc>
+		<lastmod>2009-09-27T07:50:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 147: Comments: 1 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/09/17/ummazing/</loc>
+		<lastmod>2009-09-17T16:13:08+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 144: Comments: 2 of 25 = 0.1 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/09/16/what-is-this-house/</loc>
+		<lastmod>2009-09-17T04:45:03+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 139: Comments: 2 of 25 = 0.1 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/09/07/cleaning-time/</loc>
+		<lastmod>2009-09-07T06:51:49+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 132: Comments: 1 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/09/05/time-to-retire-the-painting-clothes/</loc>
+		<lastmod>2009-09-05T15:37:40+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 124: Comments: 1 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/09/04/the-thrill-of-creating/</loc>
+		<lastmod>2009-09-05T15:36:05+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 118: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/08/13/over-that-mountain/</loc>
+		<lastmod>2009-08-14T02:55:36+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 29: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/02/15/vibrato/</loc>
+		<lastmod>2009-08-07T16:39:44+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 114: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/08/07/pride-watch-out/</loc>
+		<lastmod>2009-08-07T05:15:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 108: Comments: 2 of 25 = 0.1 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/08/03/begining-and-end/</loc>
+		<lastmod>2009-08-03T16:15:06+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 102: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/06/27/mentality-on-vulnerability-design/</loc>
+		<lastmod>2009-06-27T07:02:29+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 98: Comments: 3 of 25 = 0.1 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/06/27/our-mentality-on-vulnerability/</loc>
+		<lastmod>2009-06-27T07:00:05+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 54: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2008/04/12/thas-right-added-the-geek-category/</loc>
+		<lastmod>2009-06-22T04:00:01+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 80: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/11/16/awesome-videos/</loc>
+		<lastmod>2009-06-22T03:49:45+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 78: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/10/13/time-for-an-upgrade/</loc>
+		<lastmod>2009-06-22T03:48:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 77: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/10/14/breathe-you-in/</loc>
+		<lastmod>2009-06-22T03:46:32+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 76: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/10/23/sad-news/</loc>
+		<lastmod>2009-06-22T03:41:46+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 75: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/11/07/for-you-gmail-lovers/</loc>
+		<lastmod>2009-06-22T03:36:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 73: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/12/15/frustrated/</loc>
+		<lastmod>2009-06-22T03:34:08+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 67: Comments: 2 of 25 = 0.1 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/06/21/my-car-on-top-gear/</loc>
+		<lastmod>2009-06-21T22:13:33+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 64: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2008/03/24/the-sword-of-the-spirit/</loc>
+		<lastmod>2009-06-21T21:56:45+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 62: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2008/04/08/phew/</loc>
+		<lastmod>2009-06-21T21:53:24+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 37: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/08/27/job-search-interlude/</loc>
+		<lastmod>2009-06-21T21:50:58+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 32: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/09/30/im-back/</loc>
+		<lastmod>2009-06-21T21:49:05+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 35: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/09/30/job-job-job/</loc>
+		<lastmod>2009-06-21T21:48:39+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 52: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2008/06/26/the-birth-of-amazingness/</loc>
+		<lastmod>2009-06-21T21:46:18+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 50: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2008/09/23/the-advent-conspiracy/</loc>
+		<lastmod>2009-06-21T21:43:30+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 47: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/09/09/last-weekend-in-chicago/</loc>
+		<lastmod>2009-06-20T21:33:40+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 45: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2008/04/28/one-of-those-nights/</loc>
+		<lastmod>2009-06-20T21:31:53+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 43: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2008/09/16/the-power-of-sound/</loc>
+		<lastmod>2009-06-20T21:28:25+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 40: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2007/09/02/labor-day-weekend/</loc>
+		<lastmod>2009-06-20T21:25:35+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 16: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/06/14/sword-of-the-spirit/</loc>
+		<lastmod>2009-06-18T02:44:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 20: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/06/17/wifi-yuck/</loc>
+		<lastmod>2009-06-18T02:42:51+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 12: Comments: 0 of 25 = 0 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/06/14/safe-in-you-design/</loc>
+		<lastmod>2009-06-14T21:56:38+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 4: Comments: 4 of 25 = 0.2 points -->
+	<url>
+		<loc>http://coffeencoke.development/2009/06/12/safe-in-you/</loc>
+		<lastmod>2009-06-12T05:17:06+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: End Postings -->
+<!-- Debug: Start Custom Pages -->
+<!-- Debug: End Custom Pages -->
+<!-- Debug: Start additional URLs -->
+<!-- Debug: End additional URLs -->
+</urlset>

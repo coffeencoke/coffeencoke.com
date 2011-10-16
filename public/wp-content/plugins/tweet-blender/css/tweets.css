@@ -1,0 +1,142 @@
+/*
+	Tweet Blender CSS
+*/
+#tweetblender {
+	padding:5px 0;
+}
+
+#tbheader {
+	height: 25px;
+	width:100%;
+}
+
+#twitterlogo {
+	width: 86px;
+	height: 20px;
+	margin-bottom: 5px;
+	float:left;
+	border:none;
+}
+
+#tb_loading {
+	text-align:center;
+	clear:both;
+}
+
+#tweetblender ol {
+	margin:0;
+	padding:0;
+	clear:both;
+	border-bottom: dotted 1px #ccc;
+}
+
+#refreshlink {
+	display:inline;
+	float:right;
+	height:16px;
+	width:16px;
+	-moz-opacity:.30; filter:alpha(opacity=30); opacity:.30;
+	margin-right: 5px;
+	margin-top:3px;
+	margin-right:7px;
+}
+#refreshlink:hover, #refreshlink.loading {
+	-moz-opacity:1; filter:alpha(opacity=100); opacity:1;
+}
+#refreshlink img {
+	border:none;
+}
+
+div.tb_msg {
+	min-height: 40px;
+	clear:both;
+	padding:5px;
+	background-color:#FFFFCC;
+	border:1px solid #FFFF66;
+}
+
+#infolink {
+	display:inline;
+	float:right;
+	height:16px;
+	width:16px;
+	-moz-opacity:.30; filter:alpha(opacity=30); opacity:.30;
+	margin-bottom:10px;
+	margin-right: 7px;
+	margin-top:3px;
+}
+
+#tb_tools {
+	float:right;
+	height:22px;
+	width:52px;
+	background-repeat:no-repeat;
+}
+
+#infolink:hover {
+	-moz-opacity:1; filter:alpha(opacity=100); opacity:1;
+}
+
+#archivelink {
+	margin-left: 5px;
+	float:right;
+}
+
+#tweetlist {
+	margin: 2px;
+}
+
+#tweetlist li {
+	border-top: dotted 1px #ccc;
+	padding: 2px;
+	min-height: 60px;
+	list-style:none;
+	background:none;
+	overflow:hidden;
+}
+
+div.tweet-tools {
+	text-align:right;
+	clear:both;
+}
+
+a.tb_photo {
+	display:block;
+	float:left;
+	border:none;
+}
+
+a.tb_photo img {
+	margin-right: 4px;
+	width: 48px;
+	padding: 3px;
+	border: 1px solid #ddd;
+}
+
+.tb_author {
+	font-weight:normal;
+}
+
+.tb_tweetinfo {
+	color: #ccc;
+	font-style:italic;
+}
+
+.tb_tweetinfo a {
+	color: #ccc;
+	text-decoration:none;
+}
+
+.tb_tweetinfo a:hover {
+	text-decoration:underline;
+}
+
+.tooltip { 
+	position: absolute; 
+	top: 0; left: 0; 
+	z-index: 300; 
+	display: none; 
+	background-color:#FFFFcc; 
+	padding: 2px 8px; 
+	}
+
