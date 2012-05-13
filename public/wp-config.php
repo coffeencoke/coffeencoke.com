@@ -16,11 +16,10 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('WP_CACHE', true); //Added by WP-Cache Manager
-define('DB_NAME', 'envion_coffeencoke');
+define('DB_NAME', 'coffeencoke');
 
 /** MySQL database username */
-define('DB_USER', 'msimpson');
+define('DB_USER', 'root');
 
 /** MySQL database password */
 define('DB_PASSWORD', '');
@@ -33,14 +32,6 @@ define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
-
-/**
- * Since PHP 5.1.0 (when the date/time functions were rewritten), every call 
- * to a date/time function will generate a E_NOTICE if the timezone isn't 
- * valid, and/or a E_WARNING message if using the system settings or the TZ 
- * environment variable. 
- */
-date_default_timezone_set('America/Chicago');
 
 /**#@+
  * Authentication Unique Keys.
