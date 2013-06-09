@@ -1,0 +1,38 @@
+---
+layout: post
+title: No Downtime Deployments
+tags: []
+status: draft
+type: post
+published: false
+meta:
+  _edit_last: '1'
+---
+Deploying is easy with <a href='http://capistranorb.com/'>Capistrano</a>. Managing ruby installations is easy with <a href='https://rvm.io/'>RVM</a>. Serving <a href='http://rubyonrails.org/'>rails</a> and <a href='http://www.ruby-lang.org/en/'>ruby</a> apps is easy with <a href='http://nginx.org'>Nginx</a>, and <a href='http://unicorn.bogomips.org/'>Unicorn</a>. Writing background tasks is simple enough using <a href='http://redis.io/'>Redis</a> and <a href='https://github.com/defunkt/resque'>Resque</a> or <a href='https://github.com/mperham/sidekiq'>Sidekiq</a>.  And You can monitor all of these pretty easily with <a href='http://godrb.com/'>God</a>, <a href='http://www.bb4.org/download.html'>Big Brother</a>, and <a href='http://newrelic.com/'>New Relic</a>.
+
+However, it is quite difficult to get zero downtime deploys to work with all of these pieces! It's also nice to improve how we deploy.
+
+<h2>Disclaimer</h2>
+
+This is not a post about supporting no downtime with migrations.  That is a separate topic that I would like to post about later.
+
+<h2>Capistrano Setup</h2>
+
+<i>This is specific for a rails application</i>
+
+Deployment important contents of our Gemfile.
+
+<pre>
+group :assets do
+  gem 'turbo-sprockets-rails3', '0.3.6'
+end
+
+# Deploy with Capistrano
+gem 'capistrano', '~> 2.14'
+gem 'capistrano-unicorn', '0.1.6', require: false
+gem 'capistrano-maintenance', '0.0.2'
+gem 'rvm-capistrano', '~> 1.2'
+gem 'unicorn', '~> 4.5'
+gem 'sidekiq', '~> 2.6'
+</pre>
+
