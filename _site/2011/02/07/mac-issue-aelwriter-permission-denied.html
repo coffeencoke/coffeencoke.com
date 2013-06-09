@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mac Issue: AELWriter Permission denied</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Coffeencoke - Matt Simpson</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Mac Issue: AELWriter Permission denied</h2>
+<p class="meta">07 Feb 2011</p>
+
+<div class="post">
+<p>When I was inserting a new Product Serial Number for Adobe Aperture after migrating Aperture from another computer via that mac osx migration assistant.  Apperture will spin the dreadful spinning wheel of death and spit out this in the Console:</p>
+<pre>
+<div id="_mcePaste">2/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter[1230]) posix_spawn("/usr/sbin/AELWriter", ...): Permission denied</div>
+<div id="_mcePaste">2/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter[1230]) Exited with exit code: 1</div>
+<div id="_mcePaste">2/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter) Throttling respawn: Will start in 2 seconds</div>
+2/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter[1230]) posix_spawn("/usr/sbin/AELWriter", ...): Permission denied2/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter[1230]) Exited with exit code: 12/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter) Throttling respawn: Will start in 2 seconds
+</pre>
+
+<p>
+The fix is found here:
+</p>
+<p>
+<a href='http://support.apple.com/kb/TS3519' target='_blank'>Apple Support Fix</a>
+</p>
+happy fixing.
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  <a
+                    href="http://github.com/coffeencoke/">github.com/coffeencoke</a><br />
+                  <a
+                    href="http://twitter.com/coffeencoke/">twitter.com/coffeencoke</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+    </body>
+</html>
