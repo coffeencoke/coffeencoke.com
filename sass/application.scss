@@ -1,0 +1,45 @@
+@import "compass";
+@include global-reset;
+@include reset-html5;
+@import 'grid';
+
+
+//////////
+// GRID //
+//////////
+
+// Specify the number of columns and set column and gutter widths
+$columns: 12;
+$column-width: 60;
+$gutter-width: 20;
+
+// Remove the definition below for a pixel-based layout
+$total-width: 100%;
+
+////////////
+// LAYOUT //
+////////////
+
+// header
+header#main-header {
+	@include column(12);
+}
+
+div#main-content {
+	@include column(12);
+}
+footer#main-footer {
+	@include column(12);
+}
+
+div#main-content #home{
+  article.intro {
+    @include column(7);
+    background: blue;
+  }
+
+  article.feature{
+    @include column(5);
+    background: red;
+  }
+}
