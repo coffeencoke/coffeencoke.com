@@ -3,6 +3,7 @@
 @include reset-html5;
 @import 'grid';
 
+$red: #ab3700;
 
 //////////
 // GRID //
@@ -22,7 +23,28 @@ $total-width: 100%;
 
 // header
 header#main-header {
-	@include column(12);
+  height: 100px;
+  border-bottom: 5px solid #322a26;
+  background: $red;
+
+  div{
+    @include column(12);
+
+    h1{
+      display: inline-block;
+      a:link, a:visited, a:active{
+        color: #000;
+        font-size: 90px;
+      }
+    }
+    h2{
+      display: inline-block;
+      a:link, a:visited, a:active{
+        color: #c49f91;
+        font-size: 30px;
+      }
+    }
+  }
 }
 
 div#main-content {

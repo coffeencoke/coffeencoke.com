@@ -24,10 +24,12 @@
 </head>
 <body>
   <header id='main-header'>
-    <h1><a href="/">{{ site.title }}</a></h1>
-    {% if site.subtitle %}
-      <h2><a href="/">{{ site.subtitle }}</a></h2>
-    {% endif %}
+    <div>
+      <h1><a href="/">{{ site.title }}</a></h1>
+      {% if site.subtitle %}
+        <h2><a href="/">{{ site.subtitle }}</a></h2>
+      {% endif %}
+    </div>
   </header>
   <div id='main-content'>
     {{ content }}
