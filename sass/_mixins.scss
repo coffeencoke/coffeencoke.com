@@ -1,0 +1,23 @@
+@mixin table-lLandscape {
+  @media (min-width: 979px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin tabletPortrait {
+  @media (min-width: 600px) and (max-width: 979px) {
+    @content;
+  }
+}
+
+@mixin phoneLandscape {
+  @media (min-width: 400px) and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin phonePortrait {
+  @media (max-width: 400px) {
+    @content;
+  }
+}

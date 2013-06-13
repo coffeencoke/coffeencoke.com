@@ -3,6 +3,7 @@
 @include reset-html5;
 @import 'grid';
 @import 'fonts';
+@import 'mixins';
 
 $red: #ab3700;
 
@@ -13,7 +14,7 @@ $red: #ab3700;
 // Specify the number of columns and set column and gutter widths
 $columns: 12;
 $column-width: 60;
-$gutter-width: 20;
+$gutter-width: 80;
 
 // Remove the definition below for a pixel-based layout
 $total-width: 100%;
@@ -39,11 +40,16 @@ a{
 header#main-header {
   height: 100px;
   border-bottom: 5px solid #322a26;
-  background: $red;
+  -webkit-box-shadow:  0px 3px 10px 1px #333;
+  box-shadow:  0px 3px 10px 1px #333;
+  background: url(/images/header_bg.png) 50% 50% no-repeat;
+  background-size: 100% auto;
 
   div{
     @include column(12);
     padding-top: 15px;
+    text-shadow: 1px 1px 10px $red;
+    filter: dropshadow(color=$red, offx=1, offy=1);
 
     h1{
       display: inline-block;
@@ -57,6 +63,7 @@ header#main-header {
       display: inline-block;
       vertical-align: middle;
       height: 100px;
+      margin-left: 20px;
       a:link, a:visited, a:active{
         font-family: $desyrel;
         color: #c49f91;
@@ -84,5 +91,33 @@ div#main-content #home{
   article.feature{
     @include column(5);
     background: red;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@include phoneLandscape {
+  header#main-header {
+    height: 130px;
+
+    div{
+      padding-top: 5px;
+
+      h1{
+        text-align: center;
+        display: block;
+      }
+      h2{
+        display: block;
+        text-align: center;
+        height: 20px;
+        margin-left: 0;
+        a:link, a:visited, a:active{
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
   }
 }
