@@ -2,6 +2,7 @@
 @include global-reset;
 @include reset-html5;
 @import 'grid';
+@import 'fonts';
 
 $red: #ab3700;
 
@@ -17,6 +18,19 @@ $gutter-width: 20;
 // Remove the definition below for a pixel-based layout
 $total-width: 100%;
 
+/*
+ * Global Styles
+ */
+a{
+  &:link, &:visited, &:active{
+    text-decoration: none;
+  }
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
 ////////////
 // LAYOUT //
 ////////////
@@ -29,19 +43,26 @@ header#main-header {
 
   div{
     @include column(12);
+    padding-top: 15px;
 
     h1{
       display: inline-block;
       a:link, a:visited, a:active{
+        font-family: $leagueGothic;
         color: #000;
         font-size: 90px;
       }
     }
     h2{
       display: inline-block;
+      vertical-align: middle;
+      height: 100px;
       a:link, a:visited, a:active{
+        font-family: $desyrel;
         color: #c49f91;
+        vertical-align: middle;
         font-size: 30px;
+        line-height: 60px;
       }
     }
   }
