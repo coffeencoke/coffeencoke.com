@@ -5,7 +5,7 @@
 @import 'fonts';
 @import 'mixins';
 
-$red: #ab3700;
+$red: #ad3d00;
 
 //////////
 // GRID //
@@ -104,6 +104,30 @@ div#main-content #home{
         font-size: 18px;
         text-transform: uppercase;
         line-height: 32px;
+      }
+
+      ul {
+        margin-top: 60px;
+        li{
+          display: inline-block;
+
+          a:link, a:visited, a:active{
+            font-family: $leagueGothic;
+            font-size: 48px;
+            line-height: 70px;
+            padding: 0 30px;
+            color: #000;
+            border-bottom: solid 4px #000;
+            margin: 16px;
+            font-variant: small-caps;
+          }
+
+          a:hover{
+            border-bottom: solid 8px #000;
+            color: $red;
+            @include transition(color, 300ms, ease-out);
+          }
+        }
       }
     }
 

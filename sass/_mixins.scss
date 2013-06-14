@@ -48,3 +48,11 @@
   position: absolute;
   width: 1px;
 }
+
+@mixin transition($event, $duration, $function){
+  -webkit-transition: $event $duration $function;
+  -moz-transition: $event $duration $function;
+  -ms-transition: $event $duration $function;
+  -o-transition: $event $duration $function;
+  transition: $event $duration $function;
+}
