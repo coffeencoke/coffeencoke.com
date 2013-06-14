@@ -61,15 +61,13 @@ header#main-header {
     }
     h2{
       display: inline-block;
-      vertical-align: middle;
-      height: 100px;
+      vertical-align: top;
       margin-left: 20px;
+      margin-top: 30px;
       a:link, a:visited, a:active{
         font-family: $desyrel;
         color: #c49f91;
-        vertical-align: middle;
         font-size: 30px;
-        line-height: 60px;
       }
     }
   }
@@ -77,22 +75,43 @@ header#main-header {
 
 div#main-content {
 	@include column(12);
+  padding-top: 50px;
 }
 footer#main-footer {
 	@include column(12);
 }
 
 div#main-content #home{
-  article.intro {
-    @include column(7);
-    background: blue;
-  }
+  section{
+    h1{
+      @include visuallyHidden;
+    }
+    article.intro {
+      @include column(7);
+      padding-top: 40px;
 
-  article.feature{
-    @include column(5);
-    background: red;
-    img{
-      width: 100%;
+      h2{
+        @include imageReplacement('/images/home-heading-text.png');
+        width: 360px;
+        height: 111px;
+        margin-left: 15%;
+        margin-bottom: 35px;
+      }
+
+      p{
+        font-family: Helvetica, Arial;
+        margin-left: 8%;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 32px;
+      }
+    }
+
+    article.feature{
+      @include column(5);
+      img{
+        width: 100%;
+      }
     }
   }
 }
@@ -108,11 +127,13 @@ div#main-content #home{
         text-align: center;
         display: block;
       }
+
       h2{
         display: block;
         text-align: center;
         height: 20px;
         margin-left: 0;
+        margin-top: 0;
         a:link, a:visited, a:active{
           font-size: 20px;
           line-height: 20px;
