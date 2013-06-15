@@ -309,8 +309,8 @@ div#main-content #home{
         }
 
         p, p.pixels, p.problems{
-          width: 390px;
-          font-size: 12px;
+          width: 360px;
+          font-size: 11px;
         }
 
         ul{
@@ -337,12 +337,75 @@ div#main-content #home{
 }
 
 @include phonePortrait {
-  div#main-content > div {
-    article.intro{
+  header#main-header {
+    height: 130px;
+
+    div{
+      padding-top: 5px;
+
+      h1{
+        text-align: center;
+        display: block;
+      }
+
       h2{
-        background-width: 380px auto;
-        width: 380px;
+        display: block;
+        text-align: center;
+        height: 20px;
+        margin-left: 0;
+        margin-top: 0;
+        a:link, a:visited, a:active{
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  div#main-content > div{ 
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    #home section {
+      article.intro, article.feature  {
+        @include column(12, 12);
+      }
+
+      article.intro {
+        padding-top: 0;
+
+        h2{
+          width: 300px;
+          background-size: 300px auto;
+          margin-bottom: 10px;
+        }
+
+        p, p.pixels, p.problems{
+          width: 210px;
+          font-size: 12px;
+        }
+
+        ul{
+          margin-top: 10px;
+          width: 300px;
+
+          li a{
+            &:link, a:visited, a:active{
+              width: 105px;
+              font-size: 32px;
+            }
+          }
+        }
+      }
+
+      article.feature {
+        text-align: center;
+        img{
+          margin-top: 30px;
+          width: 80%;
+        }
       }
     }
   }
 }
+
