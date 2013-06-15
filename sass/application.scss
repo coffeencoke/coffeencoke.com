@@ -88,18 +88,21 @@ footer#main-footer {
   background: url(/images/footer_bg.png) top left;
   display: block;
 
+  $tan: #e5d6b9;
+  $offwhite: #f9f9f9;
+
   &> div {
   	@include column(12);
     padding-top: 30px;
 
     p{
-      font-family: Helvetica, Arial;
+      font-family: $neoRetroFill;
       text-transform: uppercase;
-      color: #e5d6b9;
+      color: $tan;
       font-size: 18px;
 
       a:link, a:visited, a:active{
-        color: #f9f9f9;
+        color: $offwhite;
         text-decoration: none;
       }
 
@@ -111,23 +114,50 @@ footer#main-footer {
 
     section#currentProfessionalInterests, 
     section#upcomingEvents{
-      @include column(6);
-
       h1, h2{
         font-family: $leagueGothic;
-        color: #f9f9f9;
+        color: $offwhite;
+        letter-spacing: .06em;
       }
 
       h1{
-        font-size: 58px;
+        font-size: 55px;
       }
 
       h2{
-        font-size: 36px;
+        font-size: 32px;
       }
 
       article{
-        margin-top: 35px;
+        margin-top: 32px;
+      }
+    }
+
+    section#currentProfessionalInterests{
+      @include column(7);
+    }
+
+    section#upcomingEvents{
+      @include column(5);
+
+      h2{
+        padding-right: 60px;
+        color: $tan;
+        font-size: 28px;
+      }
+
+      p{
+        width: 380px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: .08em;
+        color: $offwhite;
+
+        a{
+          &:link, &:visited, &:active{
+            color: $tan;
+          }
+        }
       }
     }
 
@@ -145,121 +175,11 @@ footer#main-footer {
   }
 }
 
-div#main-content #home{
-  section{
-    h1{
-      @include visuallyHidden;
-    }
-    article.intro {
-      @include column(7, 12);
-      padding-top: 40px;
-
-      h2{
-        @include imageReplacement('/images/home-heading-text.png');
-        width: 360px;
-        height: 111px;
-        margin: 0 auto 35px;
-      }
-
-      p{
-        font-family: Helvetica, Arial;
-        margin: 0 auto;;
-        font-size: 18px;
-        text-transform: uppercase;
-        line-height: 32px;
-        width: 520px;
-        
-        &.problems{
-          letter-spacing: .10em;
-        }
-
-        &.pixels{
-          letter-spacing: .05em;
-          font-size: 16px;
-        }
-      }
-
-      ul {
-        margin-top: 60px;
-        margin: 60px auto 0;
-        width: 630px;
-        li{
-          display: inline-block;
-
-          a:link, a:visited, a:active{
-            font-family: $leagueGothic;
-            font-size: 40px;
-            line-height: 70px;
-            padding: 0 30px;
-            color: #000;
-            border-bottom: solid 4px #000;
-            margin: 16px;
-            font-variant: small-caps;
-
-            @include borderTransition(100ms, ease-in);
-          }
-
-          a:hover{
-            border-bottom: solid 8px $red;
-            color: $red;
-            @include transition(color, 300ms, ease-out);
-          }
-        }
-      }
-    }
-
-    article.feature{
-      @include column(5, 12);
-      img{
-        width: 100%;
-      }
-    }
-  }
-}
-
-@include tabletLandscape {
-  div#main-content > div{ 
-    #home section article.intro {
-      ul{
-        width: 450px;
-        margin-top: 20px;
-
-        li {
-          a:link, a:visited, a:active{
-            margin: 4px;
-            padding: 0 20px;
-          }
-        }
-      }
-    }
-  }
-}
-
 @include tabletPortrait {
-  div#main-content > div{ 
-    #home section {
-      article.intro, article.feature  {
-        @include column(12, 12);
-      }
-      article.intro ul{
-        width: 540px;
-        margin-top: 20px;
-
-        li {
-          a:link, a:visited, a:active{
-            margin: 8px;
-            padding: 0 25px;
-          }
-        }
-      }
-
-      article.feature {
-        text-align: center;
-        img{
-          margin-top: 30px;
-          width: 80%;
-        }
-      }
+  footer#main-footer > div{
+    section#upcomingEvents, section#currentProfessionalInterests {
+      @include column(12, 12);
+      padding-bottom: 30px;
     }
   }
 }
@@ -290,47 +210,19 @@ div#main-content #home{
     }
   }
 
-  div#main-content > div{ 
-    padding-top: 40px;
-    padding-bottom: 40px;
+  footer#main-footer > div{
+    section#upcomingEvents, section#currentProfessionalInterests {
+      @include column(12, 12);
+      padding-bottom: 30px;
 
-    #home section {
-      article.intro, article.feature  {
-        @include column(12, 12);
+      p{
+        width: auto;
       }
+    }
 
-      article.intro {
-        padding-top: 0;
-
-        h2{
-          width: 300px;
-          background-size: 300px auto;
-          margin-bottom: 10px;
-        }
-
-        p, p.pixels, p.problems{
-          width: 360px;
-          font-size: 11px;
-        }
-
-        ul{
-          margin-top: 10px;
-          width: 320px;
-
-          li a{
-            &:link, a:visited, a:active{
-              width: 125px;
-            }
-          }
-        }
-      }
-
-      article.feature {
-        text-align: center;
-        img{
-          margin-top: 30px;
-          width: 80%;
-        }
+    section#copyright{
+      p{
+        margin-bottom: 20px;
       }
     }
   }
@@ -346,6 +238,7 @@ div#main-content #home{
       h1{
         text-align: center;
         display: block;
+        font-size: 80px;
       }
 
       h2{
@@ -362,50 +255,23 @@ div#main-content #home{
     }
   }
 
-  div#main-content > div{ 
-    padding-top: 40px;
-    padding-bottom: 40px;
+  footer#main-footer > div{
+    section#upcomingEvents, section#currentProfessionalInterests {
+      @include column(12, 12);
+      padding-bottom: 30px;
 
-    #home section {
-      article.intro, article.feature  {
-        @include column(12, 12);
+      p{
+        width: auto;
       }
+    }
 
-      article.intro {
-        padding-top: 0;
-
-        h2{
-          width: 300px;
-          background-size: 300px auto;
-          margin-bottom: 10px;
-        }
-
-        p, p.pixels, p.problems{
-          width: 210px;
-          font-size: 12px;
-        }
-
-        ul{
-          margin-top: 10px;
-          width: 300px;
-
-          li a{
-            &:link, a:visited, a:active{
-              width: 105px;
-              font-size: 32px;
-            }
-          }
-        }
-      }
-
-      article.feature {
-        text-align: center;
-        img{
-          margin-top: 30px;
-          width: 80%;
-        }
+    section#copyright{
+      p{
+        margin-bottom: 20px;
       }
     }
   }
 }
 
+
+@import 'pages/home';

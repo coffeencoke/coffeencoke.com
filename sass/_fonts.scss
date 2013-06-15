@@ -57,6 +57,43 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'NeoRetroDrawRegular';
+    src: url('../assets/fonts/NEORD___-webfont.eot');
+    src: url('../assets/fonts/NEORD___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/NEORD___-webfont.woff') format('woff'),
+         url('../assets/fonts/NEORD___-webfont.ttf') format('truetype'),
+         url('../assets/fonts/NEORD___-webfont.svg#NeoRetroDrawRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NeoRetroFillRegular';
+    src: url('../assets/fonts/NEORF___-webfont.eot');
+    src: url('../assets/fonts/NEORF___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/NEORF___-webfont.woff') format('woff'),
+         url('../assets/fonts/NEORF___-webfont.ttf') format('truetype'),
+         url('../assets/fonts/NEORF___-webfont.svg#NeoRetroFillRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NeoRetroShadowRegular';
+    src: url('../assets/fonts/NEORS___-webfont.eot');
+    src: url('../assets/fonts/NEORS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/NEORS___-webfont.woff') format('woff'),
+         url('../assets/fonts/NEORS___-webfont.ttf') format('truetype'),
+         url('../assets/fonts/NEORS___-webfont.svg#NeoRetroShadowRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$neoRetroFill: 'NeoRetroFillRegular';
 $leagueGothic: 'LeagueGothicRegular';
 $leagueGothicItalic: 'LeagueGothicItalic';
 $leagueGothicCondensed: 'LeagueGothicCondensedRegular';

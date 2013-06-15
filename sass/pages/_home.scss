@@ -1,0 +1,217 @@
+div#main-content #home{
+  section{
+    h1{
+      @include visuallyHidden;
+    }
+    article.intro {
+      @include column(7, 12);
+      padding-top: 40px;
+
+      h2{
+        @include imageReplacement('/images/home-heading-text.png');
+        width: 360px;
+        height: 111px;
+        margin: 0 auto 35px;
+      }
+
+      p{
+        font-family: $neoRetroFill;
+        margin: 0 auto;;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 32px;
+        width: 570px;
+        
+        &.problems{
+          letter-spacing: .10em;
+        }
+
+        &.pixels{
+          letter-spacing: .05em;
+          font-size: 16px;
+        }
+      }
+
+      ul {
+        margin-top: 60px;
+        margin: 60px auto 0;
+        width: 630px;
+        li{
+          display: inline-block;
+
+          a:link, a:visited, a:active{
+            font-family: $leagueGothic;
+            font-size: 40px;
+            line-height: 70px;
+            padding: 0 30px;
+            color: #000;
+            border-bottom: solid 4px #000;
+            margin: 16px;
+            font-variant: small-caps;
+
+            @include borderTransition(100ms, ease-in);
+          }
+
+          a:hover{
+            border-bottom: solid 8px $red;
+            color: $red;
+            @include transition(color, 300ms, ease-out);
+          }
+        }
+      }
+    }
+
+    article.feature{
+      @include column(5, 12);
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@include tabletLandscape {
+  div#main-content > div{ 
+    #home section article.intro {
+      ul{
+        width: 450px;
+        margin-top: 20px;
+
+        li {
+          a:link, a:visited, a:active{
+            margin: 4px;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tabletPortrait {
+  div#main-content > div{ 
+    #home section {
+      article.intro, article.feature  {
+        @include column(12, 12);
+      }
+      article.intro ul{
+        width: 540px;
+        margin-top: 20px;
+
+        li {
+          a:link, a:visited, a:active{
+            margin: 8px;
+            padding: 0 25px;
+          }
+        }
+      }
+
+      article.feature {
+        text-align: center;
+        img{
+          margin-top: 30px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@include phoneLandscape {
+  div#main-content > div{ 
+    #home section {
+      article.intro, article.feature  {
+        @include column(12, 12);
+      }
+
+      article.intro {
+        padding-top: 0;
+
+        h2{
+          width: 300px;
+          background-size: 300px auto;
+          margin-bottom: 10px;
+        }
+
+        p, p.pixels, p.problems{
+          width: 340px;
+          font-size: 18px;
+        }
+
+        p.problems{
+          font-size: 20px;
+        }
+
+        ul{
+          margin-top: 10px;
+          width: 320px;
+
+          li a{
+            &:link, a:visited, a:active{
+              width: 125px;
+            }
+          }
+        }
+      }
+
+      article.feature {
+        text-align: center;
+        img{
+          margin-top: 30px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@include phonePortrait {
+  div#main-content > div{ 
+    #home section {
+      article.intro, article.feature  {
+        @include column(12, 12);
+      }
+
+      article.intro {
+        padding-top: 0;
+
+        h2{
+          width: 300px;
+          background-size: 300px auto;
+          margin-bottom: 10px;
+        }
+
+        p, p.pixels, p.problems{
+          width: 210px;
+          font-size: 14px;
+        }
+
+        p.problems{
+          font-size: 16px;
+        }
+
+        ul{
+          margin-top: 10px;
+          width: 300px;
+
+          li a{
+            &:link, a:visited, a:active{
+              width: 105px;
+              font-size: 32px;
+            }
+          }
+        }
+      }
+
+      article.feature {
+        text-align: center;
+        img{
+          margin-top: 30px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
