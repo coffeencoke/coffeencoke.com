@@ -1,4 +1,4 @@
-@mixin table-lLandscape {
+@mixin tabletLandscape {
   @media (min-width: 979px) and (max-width: 1199px) {
     @content;
   }
@@ -21,6 +21,7 @@
     @content;
   }
 }
+
 
 @mixin imageReplacement($image) {
   background-color: transparent;
@@ -55,4 +56,14 @@
   -ms-transition: $event $duration $function;
   -o-transition: $event $duration $function;
   transition: $event $duration $function;
+}
+
+@mixin borderTransition($duration, $function){
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: $duration $function;
+  -moz-transition: $duration $function;
+  -ms-transition: $duration $function;
 }

@@ -14,7 +14,7 @@ $red: #ad3d00;
 // Specify the number of columns and set column and gutter widths
 $columns: 12;
 $column-width: 60;
-$gutter-width: 80;
+$gutter-width: 10;
 
 // Remove the definition below for a pixel-based layout
 $total-width: 100%;
@@ -151,43 +151,56 @@ div#main-content #home{
       @include visuallyHidden;
     }
     article.intro {
-      @include column(7);
+      @include column(7, 12);
       padding-top: 40px;
 
       h2{
         @include imageReplacement('/images/home-heading-text.png');
         width: 360px;
         height: 111px;
-        margin-left: 15%;
-        margin-bottom: 35px;
+        margin: 0 auto 35px;
       }
 
       p{
         font-family: Helvetica, Arial;
-        margin-left: 8%;
+        margin: 0 auto;;
         font-size: 18px;
         text-transform: uppercase;
         line-height: 32px;
+        width: 520px;
+        
+        &.problems{
+          letter-spacing: .10em;
+        }
+
+        &.pixels{
+          letter-spacing: .05em;
+          font-size: 16px;
+        }
       }
 
       ul {
         margin-top: 60px;
+        margin: 60px auto 0;
+        width: 630px;
         li{
           display: inline-block;
 
           a:link, a:visited, a:active{
             font-family: $leagueGothic;
-            font-size: 48px;
+            font-size: 40px;
             line-height: 70px;
             padding: 0 30px;
             color: #000;
             border-bottom: solid 4px #000;
             margin: 16px;
             font-variant: small-caps;
+
+            @include borderTransition(100ms, ease-in);
           }
 
           a:hover{
-            border-bottom: solid 8px #000;
+            border-bottom: solid 8px $red;
             color: $red;
             @include transition(color, 300ms, ease-out);
           }
@@ -196,9 +209,56 @@ div#main-content #home{
     }
 
     article.feature{
-      @include column(5);
+      @include column(5, 12);
       img{
         width: 100%;
+      }
+    }
+  }
+}
+
+@include tabletLandscape {
+  div#main-content > div{ 
+    #home section article.intro {
+      ul{
+        width: 450px;
+        margin-top: 20px;
+
+        li {
+          a:link, a:visited, a:active{
+            margin: 4px;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tabletPortrait {
+  div#main-content > div{ 
+    #home section {
+      article.intro, article.feature  {
+        @include column(12, 12);
+      }
+      article.intro ul{
+        width: 540px;
+        margin-top: 20px;
+
+        li {
+          a:link, a:visited, a:active{
+            margin: 8px;
+            padding: 0 25px;
+          }
+        }
+      }
+
+      article.feature {
+        text-align: center;
+        img{
+          margin-top: 30px;
+          width: 80%;
+        }
       }
     }
   }
@@ -226,6 +286,62 @@ div#main-content #home{
           font-size: 20px;
           line-height: 20px;
         }
+      }
+    }
+  }
+
+  div#main-content > div{ 
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    #home section {
+      article.intro, article.feature  {
+        @include column(12, 12);
+      }
+
+      article.intro {
+        padding-top: 0;
+
+        h2{
+          width: 300px;
+          background-size: 300px auto;
+          margin-bottom: 10px;
+        }
+
+        p, p.pixels, p.problems{
+          width: 390px;
+          font-size: 12px;
+        }
+
+        ul{
+          margin-top: 10px;
+          width: 320px;
+
+          li a{
+            &:link, a:visited, a:active{
+              width: 125px;
+            }
+          }
+        }
+      }
+
+      article.feature {
+        text-align: center;
+        img{
+          margin-top: 30px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@include phonePortrait {
+  div#main-content > div {
+    article.intro{
+      h2{
+        background-width: 380px auto;
+        width: 380px;
       }
     }
   }
