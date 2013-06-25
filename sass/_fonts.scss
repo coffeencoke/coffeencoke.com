@@ -90,9 +90,59 @@
          url('../assets/fonts/NEORS___-webfont.svg#NeoRetroShadowRegular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArsenalRegular';
+    src: url('../assets/fonts/Arsenal-Regular-webfont.eot');
+    src: url('../assets/fonts/Arsenal-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Arsenal-Regular-webfont.woff') format('woff'),
+         url('../assets/fonts/Arsenal-Regular-webfont.ttf') format('truetype'),
+         url('../assets/fonts/Arsenal-Regular-webfont.svg#ArsenalRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
+@font-face {
+    font-family: 'ArsenalItalic';
+    src: url('../assets/fonts/Arsenal-Italic-webfont.eot');
+    src: url('../assets/fonts/Arsenal-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Arsenal-Italic-webfont.woff') format('woff'),
+         url('../assets/fonts/Arsenal-Italic-webfont.ttf') format('truetype'),
+         url('../assets/fonts/Arsenal-Italic-webfont.svg#ArsenalItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ArsenalBold';
+    src: url('../assets/fonts/Arsenal-Bold-webfont.eot');
+    src: url('../assets/fonts/Arsenal-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Arsenal-Bold-webfont.woff') format('woff'),
+         url('../assets/fonts/Arsenal-Bold-webfont.ttf') format('truetype'),
+         url('../assets/fonts/Arsenal-Bold-webfont.svg#ArsenalBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ArsenalBoldItalic';
+    src: url('../assets/fonts/Arsenal-BoldItalic-webfont.eot');
+    src: url('../assets/fonts/Arsenal-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Arsenal-BoldItalic-webfont.woff') format('woff'),
+         url('../assets/fonts/Arsenal-BoldItalic-webfont.ttf') format('truetype'),
+         url('../assets/fonts/Arsenal-BoldItalic-webfont.svg#ArsenalBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$arsenal: 'ArsenalRegular';
+$arsenalBold: 'ArsenalBold';
+$arsenalItalic: 'ArsenalItalic';
 $neoRetroFill: 'NeoRetroFillRegular';
 $leagueGothic: 'LeagueGothicRegular';
 $leagueGothicItalic: 'LeagueGothicItalic';

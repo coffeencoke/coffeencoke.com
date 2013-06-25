@@ -35,7 +35,7 @@ div#main-content #home{
       ul {
         margin-top: 60px;
         margin: 60px auto 0;
-        width: 630px;
+        width: 670px;
         li{
           display: inline-block;
 
@@ -75,7 +75,7 @@ div#main-content #home{
   div#main-content > div{ 
     #home section article.intro {
       ul{
-        width: 450px;
+        width: 500px;
         margin-top: 20px;
 
         li {
@@ -96,7 +96,7 @@ div#main-content #home{
         @include column(12, 12);
       }
       article.intro ul{
-        width: 540px;
+        width: 570px;
         margin-top: 20px;
 
         li {
@@ -145,7 +145,7 @@ div#main-content #home{
 
         ul{
           margin-top: 10px;
-          width: 320px;
+          width: 350px;
 
           li a{
             &:link, a:visited, a:active{
@@ -193,7 +193,7 @@ div#main-content #home{
 
         ul{
           margin-top: 10px;
-          width: 300px;
+          width: 320px;
 
           li a{
             &:link, a:visited, a:active{

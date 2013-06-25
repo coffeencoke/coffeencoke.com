@@ -1,0 +1,21 @@
+div#main-content #portfolio{
+  h1{
+    font-family: $leagueGothic;
+    font-size: 40px;
+  }
+
+  h2{
+    font-family: $leagueGothic;
+    font-size: 24px;
+  }
+
+  section{
+    margin: 20px 0;
+    @include clearfix;
+  }
+
+  section#sources article{
+    @include column(3, 12);
+  }
+}
+

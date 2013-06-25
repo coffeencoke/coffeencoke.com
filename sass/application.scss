@@ -25,11 +25,22 @@ $total-width: 100%;
 a{
   &:link, &:visited, &:active{
     text-decoration: none;
+    color: $red;
   }
 
   &:hover{
     text-decoration: none;
   }
+}
+
+p a:hover{
+  text-decoration: underline;
+}
+
+p, ul li, p a:link, p a:visited, p a:active{
+  font-family: $arsenal;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 ////////////
@@ -273,5 +284,5 @@ footer#main-footer {
   }
 }
 
-
 @import 'pages/home';
+@import 'pages/portfolio';
