@@ -72,7 +72,7 @@ div#main-content #home{
 
 
 @include tabletLandscape {
-  div#main-content > div{ 
+  div#main-content { 
     #home section article.intro {
       ul{
         width: 500px;
@@ -90,7 +90,7 @@ div#main-content #home{
 }
 
 @include tabletPortrait {
-  div#main-content > div{ 
+  div#main-content {
     #home section {
       article.intro, article.feature  {
         @include column(12, 12);
@@ -119,7 +119,7 @@ div#main-content #home{
 }
 
 @include phoneLandscape {
-  div#main-content > div{ 
+  div#main-content{ 
     #home section {
       article.intro, article.feature  {
         @include column(12, 12);
@@ -167,7 +167,7 @@ div#main-content #home{
 }
 
 @include phonePortrait {
-  div#main-content > div{ 
+  div#main-content { 
     #home section {
       article.intro, article.feature  {
         @include column(12, 12);
