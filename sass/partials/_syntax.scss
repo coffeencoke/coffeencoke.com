@@ -45,7 +45,6 @@ html .gist .gist-file {
       background: $base03 !important;
     }
     .highlight pre {
-      @extend .pre-code;
       padding: 0;
     }
   }
@@ -61,7 +60,6 @@ html .gist .gist-file {
    } @else {
      background: $base02 $noise-bg;
    }
-   @extend .sans;
    line-height: 1.5em;
     a {
       color: mix($base1, $base01) !important;
@@ -71,11 +69,9 @@ html .gist .gist-file {
     a[href*='#file'] {
       position: absolute; top: 0; left:0; right:-10px;
       color: #474747 !important;
-      @extend .code-title;
       &:hover { color: $link-color !important; }
     }
     a[href*=raw]{
-      @extend .download-source;
       top: .4em;
     }
   }
@@ -83,7 +79,6 @@ html .gist .gist-file {
 pre {
   background: $pre-bg $noise-bg;
   @include border-radius(.4em);
-  @extend .mono;
   border: 1px solid $pre-border;
   line-height: 1.45em;
   font-size: 13px;
@@ -93,13 +88,11 @@ pre {
   overflow: auto;
 }
 h3.filename {
-  @extend .code-title;
   + pre { @include border-top-radius(0px); }
 }
 
 p, li {
   code {
-    @extend .mono;
     display: inline-block;
     white-space: no-wrap;
     background: #fff;
@@ -213,9 +206,6 @@ pre, .highlight, .gist-highlight {
   &::-webkit-scrollbar-thumb:horizontal { background: $solar-scroll-thumb;  -webkit-border-radius: 4px; border-radius: 4px }
 }
 
-.highlight code { 
-  @extend .pre-code; background: #000;
-}
 figure.code {
   background: none;
   padding: 0;
@@ -224,8 +214,6 @@ figure.code {
   pre { margin-bottom: 0; }
   figcaption {
     position: relative;
-    @extend .code-title;
-    a { @extend .download-source; }
   }
   .highlight {
     margin-bottom: 0;
