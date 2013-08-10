@@ -1,0 +1,25 @@
+#main-content #blog{
+  header {
+    h1{
+      font-family: $neoRetroFill;
+      font-size: 32px;
+      color: #000;
+
+      a{
+        &:link, &:visited, &:active{
+          color: #000;
+        }
+
+        &:hover{
+          color: $red;
+        }
+      }
+    }
+
+    ul.meta li{
+      font-family: $neoRetroFill;
+      font-size: 18px;
+      color: #555555;
+    }
+  }
+}

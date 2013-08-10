@@ -6,12 +6,15 @@
       <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
     {% endif %}
     {% unless page.meta == false %}
-      <p class="meta">
-        {% include post/date.html %}{{ time }}
-        {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-         | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
+      <ul class="meta">
+        {% if post.tags %}
+        <li>{{ post.tags }}</li>
         {% endif %}
-      </p>
+        <li>{% include post/date.html %}{{ time }}</li>
+        {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+        <li><a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a></li>
+        {% endif %}
+      </ul>
     {% endunless %}
   </header>
 {% endunless %}
