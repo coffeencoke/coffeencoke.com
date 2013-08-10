@@ -1,25 +1,65 @@
 #main-content #blog{
-  header {
-    h1{
-      font-family: $neoRetroFill;
-      font-size: 32px;
-      color: #000;
+  section.posts article{
+    margin: 0 10px 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e3dcd1;
 
-      a{
-        &:link, &:visited, &:active{
-          color: #000;
-        }
+    header {
+      h1{
+        font-family: $neoRetroFill;
+        font-size: 32px;
+        color: #000;
 
-        &:hover{
-          color: $red;
+        a{
+          &:link, &:visited, &:active{
+            color: #000;
+          }
+
+          &:hover{
+            color: $red;
+          }
         }
+      }
+
+      ul.meta li{
+        font-family: $neoRetroFill;
+        font-size: 18px;
+        color: #555555;
       }
     }
 
-    ul.meta li{
-      font-family: $neoRetroFill;
-      font-size: 18px;
-      color: #555555;
+    .entry-content{
+      h2, h3, h4, h5, h6{
+        font-family: $leagueGothic;
+      }
+
+      h2{
+        font-size: 32px;
+        margin: 15px 0;
+      }
+
+      h3{
+        font-size: 24px;
+        margin: 10px 0;
+      }
+
+      p, ul li, a:link, a:visited, a:active{
+        font-family: $arsenal;
+        font-size: 20px;
+      }
+
+      ul {
+        list-style: disc;
+        padding: 0 0 0 40px;
+      }
+
+      p{
+        margin: 15px 0;
+      }
+
+      a:hover{
+        text-decoration: underline;
+      }
     }
   }
 }

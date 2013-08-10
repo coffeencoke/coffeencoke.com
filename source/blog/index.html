@@ -4,9 +4,9 @@ page_id: blog
 ---
 
 {% assign index = true %}
+<section class='posts'>
 {% for post in paginator.posts %}
 {% assign content = post.content %}
-<section class='posts'>
   <article>
     {% include article.html %}
   </article>
