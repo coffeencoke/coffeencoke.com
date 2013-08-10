@@ -1,10 +1,9 @@
 #main-content #blog{
-  section.posts article{
+  article{
     margin: 0 10px 40px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #e3dcd1;
 
     header {
+      padding-bottom: 5px;
       h1{
         font-family: $neoRetroFill;
         font-size: 32px;
@@ -59,6 +58,61 @@
 
       a:hover{
         text-decoration: underline;
+      }
+    }
+  }
+
+  .single-post article{
+    footer{
+      margin: 20px 0;
+
+      .meta{
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .posts article{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e3dcd1;
+  }
+
+  footer{
+    ul li{
+      display: inline-block;
+      margin: 0 20px;
+    }
+  }
+}
+
+#main-content #blog-archives{
+  section{
+    margin: 50px 0 0 0;
+
+    &:first-child{
+      margin-top: 0;
+    }
+
+    header{
+      h1{
+        font-family: $leagueGothic;
+        font-size: 46px;
+
+        &:first-child{
+        }
+      }
+    }
+    
+    article {
+      margin: 10px 40px;
+      h2 a{
+        &:link, &:visited, &:active{
+          font-size: 18px;
+          font-family: $neoRetroFill;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
   }

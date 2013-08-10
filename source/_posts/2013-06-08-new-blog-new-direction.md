@@ -69,11 +69,3 @@ I have a passion for being an entrepreneur, I want to learn how I can follow tha
 ## Wrapup
 
 I'm excited to begin sharing what I have to share about these topics, if you have any direction, suggestions, or encouragement, please let me know.
-
-
-
-```ruby
-def foo
-  puts "Awesome"
-end
-```
