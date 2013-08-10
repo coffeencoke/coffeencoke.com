@@ -1,192 +1,279 @@
-$max-width: 1200px !default;
+$red: #ad3d00;
 
-// Padding used for layout margins
-$pad-min: 18px !default;
-$pad-narrow: 25px !default;
-$pad-medium: 35px !default;
-$pad-wide: 55px !default;
+//////////
+// GRID //
+//////////
 
-// Sidebar widths used in media queries
-$sidebar-width-medium: 240px !default;
-$sidebar-pad-medium: 15px !default;
-$sidebar-pad-wide: 20px !default;
-$sidebar-width-wide: 300px !default;
+// Specify the number of columns and set column and gutter widths
+$columns: 12;
+$column-width: 60;
+$gutter-width: 10;
 
-$indented-lists: false !default;
+// Remove the definition below for a pixel-based layout
+$total-width: 100%;
 
-$header-font-size: 1em !default;
-$header-padding-top: 1.5em !default;
-$header-padding-bottom: 1.5em !default;
-
-.group { @include pie-clearfix; }
-
-@mixin collapse-sidebar {
-  float: none;
-  width: auto;
-  clear: left;
-  margin: 0;
-  padding: 0 $pad-medium 1px;
-  background-color: lighten($sidebar-bg, 2);
-  border-top: 1px solid lighten($sidebar-border, 4);
-  section {
-    &.odd, &.even { float: left; width: 48%; }
-    &.odd { margin-left: 0; }
-    &.even { margin-left: 4%; }
+/*
+ * Global Styles
+ */
+a{
+  &:link, &:visited, &:active{
+    text-decoration: none;
+    color: $red;
   }
-  &.thirds section {
-    width: 30%;
-    margin-left: 5%;
-    &.first {
-      margin-left: 0;
-      clear: both;
-    }
+
+  &:hover{
+    text-decoration: none;
   }
 }
 
-body {
-  -webkit-text-size-adjust: none;
-  max-width: $max-width;
-  position: relative;
-  margin: 0 auto;
-  > header, > nav, > footer, #content > article, #content > div > article, #content > div > section {
-    @extend .group;
-    padding-left: $pad-min;
-    padding-right: $pad-min;
-    @media only screen and (min-width: 480px) {
-      padding-left: $pad-narrow;
-      padding-right: $pad-narrow;
-    }
-    @media only screen and (min-width: 768px) {
-      padding-left: $pad-medium;
-      padding-right: $pad-medium;
-    }
-    @media only screen and (min-width: 992px) {
-      padding-left: $pad-wide;
-      padding-right: $pad-wide;
-    }
-  }
-  div.pagination {
-    @extend .group;
-    margin-left: $pad-min;
-    margin-right: $pad-min;
-    @media only screen and (min-width: 480px) {
-      margin-left: $pad-narrow;
-      margin-right: $pad-narrow;
-    }
-    @media only screen and (min-width: 768px) {
-      margin-left: $pad-medium;
-      margin-right: $pad-medium;
-    }
-    @media only screen and (min-width: 992px) {
-      margin-left: $pad-wide;
-      margin-right: $pad-wide;
-    }
-  }
-  > header {
-    font-size: $header-font-size;
-    padding-top: $header-padding-top;
-    padding-bottom: $header-padding-bottom;
-  }
+p a:hover{
+  text-decoration: underline;
 }
 
-#content {
-  overflow: hidden;
-  > div, > article { width: 100%; }
+p, ul li, p a:link, p a:visited, p a:active{
+  font-family: $arsenal;
+  font-size: 16px;
+  line-height: 140%;
 }
 
-aside.sidebar {
-  float: none;
-  padding: 0 $pad-min 1px;
-  background-color: lighten($sidebar-bg, 2);
-  border-top: 1px solid $sidebar-border;
-  @extend .group;
-}
+////////////
+// LAYOUT //
+////////////
 
-.flex-content { max-width: 100%; height: auto; }
+// header
+header#main-header {
+  height: 100px;
+  border-bottom: 5px solid #322a26;
+  -webkit-box-shadow:  0px 3px 10px 1px #333;
+  box-shadow:  0px 3px 10px 1px #333;
+  background: url(/images/header_bg.png) 50% 50% no-repeat;
+  background-size: 100% auto;
 
-.basic-alignment {
-  &.left { float: left; margin-right: 1.5em; }
-  &.right { float: right; margin-left: 1.5em; }
-  &.center { display:block; margin: 0 auto 1.5em; }
-  &.left, &.right { margin-bottom: .8em; }
-}
+  div{
+    @include column(12);
+    padding-top: 15px;
+    text-shadow: 1px 1px 10px $red;
+    filter: dropshadow(color=$red, offx=1, offy=1);
 
-.toggle-sidebar { &, .no-sidebar & { display: none; }}
-
-body.sidebar-footer {
-  @media only screen and (min-width: 750px) {
-    aside.sidebar{ @include collapse-sidebar; }
-  }
-  #content { margin-right: 0px; }
-  .toggle-sidebar { display: none; }
-}
-
-@media only screen and (min-width: 550px) {
-  body > header { font-size: $header-font-size; }
-}
-@media only screen and (min-width: 750px) {
-  aside.sidebar { @include collapse-sidebar; }
-}
-#main, #content, .sidebar {
-  @extend .group;
-}
-@media only screen and (min-width: 768px) {
-  body { -webkit-text-size-adjust: auto; }
-  body > header { font-size: $header-font-size * 1.2; }
-  #main {
-    padding: 0;
-    margin: 0 auto;
-  }
-  #content {
-    overflow: visible;
-    margin-right: $sidebar-width-medium;
-    position: relative;
-    .no-sidebar & { margin-right: 0; border-right: 0; }
-    .collapse-sidebar & { margin-right: 20px; }
-    > div, > article {
-      padding-top: $pad-medium/2;
-      padding-bottom: $pad-medium/2;
-      float: left;
+    h1{
+      display: inline-block;
+      a:link, a:visited, a:active{
+        font-family: $leagueGothic;
+        color: #000;
+        font-size: 90px;
+      }
     }
-  }
-  aside.sidebar {
-    width: $sidebar-width-medium - $sidebar-pad-medium*2;
-    padding: 0 $sidebar-pad-medium $sidebar-pad-medium;
-    background: none;
-    clear: none;
-    float: left;
-    margin: 0 -100% 0 0;
-    section {
-      width: auto; margin-left: 0;
-      &.odd, &.even { float: none; width: auto; margin-left: 0; }
-    }
-    .collapse-sidebar & {
-      @include collapse-sidebar;
+    h2{
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 20px;
+      margin-top: 30px;
+      a:link, a:visited, a:active{
+        font-family: $desyrel;
+        color: #c49f91;
+        font-size: 30px;
+      }
     }
   }
 }
 
-@media only screen and (min-width: 992px) {
-  body > header { font-size: $header-font-size * 1.3; }
-  #content { margin-right: $sidebar-width-wide; }
-  #content {
-    > div, > article {
-      padding-top: $pad-wide/2;
-      padding-bottom: $pad-wide/2;
-    }
+div#main-content {
+  @include clearfix;
+  &> div {
+	  @include column(12);
+    padding-top: 50px;
+    padding-bottom: 110px;
   }
-  aside.sidebar {
-    width: $sidebar-width-wide - $sidebar-pad-wide*2;
-    padding: 1.2em $sidebar-pad-wide $sidebar-pad-wide;
-    .collapse-sidebar & {
-      padding: { left: $pad-wide; right: $pad-wide; }
+}
+
+footer#main-footer {
+  @include clearfix;
+  border-top: 5px solid #2e2621;
+  background: url(/images/footer_bg.png) top left;
+  display: block;
+
+  $tan: #e5d6b9;
+  $offwhite: #f9f9f9;
+
+  &> div {
+  	@include column(12);
+    padding-top: 30px;
+
+    p{
+      font-family: $neoRetroFill;
+      text-transform: uppercase;
+      color: $tan;
+      font-size: 18px;
+
+      a:link, a:visited, a:active{
+        color: $offwhite;
+        text-decoration: none;
+      }
+
+      a:hover{
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    section#currentProfessionalInterests, 
+    section#upcomingEvents{
+      h1, h2{
+        font-family: $leagueGothic;
+        color: $offwhite;
+        letter-spacing: .06em;
+      }
+
+      h1{
+        font-size: 55px;
+      }
+
+      h2{
+        font-size: 32px;
+      }
+
+      article{
+        margin-top: 32px;
+      }
+    }
+
+    section#currentProfessionalInterests{
+      @include column(7);
+    }
+
+    section#upcomingEvents{
+      @include column(5);
+
+      h2{
+        padding-right: 60px;
+        color: $tan;
+        font-size: 28px;
+      }
+
+      p{
+        width: 380px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: .08em;
+        color: $offwhite;
+
+        a{
+          &:link, &:visited, &:active{
+            color: $tan;
+          }
+        }
+      }
+    }
+
+    section#copyright{
+      @include column(12);
+
+      margin-top: 60px;
+      text-align: center;
+      margin-bottom: 30px;
+      p{
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
   }
 }
 
-@if $indented-lists == false {
-  @media only screen and (min-width: 768px) {
-    ul, ol { margin-left: 0; }
+@include tabletPortrait {
+  footer#main-footer > div{
+    section#upcomingEvents, section#currentProfessionalInterests {
+      @include column(12, 12);
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@include phoneLandscape {
+  header#main-header {
+    height: 130px;
+
+    div{
+      padding-top: 5px;
+
+      h1{
+        text-align: center;
+        display: block;
+      }
+
+      h2{
+        display: block;
+        text-align: center;
+        height: 20px;
+        margin-left: 0;
+        margin-top: 0;
+        a:link, a:visited, a:active{
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  footer#main-footer > div{
+    section#upcomingEvents, section#currentProfessionalInterests {
+      @include column(12, 12);
+      padding-bottom: 30px;
+
+      p{
+        width: auto;
+      }
+    }
+
+    section#copyright{
+      p{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@include phonePortrait {
+  header#main-header {
+    height: 130px;
+
+    div{
+      padding-top: 5px;
+
+      h1{
+        text-align: center;
+        display: block;
+        font-size: 80px;
+      }
+
+      h2{
+        display: block;
+        text-align: center;
+        height: 20px;
+        margin-left: 0;
+        margin-top: 0;
+        a:link, a:visited, a:active{
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  footer#main-footer > div{
+    section#upcomingEvents, section#currentProfessionalInterests {
+      @include column(12, 12);
+      padding-bottom: 30px;
+
+      p{
+        width: auto;
+      }
+    }
+
+    section#copyright{
+      p{
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 

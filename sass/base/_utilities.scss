@@ -26,3 +26,73 @@
   @return $text-color;
 }
 
+@mixin tabletLandscape {
+  @media (min-width: 979px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin tabletPortrait {
+  @media (min-width: 600px) and (max-width: 979px) {
+    @content;
+  }
+}
+
+@mixin phoneLandscape {
+  @media (min-width: 400px) and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin phonePortrait {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+
+@mixin imageReplacement($image) {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+  background: url($image) top left no-repeat;
+}
+
+@mixin visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin transition2($event, $duration, $function){
+  -webkit-transition: $event $duration $function;
+  -moz-transition: $event $duration $function;
+  -ms-transition: $event $duration $function;
+  -o-transition: $event $duration $function;
+  transition: $event $duration $function;
+}
+
+@mixin borderTransition($duration, $function){
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: $duration $function;
+  -moz-transition: $duration $function;
+  -ms-transition: $duration $function;
+}
+
