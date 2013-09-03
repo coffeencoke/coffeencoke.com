@@ -1,0 +1,12 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://coffeencoke.com
+title: Coffeencoke
+subtitle: Matt Simpson's blog
+author: Matt Simpson
+description: Blog for Coffeencoke - Matt Simpson - about Computer Science, Programming Languages, Community, and Entrepreneurship
+permalink: /blog/:year/:month/:day/:title/
+#pygments: false # default python pygments have been replaced by pygments.rb
+safe: false

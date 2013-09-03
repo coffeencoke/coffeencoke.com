@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <header id='main-header'>
+    <div>
+      <h1><a href="/">{{ site.title }}</a></h1>
+      {% if site.subtitle %}
+        <h2><a href="/">{{ site.subtitle }}</a></h2>
+      {% endif %}
+      {% if page.nav %}
+      <nav>
+        <ul>
+          <li><a href='/portfolio.html'>Portfolio</a></li>
+          <li><a href='/blog.html'>Blog</a></li>
+          <li><a href='/about.html'>About</a></li>
+          <li><a href='http://twitter.com/coffeencoke'>Twitter</a></li>
+        </ul>
+      </nav>
+      {% endif %}
+    </div>
+  </header>
+  <div id='main-content'>
+    <div id='{{page.page_id}}'>
+      {{ content }}
+    </div>
+  </div>
+  {% include footer.html %}
+</body>
+
