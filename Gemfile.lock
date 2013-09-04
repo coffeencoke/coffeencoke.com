@@ -36,9 +36,6 @@ GEM
     jekyll-haml (0.1.1)
       haml (>= 3.0.0)
       jekyll (>= 0.10.0)
-    jekyll-sass (1.1.0)
-      jekyll (>= 0.10.0)
-      sass (>= 3.0.0)
     kramdown (1.0.2)
     liquid (2.3.0)
     maruku (0.6.1)
@@ -68,4 +65,4 @@ DEPENDENCIES
   compass (~> 0.12.2)
   jekyll (~> 1.1)
   jekyll-haml (= 0.1.1)
-  jekyll-sass (~> 1.1)
+  sass
