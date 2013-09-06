@@ -220,17 +220,13 @@ header#main-header {
 }
 /* line 52, ../_sass/base/_layout.scss */
 header#main-header div {
+  padding-top: 15px;
+  text-shadow: 1px 1px 10px #ad3d00;
+  filter: dropshadow(color=#ad3d00, offx=1, offy=1);
   display: inline;
   float: left;
   width: 98.80952%;
   margin: 0 0.59524%;
-  padding-top: 15px;
-  text-shadow: 1px 1px 10px #ad3d00;
-  filter: dropshadow(color=#ad3d00, offx=1, offy=1);
-}
-/* line 58, ../_sass/base/_layout.scss */
-header#main-header div h1 {
-  display: inline-block;
 }
 /* line 60, ../_sass/base/_layout.scss */
 header#main-header div h1 a:link, header#main-header div h1 a:visited, header#main-header div h1 a:active {
@@ -240,19 +236,52 @@ header#main-header div h1 a:link, header#main-header div h1 a:visited, header#ma
 }
 /* line 66, ../_sass/base/_layout.scss */
 header#main-header div h2 {
-  display: inline-block;
   vertical-align: top;
-  margin-left: 20px;
   margin-top: 30px;
 }
-/* line 71, ../_sass/base/_layout.scss */
+/* line 69, ../_sass/base/_layout.scss */
 header#main-header div h2 a:link, header#main-header div h2 a:visited, header#main-header div h2 a:active {
   font-family: "DesyrelRegular";
   color: #c49f91;
-  font-size: 30px;
+  font-size: 25px;
+}
+/* line 76, ../_sass/base/_layout.scss */
+header#main-header div nav {
+  float: right;
+}
+/* line 78, ../_sass/base/_layout.scss */
+header#main-header div nav ul {
+  list-style: none;
+  vertical-align: top;
+  margin-top: 30px;
+  text-align: right;
+}
+/* line 84, ../_sass/base/_layout.scss */
+header#main-header div nav ul li {
+  display: inline-block;
+}
+/* line 88, ../_sass/base/_layout.scss */
+header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active, header#main-header div nav ul li a:link {
+  font-size: 34px;
+  font-family: "LeagueGothicRegular";
+  color: black;
+  padding: 6px 6px 2px;
+  margin: 17px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 300ms ease-in;
+  -moz-transition: 300ms ease-in;
+  -ms-transition: 300ms ease-in;
+  text-shadow: 1px 1px 10px #ad3d00;
+  filter: dropshadow(color=#ad3d00, offx=1, offy=1);
+}
+/* line 99, ../_sass/base/_layout.scss */
+header#main-header div nav ul li a:hover {
+  border-bottom: 5px solid black;
 }
 
-/* line 80, ../_sass/base/_layout.scss */
+/* line 109, ../_sass/base/_layout.scss */
 div#main-content {
   *zoom: 1;
 }
@@ -265,7 +294,7 @@ div#main-content:before, div#main-content:after {
 div#main-content:after {
   clear: both;
 }
-/* line 82, ../_sass/base/_layout.scss */
+/* line 111, ../_sass/base/_layout.scss */
 div#main-content > div {
   display: inline;
   float: left;
@@ -275,11 +304,11 @@ div#main-content > div {
   padding-bottom: 110px;
 }
 
-/* line 89, ../_sass/base/_layout.scss */
+/* line 118, ../_sass/base/_layout.scss */
 footer#main-footer {
   *zoom: 1;
   border-top: 5px solid #2e2621;
-  background: url(/images/footer_bg.png) top left;
+  background: #1d1d1d url(/images/footer_bg.png) repeat-x top left;
   display: block;
 }
 /* line 27, ../_sass/base/_grid.scss */
@@ -291,7 +320,7 @@ footer#main-footer:before, footer#main-footer:after {
 footer#main-footer:after {
   clear: both;
 }
-/* line 98, ../_sass/base/_layout.scss */
+/* line 127, ../_sass/base/_layout.scss */
 footer#main-footer > div {
   display: inline;
   float: left;
@@ -299,24 +328,24 @@ footer#main-footer > div {
   margin: 0 0.59524%;
   padding-top: 30px;
 }
-/* line 102, ../_sass/base/_layout.scss */
+/* line 131, ../_sass/base/_layout.scss */
 footer#main-footer > div p {
   font-family: "NeoRetroFillRegular";
   text-transform: uppercase;
   color: #e5d6b9;
   font-size: 18px;
 }
-/* line 108, ../_sass/base/_layout.scss */
+/* line 137, ../_sass/base/_layout.scss */
 footer#main-footer > div p a:link, footer#main-footer > div p a:visited, footer#main-footer > div p a:active {
   color: #f9f9f9;
   text-decoration: none;
 }
-/* line 113, ../_sass/base/_layout.scss */
+/* line 142, ../_sass/base/_layout.scss */
 footer#main-footer > div p a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 121, ../_sass/base/_layout.scss */
+/* line 150, ../_sass/base/_layout.scss */
 footer#main-footer > div section#currentProfessionalInterests h1, footer#main-footer > div section#currentProfessionalInterests h2,
 footer#main-footer > div section#upcomingEvents h1,
 footer#main-footer > div section#upcomingEvents h2 {
@@ -324,42 +353,42 @@ footer#main-footer > div section#upcomingEvents h2 {
   color: #f9f9f9;
   letter-spacing: .06em;
 }
-/* line 127, ../_sass/base/_layout.scss */
+/* line 156, ../_sass/base/_layout.scss */
 footer#main-footer > div section#currentProfessionalInterests h1,
 footer#main-footer > div section#upcomingEvents h1 {
   font-size: 55px;
 }
-/* line 131, ../_sass/base/_layout.scss */
+/* line 160, ../_sass/base/_layout.scss */
 footer#main-footer > div section#currentProfessionalInterests h2,
 footer#main-footer > div section#upcomingEvents h2 {
   font-size: 32px;
 }
-/* line 135, ../_sass/base/_layout.scss */
+/* line 164, ../_sass/base/_layout.scss */
 footer#main-footer > div section#currentProfessionalInterests article,
 footer#main-footer > div section#upcomingEvents article {
   margin-top: 32px;
 }
-/* line 140, ../_sass/base/_layout.scss */
+/* line 169, ../_sass/base/_layout.scss */
 footer#main-footer > div section#currentProfessionalInterests {
   display: inline;
   float: left;
   width: 57.14286%;
   margin: 0 0.59524%;
 }
-/* line 144, ../_sass/base/_layout.scss */
+/* line 173, ../_sass/base/_layout.scss */
 footer#main-footer > div section#upcomingEvents {
   display: inline;
   float: left;
   width: 40.47619%;
   margin: 0 0.59524%;
 }
-/* line 147, ../_sass/base/_layout.scss */
+/* line 176, ../_sass/base/_layout.scss */
 footer#main-footer > div section#upcomingEvents h2 {
   padding-right: 60px;
   color: #e5d6b9;
   font-size: 28px;
 }
-/* line 153, ../_sass/base/_layout.scss */
+/* line 182, ../_sass/base/_layout.scss */
 footer#main-footer > div section#upcomingEvents p {
   width: 380px;
   font-size: 16px;
@@ -367,11 +396,11 @@ footer#main-footer > div section#upcomingEvents p {
   letter-spacing: .08em;
   color: #f9f9f9;
 }
-/* line 161, ../_sass/base/_layout.scss */
+/* line 190, ../_sass/base/_layout.scss */
 footer#main-footer > div section#upcomingEvents p a:link, footer#main-footer > div section#upcomingEvents p a:visited, footer#main-footer > div section#upcomingEvents p a:active {
   color: #e5d6b9;
 }
-/* line 168, ../_sass/base/_layout.scss */
+/* line 197, ../_sass/base/_layout.scss */
 footer#main-footer > div section#copyright {
   display: inline;
   float: left;
@@ -381,14 +410,41 @@ footer#main-footer > div section#copyright {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 174, ../_sass/base/_layout.scss */
+/* line 203, ../_sass/base/_layout.scss */
 footer#main-footer > div section#copyright p {
   font-size: 14px;
   line-height: 22px;
 }
 
+@media (min-width: 979px) and (max-width: 1199px) {
+  /* line 213, ../_sass/base/_layout.scss */
+  header#main-header div nav ul li a:link, header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1052px) {
+  /* line 220, ../_sass/base/_layout.scss */
+  header#main-header {
+    height: 170px;
+  }
+  /* line 222, ../_sass/base/_layout.scss */
+  header#main-header div nav {
+    display: inline;
+    float: left;
+    width: 98.80952%;
+    margin: 0 0.59524%;
+  }
+  /* line 225, ../_sass/base/_layout.scss */
+  header#main-header div nav ul {
+    text-align: left;
+  }
+  /* line 229, ../_sass/base/_layout.scss */
+  header#main-header div nav ul li a:link, header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active {
+    font-size: 34px;
+  }
+}
 @media (min-width: 600px) and (max-width: 979px) {
-  /* line 184, ../_sass/base/_layout.scss */
+  /* line 240, ../_sass/base/_layout.scss */
   footer#main-footer > div section#upcomingEvents, footer#main-footer > div section#currentProfessionalInterests {
     display: inline;
     float: left;
@@ -398,34 +454,44 @@ footer#main-footer > div section#copyright p {
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
-  /* line 192, ../_sass/base/_layout.scss */
+  /* line 248, ../_sass/base/_layout.scss */
   header#main-header {
     height: 130px;
   }
-  /* line 195, ../_sass/base/_layout.scss */
+  /* line 250, ../_sass/base/_layout.scss */
   header#main-header div {
     padding-top: 5px;
   }
-  /* line 198, ../_sass/base/_layout.scss */
+  /* line 253, ../_sass/base/_layout.scss */
   header#main-header div h1 {
     text-align: center;
     display: block;
+    padding-top: 10px;
+    display: inline;
+    float: left;
+    width: 98.80952%;
+    margin: 0 0.59524%;
   }
-  /* line 203, ../_sass/base/_layout.scss */
+  /* line 259, ../_sass/base/_layout.scss */
+  header#main-header div h1 a:link, header#main-header div h1 a:visited, header#main-header div h1 a:active {
+    font-size: 50px;
+  }
+  /* line 265, ../_sass/base/_layout.scss */
   header#main-header div h2 {
-    display: block;
-    text-align: center;
-    height: 20px;
-    margin-left: 0;
-    margin-top: 0;
+    display: none;
+    visibility: hidden;
   }
-  /* line 209, ../_sass/base/_layout.scss */
-  header#main-header div h2 a:link, header#main-header div h2 a:visited, header#main-header div h2 a:active {
-    font-size: 20px;
-    line-height: 20px;
+  /* line 270, ../_sass/base/_layout.scss */
+  header#main-header div nav ul {
+    text-align: center;
+  }
+  /* line 274, ../_sass/base/_layout.scss */
+  header#main-header div nav ul li a:link, header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active {
+    margin: 0;
+    font-size: 24px;
   }
 
-  /* line 218, ../_sass/base/_layout.scss */
+  /* line 285, ../_sass/base/_layout.scss */
   footer#main-footer > div section#upcomingEvents, footer#main-footer > div section#currentProfessionalInterests {
     display: inline;
     float: left;
@@ -433,45 +499,56 @@ footer#main-footer > div section#copyright p {
     margin: 0 0.59524%;
     padding-bottom: 30px;
   }
-  /* line 222, ../_sass/base/_layout.scss */
+  /* line 289, ../_sass/base/_layout.scss */
   footer#main-footer > div section#upcomingEvents p, footer#main-footer > div section#currentProfessionalInterests p {
     width: auto;
   }
-  /* line 228, ../_sass/base/_layout.scss */
+  /* line 295, ../_sass/base/_layout.scss */
   footer#main-footer > div section#copyright p {
     margin-bottom: 20px;
   }
 }
 @media (max-width: 400px) {
-  /* line 236, ../_sass/base/_layout.scss */
+  /* line 303, ../_sass/base/_layout.scss */
   header#main-header {
     height: 130px;
   }
-  /* line 239, ../_sass/base/_layout.scss */
+  /* line 305, ../_sass/base/_layout.scss */
   header#main-header div {
-    padding-top: 5px;
+    padding-top: 0px;
   }
-  /* line 242, ../_sass/base/_layout.scss */
+  /* line 308, ../_sass/base/_layout.scss */
   header#main-header div h1 {
+    font-size: 50px;
     text-align: center;
     display: block;
-    font-size: 80px;
+    padding-top: 10px;
+    display: inline;
+    float: left;
+    width: 98.80952%;
+    margin: 0 0.59524%;
   }
-  /* line 248, ../_sass/base/_layout.scss */
+  /* line 315, ../_sass/base/_layout.scss */
+  header#main-header div h1 a:link, header#main-header div h1 a:visited, header#main-header div h1 a:active {
+    font-size: 50px;
+  }
+  /* line 321, ../_sass/base/_layout.scss */
   header#main-header div h2 {
-    display: block;
-    text-align: center;
-    height: 20px;
-    margin-left: 0;
-    margin-top: 0;
+    display: none;
+    visibility: hidden;
   }
-  /* line 254, ../_sass/base/_layout.scss */
-  header#main-header div h2 a:link, header#main-header div h2 a:visited, header#main-header div h2 a:active {
-    font-size: 20px;
-    line-height: 20px;
+  /* line 326, ../_sass/base/_layout.scss */
+  header#main-header div nav ul {
+    text-align: center;
+    margin-top: 20px;
+  }
+  /* line 331, ../_sass/base/_layout.scss */
+  header#main-header div nav ul li a:link, header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active {
+    margin: 0;
+    font-size: 24px;
   }
 
-  /* line 263, ../_sass/base/_layout.scss */
+  /* line 342, ../_sass/base/_layout.scss */
   footer#main-footer > div section#upcomingEvents, footer#main-footer > div section#currentProfessionalInterests {
     display: inline;
     float: left;
@@ -479,11 +556,11 @@ footer#main-footer > div section#copyright p {
     margin: 0 0.59524%;
     padding-bottom: 30px;
   }
-  /* line 267, ../_sass/base/_layout.scss */
+  /* line 346, ../_sass/base/_layout.scss */
   footer#main-footer > div section#upcomingEvents p, footer#main-footer > div section#currentProfessionalInterests p {
     width: auto;
   }
-  /* line 273, ../_sass/base/_layout.scss */
+  /* line 352, ../_sass/base/_layout.scss */
   footer#main-footer > div section#copyright p {
     margin-bottom: 20px;
   }

@@ -50,13 +50,13 @@ header#main-header {
   background-size: 100% auto;
 
   div{
-    @include column(12);
     padding-top: 15px;
     text-shadow: 1px 1px 10px $red;
     filter: dropshadow(color=$red, offx=1, offy=1);
 
+    @include column(12);
+
     h1{
-      display: inline-block;
       a:link, a:visited, a:active{
         font-family: $leagueGothic;
         color: #000;
@@ -64,14 +64,43 @@ header#main-header {
       }
     }
     h2{
-      display: inline-block;
       vertical-align: top;
-      margin-left: 20px;
       margin-top: 30px;
       a:link, a:visited, a:active{
         font-family: $desyrel;
         color: #c49f91;
-        font-size: 30px;
+        font-size: 25px;
+      }
+    }
+
+    nav{
+      float: right;
+      ul{
+        list-style: none;
+        vertical-align: top;
+        margin-top: 30px;
+        text-align: right;
+
+        li{
+          display: inline-block;
+
+          a{
+            &:visited, &:active, &:link{
+              font-size: 34px;
+              font-family: $leagueGothic;
+              color: black;
+              padding: 6px 6px 2px;
+              margin: 17px;
+              @include borderTransition(300ms, ease-in);
+              text-shadow: 1px 1px 10px $red;
+              filter: dropshadow(color=$red, offx=1, offy=1);
+            }
+
+            &:hover{
+              border-bottom: 5px solid black;
+            }
+          }
+        }
       }
     }
   }
@@ -89,7 +118,7 @@ div#main-content {
 footer#main-footer {
   @include clearfix;
   border-top: 5px solid #2e2621;
-  background: url(/images/footer_bg.png) top left;
+  background: #1d1d1d url(/images/footer_bg.png) repeat-x top left;
   display: block;
 
   $tan: #e5d6b9;
@@ -179,6 +208,33 @@ footer#main-footer {
   }
 }
 
+@include tabletLandscape {
+  header#main-header div nav ul li a{
+    &:link, &:visited, &:active {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 1052px) {
+  header#main-header {
+    height: 170px;
+    div nav {
+      @include column(12, 12);
+
+      ul{
+        text-align: left;
+
+        li a{
+          &:link, &:visited, &:active{
+            font-size: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @include tabletPortrait {
   footer#main-footer > div{
     section#upcomingEvents, section#currentProfessionalInterests {
@@ -191,24 +247,35 @@ footer#main-footer {
 @include phoneLandscape {
   header#main-header {
     height: 130px;
-
     div{
       padding-top: 5px;
 
       h1{
         text-align: center;
         display: block;
+        padding-top: 10px;
+        @include column(12, 12);
+        a{
+          &:link, &:visited, &:active {
+            font-size: 50px;
+          }
+        }
       }
 
       h2{
-        display: block;
+        display: none;
+        visibility: hidden;
+      }
+
+      nav ul{
         text-align: center;
-        height: 20px;
-        margin-left: 0;
-        margin-top: 0;
-        a:link, a:visited, a:active{
-          font-size: 20px;
-          line-height: 20px;
+        li {
+          a{
+            &:link, &:visited, &:active{
+              margin: 0;
+              font-size: 24px;
+            }
+          }
         }
       }
     }
@@ -235,25 +302,37 @@ footer#main-footer {
 @include phonePortrait {
   header#main-header {
     height: 130px;
-
     div{
-      padding-top: 5px;
+      padding-top: 0px;
 
       h1{
+        font-size: 50px;
         text-align: center;
         display: block;
-        font-size: 80px;
+        padding-top: 10px;
+        @include column(12, 12);
+        a{
+          &:link, &:visited, &:active {
+            font-size: 50px;
+          }
+        }
       }
 
       h2{
-        display: block;
+        display: none;
+        visibility: hidden;
+      }
+
+      nav ul{
         text-align: center;
-        height: 20px;
-        margin-left: 0;
-        margin-top: 0;
-        a:link, a:visited, a:active{
-          font-size: 20px;
-          line-height: 20px;
+        margin-top: 20px;
+        li {
+          a{
+            &:link, &:visited, &:active{
+              margin: 0;
+              font-size: 24px;
+            }
+          }
         }
       }
     }
