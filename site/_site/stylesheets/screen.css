@@ -1660,6 +1660,10 @@ div#main-content #portfolio section#favorites article#ionicmobile .extras .image
 div#main-content #portfolio section#favorites article#ionicmobile .extras .images ul li:first-child {
   text-align: left;
 }
+/* line 202, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#bettyelaine .extras {
+  text-align: center;
+}
 
 /* line 2, ../_sass/pages/_blog.scss */
 #main-content #blog article {
