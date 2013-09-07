@@ -213,54 +213,58 @@ p, ul li, p a:link, p a:visited, p a:active {
 header#main-header {
   height: 100px;
   border-bottom: 5px solid #322a26;
-  -webkit-box-shadow: 0px 3px 10px 1px #333;
-  box-shadow: 0px 3px 10px 1px #333;
+  -webkit-box-shadow: 0px 3px 10px 1px #322a26;
+  box-shadow: 0px 3px 10px 1px #322a26;
   background: url(/images/header_bg.png) 50% 50% no-repeat;
   background-size: 100% auto;
+  z-index: 10;
+  position: relative;
 }
-/* line 52, ../_sass/base/_layout.scss */
+/* line 54, ../_sass/base/_layout.scss */
 header#main-header div {
   padding-top: 15px;
   text-shadow: 1px 1px 10px #ad3d00;
+  z-index: 10;
+  position: relative;
   filter: dropshadow(color=#ad3d00, offx=1, offy=1);
   display: inline;
   float: left;
   width: 98.80952%;
   margin: 0 0.59524%;
 }
-/* line 60, ../_sass/base/_layout.scss */
+/* line 64, ../_sass/base/_layout.scss */
 header#main-header div h1 a:link, header#main-header div h1 a:visited, header#main-header div h1 a:active {
   font-family: "LeagueGothicRegular";
   color: #000;
   font-size: 90px;
 }
-/* line 66, ../_sass/base/_layout.scss */
+/* line 70, ../_sass/base/_layout.scss */
 header#main-header div h2 {
   vertical-align: top;
   margin-top: 30px;
 }
-/* line 69, ../_sass/base/_layout.scss */
+/* line 73, ../_sass/base/_layout.scss */
 header#main-header div h2 a:link, header#main-header div h2 a:visited, header#main-header div h2 a:active {
   font-family: "DesyrelRegular";
   color: #c49f91;
   font-size: 25px;
 }
-/* line 76, ../_sass/base/_layout.scss */
+/* line 80, ../_sass/base/_layout.scss */
 header#main-header div nav {
   float: right;
 }
-/* line 78, ../_sass/base/_layout.scss */
+/* line 82, ../_sass/base/_layout.scss */
 header#main-header div nav ul {
   list-style: none;
   vertical-align: top;
   margin-top: 30px;
   text-align: right;
 }
-/* line 84, ../_sass/base/_layout.scss */
+/* line 88, ../_sass/base/_layout.scss */
 header#main-header div nav ul li {
   display: inline-block;
 }
-/* line 88, ../_sass/base/_layout.scss */
+/* line 92, ../_sass/base/_layout.scss */
 header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active, header#main-header div nav ul li a:link {
   font-size: 34px;
   font-family: "LeagueGothicRegular";
@@ -276,12 +280,12 @@ header#main-header div nav ul li a:visited, header#main-header div nav ul li a:a
   text-shadow: 1px 1px 10px #ad3d00;
   filter: dropshadow(color=#ad3d00, offx=1, offy=1);
 }
-/* line 99, ../_sass/base/_layout.scss */
+/* line 103, ../_sass/base/_layout.scss */
 header#main-header div nav ul li a:hover {
   border-bottom: 5px solid black;
 }
 
-/* line 109, ../_sass/base/_layout.scss */
+/* line 113, ../_sass/base/_layout.scss */
 div#main-content {
   *zoom: 1;
 }
@@ -294,7 +298,7 @@ div#main-content:before, div#main-content:after {
 div#main-content:after {
   clear: both;
 }
-/* line 111, ../_sass/base/_layout.scss */
+/* line 115, ../_sass/base/_layout.scss */
 div#main-content > div {
   display: inline;
   float: left;
@@ -304,7 +308,7 @@ div#main-content > div {
   padding-bottom: 110px;
 }
 
-/* line 118, ../_sass/base/_layout.scss */
+/* line 122, ../_sass/base/_layout.scss */
 footer#main-footer {
   *zoom: 1;
   border-top: 5px solid #2e2621;
@@ -320,7 +324,7 @@ footer#main-footer:before, footer#main-footer:after {
 footer#main-footer:after {
   clear: both;
 }
-/* line 127, ../_sass/base/_layout.scss */
+/* line 131, ../_sass/base/_layout.scss */
 footer#main-footer > div {
   display: inline;
   float: left;
@@ -328,24 +332,24 @@ footer#main-footer > div {
   margin: 0 0.59524%;
   padding-top: 30px;
 }
-/* line 131, ../_sass/base/_layout.scss */
+/* line 135, ../_sass/base/_layout.scss */
 footer#main-footer > div p {
   font-family: "NeoRetroFillRegular";
   text-transform: uppercase;
   color: #e5d6b9;
   font-size: 18px;
 }
-/* line 137, ../_sass/base/_layout.scss */
+/* line 141, ../_sass/base/_layout.scss */
 footer#main-footer > div p a:link, footer#main-footer > div p a:visited, footer#main-footer > div p a:active {
   color: #f9f9f9;
   text-decoration: none;
 }
-/* line 142, ../_sass/base/_layout.scss */
+/* line 146, ../_sass/base/_layout.scss */
 footer#main-footer > div p a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 150, ../_sass/base/_layout.scss */
+/* line 154, ../_sass/base/_layout.scss */
 footer#main-footer > div section#currentProfessionalInterests h1, footer#main-footer > div section#currentProfessionalInterests h2,
 footer#main-footer > div section#upcomingEvents h1,
 footer#main-footer > div section#upcomingEvents h2 {
@@ -353,42 +357,42 @@ footer#main-footer > div section#upcomingEvents h2 {
   color: #f9f9f9;
   letter-spacing: .06em;
 }
-/* line 156, ../_sass/base/_layout.scss */
+/* line 160, ../_sass/base/_layout.scss */
 footer#main-footer > div section#currentProfessionalInterests h1,
 footer#main-footer > div section#upcomingEvents h1 {
   font-size: 55px;
 }
-/* line 160, ../_sass/base/_layout.scss */
+/* line 164, ../_sass/base/_layout.scss */
 footer#main-footer > div section#currentProfessionalInterests h2,
 footer#main-footer > div section#upcomingEvents h2 {
   font-size: 32px;
 }
-/* line 164, ../_sass/base/_layout.scss */
+/* line 168, ../_sass/base/_layout.scss */
 footer#main-footer > div section#currentProfessionalInterests article,
 footer#main-footer > div section#upcomingEvents article {
   margin-top: 32px;
 }
-/* line 169, ../_sass/base/_layout.scss */
+/* line 173, ../_sass/base/_layout.scss */
 footer#main-footer > div section#currentProfessionalInterests {
   display: inline;
   float: left;
   width: 57.14286%;
   margin: 0 0.59524%;
 }
-/* line 173, ../_sass/base/_layout.scss */
+/* line 177, ../_sass/base/_layout.scss */
 footer#main-footer > div section#upcomingEvents {
   display: inline;
   float: left;
   width: 40.47619%;
   margin: 0 0.59524%;
 }
-/* line 176, ../_sass/base/_layout.scss */
+/* line 180, ../_sass/base/_layout.scss */
 footer#main-footer > div section#upcomingEvents h2 {
   padding-right: 60px;
   color: #e5d6b9;
   font-size: 28px;
 }
-/* line 182, ../_sass/base/_layout.scss */
+/* line 186, ../_sass/base/_layout.scss */
 footer#main-footer > div section#upcomingEvents p {
   width: 380px;
   font-size: 16px;
@@ -396,11 +400,11 @@ footer#main-footer > div section#upcomingEvents p {
   letter-spacing: .08em;
   color: #f9f9f9;
 }
-/* line 190, ../_sass/base/_layout.scss */
+/* line 194, ../_sass/base/_layout.scss */
 footer#main-footer > div section#upcomingEvents p a:link, footer#main-footer > div section#upcomingEvents p a:visited, footer#main-footer > div section#upcomingEvents p a:active {
   color: #e5d6b9;
 }
-/* line 197, ../_sass/base/_layout.scss */
+/* line 201, ../_sass/base/_layout.scss */
 footer#main-footer > div section#copyright {
   display: inline;
   float: left;
@@ -410,41 +414,41 @@ footer#main-footer > div section#copyright {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 203, ../_sass/base/_layout.scss */
+/* line 207, ../_sass/base/_layout.scss */
 footer#main-footer > div section#copyright p {
   font-size: 14px;
   line-height: 22px;
 }
 
 @media (min-width: 979px) and (max-width: 1199px) {
-  /* line 213, ../_sass/base/_layout.scss */
+  /* line 217, ../_sass/base/_layout.scss */
   header#main-header div nav ul li a:link, header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active {
     font-size: 20px;
   }
 }
 @media (max-width: 1052px) {
-  /* line 220, ../_sass/base/_layout.scss */
+  /* line 224, ../_sass/base/_layout.scss */
   header#main-header {
     height: 170px;
   }
-  /* line 222, ../_sass/base/_layout.scss */
+  /* line 226, ../_sass/base/_layout.scss */
   header#main-header div nav {
     display: inline;
     float: left;
     width: 98.80952%;
     margin: 0 0.59524%;
   }
-  /* line 225, ../_sass/base/_layout.scss */
+  /* line 229, ../_sass/base/_layout.scss */
   header#main-header div nav ul {
     text-align: left;
   }
-  /* line 229, ../_sass/base/_layout.scss */
+  /* line 233, ../_sass/base/_layout.scss */
   header#main-header div nav ul li a:link, header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active {
     font-size: 34px;
   }
 }
 @media (min-width: 600px) and (max-width: 979px) {
-  /* line 240, ../_sass/base/_layout.scss */
+  /* line 244, ../_sass/base/_layout.scss */
   footer#main-footer > div section#upcomingEvents, footer#main-footer > div section#currentProfessionalInterests {
     display: inline;
     float: left;
@@ -454,15 +458,15 @@ footer#main-footer > div section#copyright p {
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
-  /* line 248, ../_sass/base/_layout.scss */
+  /* line 252, ../_sass/base/_layout.scss */
   header#main-header {
     height: 130px;
   }
-  /* line 250, ../_sass/base/_layout.scss */
+  /* line 254, ../_sass/base/_layout.scss */
   header#main-header div {
     padding-top: 5px;
   }
-  /* line 253, ../_sass/base/_layout.scss */
+  /* line 257, ../_sass/base/_layout.scss */
   header#main-header div h1 {
     text-align: center;
     display: block;
@@ -472,26 +476,26 @@ footer#main-footer > div section#copyright p {
     width: 98.80952%;
     margin: 0 0.59524%;
   }
-  /* line 259, ../_sass/base/_layout.scss */
+  /* line 263, ../_sass/base/_layout.scss */
   header#main-header div h1 a:link, header#main-header div h1 a:visited, header#main-header div h1 a:active {
     font-size: 50px;
   }
-  /* line 265, ../_sass/base/_layout.scss */
+  /* line 269, ../_sass/base/_layout.scss */
   header#main-header div h2 {
     display: none;
     visibility: hidden;
   }
-  /* line 270, ../_sass/base/_layout.scss */
+  /* line 274, ../_sass/base/_layout.scss */
   header#main-header div nav ul {
     text-align: center;
   }
-  /* line 274, ../_sass/base/_layout.scss */
+  /* line 278, ../_sass/base/_layout.scss */
   header#main-header div nav ul li a:link, header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active {
     margin: 0;
     font-size: 24px;
   }
 
-  /* line 285, ../_sass/base/_layout.scss */
+  /* line 289, ../_sass/base/_layout.scss */
   footer#main-footer > div section#upcomingEvents, footer#main-footer > div section#currentProfessionalInterests {
     display: inline;
     float: left;
@@ -499,25 +503,25 @@ footer#main-footer > div section#copyright p {
     margin: 0 0.59524%;
     padding-bottom: 30px;
   }
-  /* line 289, ../_sass/base/_layout.scss */
+  /* line 293, ../_sass/base/_layout.scss */
   footer#main-footer > div section#upcomingEvents p, footer#main-footer > div section#currentProfessionalInterests p {
     width: auto;
   }
-  /* line 295, ../_sass/base/_layout.scss */
+  /* line 299, ../_sass/base/_layout.scss */
   footer#main-footer > div section#copyright p {
     margin-bottom: 20px;
   }
 }
 @media (max-width: 400px) {
-  /* line 303, ../_sass/base/_layout.scss */
+  /* line 307, ../_sass/base/_layout.scss */
   header#main-header {
     height: 130px;
   }
-  /* line 305, ../_sass/base/_layout.scss */
+  /* line 309, ../_sass/base/_layout.scss */
   header#main-header div {
     padding-top: 0px;
   }
-  /* line 308, ../_sass/base/_layout.scss */
+  /* line 312, ../_sass/base/_layout.scss */
   header#main-header div h1 {
     font-size: 50px;
     text-align: center;
@@ -528,27 +532,27 @@ footer#main-footer > div section#copyright p {
     width: 98.80952%;
     margin: 0 0.59524%;
   }
-  /* line 315, ../_sass/base/_layout.scss */
+  /* line 319, ../_sass/base/_layout.scss */
   header#main-header div h1 a:link, header#main-header div h1 a:visited, header#main-header div h1 a:active {
     font-size: 50px;
   }
-  /* line 321, ../_sass/base/_layout.scss */
+  /* line 325, ../_sass/base/_layout.scss */
   header#main-header div h2 {
     display: none;
     visibility: hidden;
   }
-  /* line 326, ../_sass/base/_layout.scss */
+  /* line 330, ../_sass/base/_layout.scss */
   header#main-header div nav ul {
     text-align: center;
     margin-top: 20px;
   }
-  /* line 331, ../_sass/base/_layout.scss */
+  /* line 335, ../_sass/base/_layout.scss */
   header#main-header div nav ul li a:link, header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active {
     margin: 0;
     font-size: 24px;
   }
 
-  /* line 342, ../_sass/base/_layout.scss */
+  /* line 346, ../_sass/base/_layout.scss */
   footer#main-footer > div section#upcomingEvents, footer#main-footer > div section#currentProfessionalInterests {
     display: inline;
     float: left;
@@ -556,11 +560,11 @@ footer#main-footer > div section#copyright p {
     margin: 0 0.59524%;
     padding-bottom: 30px;
   }
-  /* line 346, ../_sass/base/_layout.scss */
+  /* line 350, ../_sass/base/_layout.scss */
   footer#main-footer > div section#upcomingEvents p, footer#main-footer > div section#currentProfessionalInterests p {
     width: auto;
   }
-  /* line 352, ../_sass/base/_layout.scss */
+  /* line 356, ../_sass/base/_layout.scss */
   footer#main-footer > div section#copyright p {
     margin-bottom: 20px;
   }
@@ -1369,19 +1373,31 @@ div#main-content #home section article.feature img {
     width: 80%;
   }
 }
-/* line 2, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio h1 {
-  font-family: "LeagueGothicRegular";
-  font-size: 40px;
+/* line 1, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio {
+  margin: 0;
+  width: 100%;
+  padding-top: 0;
 }
-/* line 7, ../_sass/pages/_portfolio.scss */
+/* line 6, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio h1 {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 10, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio h2 {
   font-family: "LeagueGothicRegular";
   font-size: 24px;
 }
-/* line 12, ../_sass/pages/_portfolio.scss */
+/* line 15, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section {
-  margin: 20px 0;
+  margin: 0;
   *zoom: 1;
 }
 /* line 27, ../_sass/base/_grid.scss */
@@ -1393,12 +1409,67 @@ div#main-content #portfolio section:before, div#main-content #portfolio section:
 div#main-content #portfolio section:after {
   clear: both;
 }
-/* line 17, ../_sass/pages/_portfolio.scss */
+/* line 20, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#sources {
+  background: #e3dcd1;
+  margin: 0;
+  z-index: 0;
+  border-bottom: 3px solid #322a26;
+  -webkit-box-shadow: 0px -3px 10px 1px #322a26 inset;
+  box-shadow: 0px -3px 10px 1px #322a26 inset;
+  text-align: center;
+}
+/* line 29, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#sources article {
-  display: inline;
-  float: left;
-  width: 23.80952%;
-  margin: 0 0.59524%;
+  width: 25%;
+  margin: 0;
+}
+/* line 33, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#sources article a {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 40px 8%;
+  -webkit-transition: background 300ms ease-in;
+  /* property duration timing-function delay */
+  -moz-transition: background 300ms ease-in;
+  -o-transition: background 300ms ease-in;
+  transition: background 300ms ease-in;
+}
+/* line 41, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#sources article a h2, div#main-content #portfolio section#sources article a p {
+  -webkit-transition: color 300ms ease-in;
+  /* property duration timing-function delay */
+  -moz-transition: color 300ms ease-in;
+  -o-transition: color 300ms ease-in;
+  transition: color 300ms ease-in;
+}
+/* line 53, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#sources article a h2 {
+  font-size: 32px;
+  font-family: "NeoRetroFillRegular";
+  color: #322a26;
+  border-bottom: #847872 5px solid;
+}
+/* line 60, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#sources article a p {
+  color: #322a26;
+  font-size: 24px;
+  font-family: "LeagueGothicRegular";
+}
+/* line 66, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#sources article a:hover {
+  background: #322a26;
+  cursor: pointer;
+}
+/* line 69, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#sources article a:hover h2 {
+  color: #e3dcd1;
+}
+/* line 72, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#sources article a:hover p {
+  color: #847872;
+  text-decoration: none;
 }
 
 /* line 2, ../_sass/pages/_blog.scss */

@@ -43,15 +43,19 @@ p, ul li, p a:link, p a:visited, p a:active{
 // header
 header#main-header {
   height: 100px;
-  border-bottom: 5px solid #322a26;
-  -webkit-box-shadow:  0px 3px 10px 1px #333;
-  box-shadow:  0px 3px 10px 1px #333;
+  border-bottom: 5px solid $dark-brown;
+  -webkit-box-shadow:  0px 3px 10px 1px $dark-brown;
+  box-shadow:  0px 3px 10px 1px $dark-brown;
   background: url(/images/header_bg.png) 50% 50% no-repeat;
   background-size: 100% auto;
+  z-index: 10;
+  position: relative;
 
   div{
     padding-top: 15px;
     text-shadow: 1px 1px 10px $red;
+    z-index: 10;
+    position: relative;
     filter: dropshadow(color=$red, offx=1, offy=1);
 
     @include column(12);

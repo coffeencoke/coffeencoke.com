@@ -1,7 +1,10 @@
 div#main-content #portfolio{
+  margin: 0;
+  width: 100%;
+  padding-top: 0;
+
   h1{
-    font-family: $leagueGothic;
-    font-size: 40px;
+    @include visuallyHidden;
   }
 
   h2{
@@ -10,12 +13,69 @@ div#main-content #portfolio{
   }
 
   section{
-    margin: 20px 0;
+    margin: 0;
     @include clearfix;
   }
 
-  section#sources article{
-    @include column(3, 12);
+  section#sources {
+    background: $light-brown;
+    margin: 0;
+    z-index: 0;
+    border-bottom: 3px solid $dark-brown;
+    -webkit-box-shadow:  0px -3px 10px 1px $dark-brown inset;
+    box-shadow:  0px -3px 10px 1px $dark-brown inset;
+    text-align: center;
+
+    article{
+      width: 25%;
+      margin: 0;
+
+      a{
+        position: relative;
+        display: block;
+        text-align: center;
+        padding: 40px 8%;
+
+        $transition-time: 300ms;
+        $transition-direction: ease-in;
+        h2, p{
+          -webkit-transition: color $transition-time $transition-direction; /* property duration timing-function delay */
+          -moz-transition: color $transition-time $transition-direction;
+          -o-transition: color $transition-time $transition-direction;
+          transition: color $transition-time $transition-direction;
+        }
+
+        -webkit-transition: background $transition-time $transition-direction; /* property duration timing-function delay */
+        -moz-transition: background $transition-time $transition-direction;
+        -o-transition: background $transition-time $transition-direction;
+        transition: background $transition-time $transition-direction;
+
+        h2{
+          font-size: 32px;
+          font-family: $neoRetroFill;
+          color: $dark-brown;
+          border-bottom: $medium-brown 5px solid;
+        }
+
+        p{
+          color: $dark-brown;
+          font-size: 24px;
+          font-family: $leagueGothic;
+        }
+
+        &:hover{
+          background: $dark-brown;
+          cursor: pointer;
+          h2{
+            color: $light-brown;
+          }
+          p{
+            color: $medium-brown;
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
 }
 

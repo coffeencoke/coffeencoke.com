@@ -10,3 +10,4 @@ description: Blog for Coffeencoke - Matt Simpson - about Computer Science, Progr
 permalink: /blog/:year/:month/:day/:title/
 #pygments: false # default python pygments have been replaced by pygments.rb
 safe: false
+handle: coffeencoke
