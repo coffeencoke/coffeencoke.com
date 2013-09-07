@@ -591,7 +591,7 @@ footer#main-footer > div section#copyright p {
   text-align: right;
   font-size: 13px;
   line-height: 1.45em;
-  background: #073642 url('/../images/noise.png?1375640665') top left !important;
+  background: #073642 url('/../images/noise.png?1378577129') top left !important;
   border-right: 1px solid #00232c !important;
   -webkit-box-shadow: #083e4b -1px 0 inset;
   -moz-box-shadow: #083e4b -1px 0 inset;
@@ -671,7 +671,7 @@ html .gist .gist-file .gist-meta {
   border: 1px solid #083e4b !important;
   color: #586e75;
   font-size: .7em !important;
-  background: #073642 url('/../images/noise.png?1375640665') top left;
+  background: #073642 url('/../images/noise.png?1378577129') top left;
   line-height: 1.5em;
 }
 /* line 64, ../_sass/partials/_syntax.scss */
@@ -706,7 +706,7 @@ html .gist .gist-file .gist-meta a[href*=raw] {
 
 /* line 79, ../_sass/partials/_syntax.scss */
 pre {
-  background: #002b36 url('/../images/noise.png?1375640665') top left;
+  background: #002b36 url('/../images/noise.png?1378577129') top left;
   -webkit-border-radius: 0.4em;
   -moz-border-radius: 0.4em;
   -ms-border-radius: 0.4em;
@@ -764,7 +764,7 @@ p pre code, li pre code {
   padding: .8em;
   overflow-x: auto;
   line-height: 1.45em;
-  background: #002b36 url('/../images/noise.png?1375640665') top left !important;
+  background: #002b36 url('/../images/noise.png?1378577129') top left !important;
   color: #93a1a1 !important;
   /* Comment */
   /* Comment.Multiline */
@@ -1112,7 +1112,7 @@ figure.code .highlight {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
   font-family: "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
-  background: #aaaaaa url('/../images/code_bg.png?1375640665') top repeat-x;
+  background: #aaaaaa url('/../images/code_bg.png?1378577129') top repeat-x;
   border: 1px solid #565656;
   border-top-color: #cbcbcb;
   border-left-color: #a5a5a5;
@@ -1474,103 +1474,191 @@ div#main-content #portfolio section#favorites {
   padding: 50px 0;
 }
 /* line 77, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article h2 {
+div#main-content #portfolio section#favorites article p {
+  color: #555;
+}
+/* line 81, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article p, div#main-content #portfolio section#favorites article a:link, div#main-content #portfolio section#favorites article a:visited, div#main-content #portfolio section#favorites article a:active {
+  font-family: "ArsenalRegular";
+  font-size: 24px;
+}
+/* line 86, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article header {
+  margin-bottom: 20px;
+}
+/* line 89, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article header h2 {
   font-family: "NeoRetroFillRegular";
   font-size: 32px;
   display: inline-block;
 }
-/* line 83, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article ul.categories {
+/* line 95, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article header nav {
   display: inline-block;
+  margin-left: 20px;
 }
-/* line 86, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article ul.categories li {
-  display: inline-block;
+/* line 99, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article header nav ul {
+  list-style-type: none;
   margin-bottom: 20px;
 }
-/* line 90, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article ul.categories li a:link, div#main-content #portfolio section#favorites article ul.categories li a:visited, div#main-content #portfolio section#favorites article ul.categories li a:active {
+/* line 5, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+div#main-content #portfolio section#favorites article header nav ul, div#main-content #portfolio section#favorites article header nav ul li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+/* line 29, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+div#main-content #portfolio section#favorites article header nav ul li:after {
+  content: ", ";
+}
+/* line 31, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+div#main-content #portfolio section#favorites article header nav ul li:last-child:after {
+  content: "";
+}
+/* line 34, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+div#main-content #portfolio section#favorites article header nav ul li.last:after {
+  content: "";
+}
+/* line 104, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article header nav ul li a:link, div#main-content #portfolio section#favorites article header nav ul li a:visited, div#main-content #portfolio section#favorites article header nav ul li a:active {
   font-family: "NeoRetroFillRegular";
   font-size: 18px;
   color: #555555;
   vertical-align: bottom;
   line-height: 30px;
 }
-/* line 100, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article p {
-  color: #555;
+/* line 116, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article main {
+  display: block;
+  width: 101.19048%;
+  margin: 0 -0.59524%;
+  *zoom: 1;
+  position: relative;
 }
-/* line 104, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article p, div#main-content #portfolio section#favorites article a:link, div#main-content #portfolio section#favorites article a:visited, div#main-content #portfolio section#favorites article a:active {
-  font-family: "ArsenalRegular";
-  font-size: 24px;
+/* line 27, ../_sass/base/_grid.scss */
+div#main-content #portfolio section#favorites article main:before, div#main-content #portfolio section#favorites article main:after {
+  content: "";
+  display: table;
 }
-/* line 109, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .description {
+/* line 31, ../_sass/base/_grid.scss */
+div#main-content #portfolio section#favorites article main:after {
+  clear: both;
+}
+/* line 120, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article main .description {
+  display: inline;
+  float: left;
+  width: 48.80952%;
+  margin: 0 0.59524%;
+  vertical-align: top;
+  height: 100%;
+}
+/* line 125, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article main .description h3 {
+  font-family: "LeagueGothicRegular";
+  font-size: 32px;
+  padding-left: 50px;
+}
+/* line 131, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article main .description h3, div#main-content #portfolio section#favorites article main .description p {
+  padding-left: 50px;
+}
+/* line 136, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article main .extras {
   display: inline;
   float: left;
   width: 48.80952%;
   margin: 0 0.59524%;
 }
-/* line 112, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .description h3 {
-  font-family: "LeagueGothicRegular";
-  font-size: 32px;
-  padding-left: 50px;
+/* line 141, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article nav.main {
+  padding: 40px 0 60px 50px;
 }
-/* line 118, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .description h3, div#main-content #portfolio section#favorites article .description p {
-  padding-left: 50px;
+/* line 144, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article nav.main ul {
+  list-style-type: none;
 }
-/* line 123, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .row {
-  *zoom: 1;
+/* line 5, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+div#main-content #portfolio section#favorites article nav.main ul, div#main-content #portfolio section#favorites article nav.main ul li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
 }
-/* line 27, ../_sass/base/_grid.scss */
-div#main-content #portfolio section#favorites article .row:before, div#main-content #portfolio section#favorites article .row:after {
+/* line 29, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+div#main-content #portfolio section#favorites article nav.main ul li:after {
+  content: ", ";
+}
+/* line 31, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+div#main-content #portfolio section#favorites article nav.main ul li:last-child:after {
   content: "";
-  display: table;
 }
-/* line 31, ../_sass/base/_grid.scss */
-div#main-content #portfolio section#favorites article .row:after {
-  clear: both;
+/* line 34, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+div#main-content #portfolio section#favorites article nav.main ul li.last:after {
+  content: "";
 }
-/* line 127, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .image, div#main-content #portfolio section#favorites article .maturity {
+/* line 151, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#mince .image, div#main-content #portfolio section#favorites article#mince .maturity {
   display: inline;
   float: left;
-  width: 23.80952%;
-  margin: 0 0.59524%;
+  width: 47.61905%;
+  margin: 0 1.19048%;
   text-align: center;
 }
-/* line 133, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .maturity h3 {
+/* line 157, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#mince .maturity h3 {
   font-family: "NeoRetroFillRegular";
   font-size: 32px;
   border-bottom: 5px solid #555;
 }
-/* line 139, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .maturity p {
+/* line 163, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#mince .maturity p {
   padding-top: 20px;
   font-family: "LeagueGothicRegular";
   font-size: 28px;
 }
-/* line 144, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .maturity p.good {
+/* line 168, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#mince .maturity p.good {
   color: #007d2c;
 }
-/* line 147, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .maturity p.bad {
+/* line 171, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#mince .maturity p.bad {
   color: #802d00;
 }
-/* line 153, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .links {
-  padding: 20px 0 40px 50px;
+/* line 179, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#ionicmobile main .description {
+  margin-top: 40px;
 }
-/* line 155, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article .links li {
+/* line 183, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#ionicmobile .extras .images {
+  display: block;
+  width: 101.19048%;
+  margin: 0 -0.59524%;
+  *zoom: 1;
+  margin-bottom: 20px;
+}
+/* line 27, ../_sass/base/_grid.scss */
+div#main-content #portfolio section#favorites article#ionicmobile .extras .images:before, div#main-content #portfolio section#favorites article#ionicmobile .extras .images:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../_sass/base/_grid.scss */
+div#main-content #portfolio section#favorites article#ionicmobile .extras .images:after {
+  clear: both;
+}
+/* line 187, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#ionicmobile .extras .images ul li {
+  display: inline;
+  float: left;
+  width: 47.61905%;
+  margin: 0 1.19048%;
   display: inline-block;
-  padding: 0 15px;
+  text-align: right;
+  vertical-align: top;
+}
+/* line 193, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#ionicmobile .extras .images ul li:first-child {
+  text-align: left;
 }
 
 /* line 2, ../_sass/pages/_blog.scss */

@@ -29,16 +29,18 @@ nav: true
         Stay connected with me
 %h1 Favorites
 %section#favorites
-  %article
-    %h2 Mince
-    %ul.categories
-      %li<>
-        %a{href: '#'}<> Code
-      %li<>
-        %a{href: '#'}<> Open Source
-      %li<>
-        %a{href: '#'}<> Side Project
-    .row
+  %article#mince
+    %header
+      %h2 Mince
+      %nav
+        %ul
+          %li<>
+            %a{href: '#'}<> Code
+          %li<>
+            %a{href: '#'}<> Open Source
+          %li<>
+            %a{href: '#'}<> Side Project
+    %main
       .description
         %h3 Flexible Object Data Mapping Library
         %p
@@ -47,33 +49,77 @@ nav: true
           Easy to write support for other databases
         %p
           Decouple your models from your database.
-      .image
-        %img{ src: '/images/uncle-bob-2012-ruby-midwest.png' }
-        %p
-          Inspired by 
-          %a{ href: '#' } Uncle Bob's 2012 Ruby Midwest Keynote
-      .maturity
-        %h3 Maturity
-        %p.good Survives prototyping to medium size applications
-        %p.bad Not yet recommended for enterprise size applications
-    %ul.links
-      %li<>
-        %a{ href: '#' }<> Read More
-      %li<>
-        %a{ href: '#' }<> Github
-      %li<>
-        %a{ href: '#' }<> API Docs
-      %li<>
-        %a{ href: '#' }<> HashyDB
-      %li<>
-        %a{ href: '#' }<> Mince Migrator
-      %li<>
-        %a{ href: '#' }<> Mince MongoDB
-      %li<>
-        %a{ href: '#' }<> Mince DynamoDB
+      .extras
+        .image
+          %img{ src: '/images/uncle-bob-2012-ruby-midwest.png' }
+          %p
+            Inspired by 
+            %a{ href: '#' } Uncle Bob's 2012 Ruby Midwest Keynote
+        .maturity
+          %h3 Maturity
+          %p.good Survives prototyping to medium size applications
+          %p.bad Not yet recommended for enterprise size applications
+    %nav.main
+      %ul
+        %li<>
+          %a{ href: '#' }<> Read More
+        %li<>
+          %a{ href: '#' }<> Github
+        %li<>
+          %a{ href: '#' }<> API Docs
+        %li<>
+          %a{ href: '#' }<> HashyDB
+        %li<>
+          %a{ href: '#' }<> Mince Migrator
+        %li<>
+          %a{ href: '#' }<> Mince MongoDB
+        %li<>
+          %a{ href: '#' }<> Mince DynamoDB
 
+  %article#ionicmobile
+    %header
+      %h2 Ionic Mobile
+      %nav
+        %ul
+          %li<>
+            %a{href: '#'}<> Main Project
+          %li<>
+            %a{href: '#'}<> Frameworks
+          %li<>
+            %a{href: '#'}<> API Development
+          %li<>
+            %a{href: '#'}<> Asynchrony
+    %main
+      .description
+        %p Develop mobile solutions for corporate needs
+        %p Integrate easily with existing legacy data sources
+        %p Distribute applications across an enterprise with control in security for mobile devices.
+      .extras
+        .images
+          %ul
+            %li
+              %a{ href: '#' }
+                %img{ src: '/images/portfolio-ionic-mobile.png' }
+            %li
+              %a{ href: '#' }
+                %img{ src: '/images/portfolio-asynchrony.png' }
+        %p I lead the team that began developing this project, I have since moved on to leading a new project.  Ionic Mobile is a product owned and developed by Asynchrony.
+    %nav.main
+      %ul
+        %li<>
+          %a{ href: '#' }<> Read More
+        %li<>
+          %a{ href: '#' }<> Ionic Mobile
+        %li<>
+          %a{ href: '#' }<> Github
+        %li<>
+          %a{ href: '#' }<> Asynchrony
+    
   %article
     %h2 Fear In Programming
+    %ul.categories
+      %li<>
+      %a{ href: '#'}<> Presentation
     %p
       This presentation is about fear, and how fear can effect how I make decisions
       in my career as a programmer. My hope is to challenge you, and that you would
