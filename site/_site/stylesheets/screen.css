@@ -1430,43 +1430,37 @@ div#main-content #portfolio section#sources article a {
   display: block;
   text-align: center;
   padding: 40px 8%;
-  -webkit-transition: background 300ms ease-in;
-  /* property duration timing-function delay */
-  -moz-transition: background 300ms ease-in;
-  -o-transition: background 300ms ease-in;
-  transition: background 300ms ease-in;
+  color: #322a26;
+  -webkit-transition: background 200ms ease-in;
+  -moz-transition: background 200ms ease-in;
+  -o-transition: background 200ms ease-in;
+  transition: background 200ms ease-in;
 }
-/* line 41, ../_sass/pages/_portfolio.scss */
+/* line 42, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#sources article a h2, div#main-content #portfolio section#sources article a p {
-  -webkit-transition: color 300ms ease-in;
-  /* property duration timing-function delay */
-  -moz-transition: color 300ms ease-in;
-  -o-transition: color 300ms ease-in;
-  transition: color 300ms ease-in;
+  -webkit-transition: color 200ms ease-in;
+  -moz-transition: color 200ms ease-in;
+  -o-transition: color 200ms ease-in;
+  transition: color 200ms ease-in;
 }
-/* line 53, ../_sass/pages/_portfolio.scss */
+/* line 48, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#sources article a h2 {
   font-size: 32px;
   font-family: "NeoRetroFillRegular";
-  color: #322a26;
   border-bottom: #847872 5px solid;
 }
-/* line 60, ../_sass/pages/_portfolio.scss */
+/* line 54, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#sources article a p {
-  color: #322a26;
   font-size: 24px;
   font-family: "LeagueGothicRegular";
 }
-/* line 66, ../_sass/pages/_portfolio.scss */
+/* line 59, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#sources article a:hover {
   background: #322a26;
   cursor: pointer;
-}
-/* line 69, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#sources article a:hover h2 {
   color: #e3dcd1;
 }
-/* line 72, ../_sass/pages/_portfolio.scss */
+/* line 63, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#sources article a:hover p {
   color: #847872;
   text-decoration: none;

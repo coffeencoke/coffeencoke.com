@@ -35,30 +35,23 @@ div#main-content #portfolio{
         display: block;
         text-align: center;
         padding: 40px 8%;
+        color: $dark-brown;
 
-        $transition-time: 300ms;
+        $transition-time: 200ms;
         $transition-direction: ease-in;
         h2, p{
-          -webkit-transition: color $transition-time $transition-direction; /* property duration timing-function delay */
-          -moz-transition: color $transition-time $transition-direction;
-          -o-transition: color $transition-time $transition-direction;
-          transition: color $transition-time $transition-direction;
+          @include single-transition(color, $transition-time, $transition-direction);
         }
 
-        -webkit-transition: background $transition-time $transition-direction; /* property duration timing-function delay */
-        -moz-transition: background $transition-time $transition-direction;
-        -o-transition: background $transition-time $transition-direction;
-        transition: background $transition-time $transition-direction;
+        @include single-transition(background, $transition-time, $transition-direction);
 
         h2{
           font-size: 32px;
           font-family: $neoRetroFill;
-          color: $dark-brown;
           border-bottom: $medium-brown 5px solid;
         }
 
         p{
-          color: $dark-brown;
           font-size: 24px;
           font-family: $leagueGothic;
         }
@@ -66,9 +59,7 @@ div#main-content #portfolio{
         &:hover{
           background: $dark-brown;
           cursor: pointer;
-          h2{
-            color: $light-brown;
-          }
+          color: $light-brown;
           p{
             color: $medium-brown;
             text-decoration: none;
