@@ -1494,10 +1494,18 @@ div#main-content #portfolio section#favorites article header h2 {
 }
 /* line 95, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article header nav {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
   display: inline-block;
   margin-left: 20px;
 }
-/* line 99, ../_sass/pages/_portfolio.scss */
+/* line 100, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article header nav ul {
   list-style-type: none;
   margin-bottom: 20px;
@@ -1520,7 +1528,7 @@ div#main-content #portfolio section#favorites article header nav ul li:last-chil
 div#main-content #portfolio section#favorites article header nav ul li.last:after {
   content: "";
 }
-/* line 104, ../_sass/pages/_portfolio.scss */
+/* line 105, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article header nav ul li a:link, div#main-content #portfolio section#favorites article header nav ul li a:visited, div#main-content #portfolio section#favorites article header nav ul li a:active {
   font-family: "NeoRetroFillRegular";
   font-size: 18px;
@@ -1528,13 +1536,14 @@ div#main-content #portfolio section#favorites article header nav ul li a:link, d
   vertical-align: bottom;
   line-height: 30px;
 }
-/* line 116, ../_sass/pages/_portfolio.scss */
+/* line 117, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article main {
   display: block;
   width: 101.19048%;
   margin: 0 -0.59524%;
   *zoom: 1;
   position: relative;
+  margin-bottom: 40px;
 }
 /* line 27, ../_sass/base/_grid.scss */
 div#main-content #portfolio section#favorites article main:before, div#main-content #portfolio section#favorites article main:after {
@@ -1545,7 +1554,7 @@ div#main-content #portfolio section#favorites article main:before, div#main-cont
 div#main-content #portfolio section#favorites article main:after {
   clear: both;
 }
-/* line 120, ../_sass/pages/_portfolio.scss */
+/* line 122, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article main .description {
   display: inline;
   float: left;
@@ -1554,28 +1563,36 @@ div#main-content #portfolio section#favorites article main .description {
   vertical-align: top;
   height: 100%;
 }
-/* line 125, ../_sass/pages/_portfolio.scss */
+/* line 127, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article main .description h3 {
   font-family: "LeagueGothicRegular";
   font-size: 32px;
   padding-left: 50px;
 }
-/* line 131, ../_sass/pages/_portfolio.scss */
+/* line 133, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article main .description h3, div#main-content #portfolio section#favorites article main .description p {
   padding-left: 50px;
 }
-/* line 136, ../_sass/pages/_portfolio.scss */
+/* line 138, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article main .extras {
   display: inline;
   float: left;
   width: 48.80952%;
   margin: 0 0.59524%;
 }
-/* line 141, ../_sass/pages/_portfolio.scss */
+/* line 143, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article nav.main {
-  padding: 40px 0 60px 50px;
+  padding: 0 0 60px 50px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
-/* line 144, ../_sass/pages/_portfolio.scss */
+/* line 147, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article nav.main ul {
   list-style-type: none;
 }
@@ -1597,7 +1614,7 @@ div#main-content #portfolio section#favorites article nav.main ul li:last-child:
 div#main-content #portfolio section#favorites article nav.main ul li.last:after {
   content: "";
 }
-/* line 151, ../_sass/pages/_portfolio.scss */
+/* line 154, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#mince .image, div#main-content #portfolio section#favorites article#mince .maturity {
   display: inline;
   float: left;
@@ -1605,31 +1622,31 @@ div#main-content #portfolio section#favorites article#mince .image, div#main-con
   margin: 0 1.19048%;
   text-align: center;
 }
-/* line 157, ../_sass/pages/_portfolio.scss */
+/* line 160, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#mince .maturity h3 {
   font-family: "NeoRetroFillRegular";
   font-size: 32px;
   border-bottom: 5px solid #555;
 }
-/* line 163, ../_sass/pages/_portfolio.scss */
+/* line 166, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#mince .maturity p {
   padding-top: 20px;
   font-family: "LeagueGothicRegular";
   font-size: 28px;
 }
-/* line 168, ../_sass/pages/_portfolio.scss */
+/* line 171, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#mince .maturity p.good {
   color: #007d2c;
 }
-/* line 171, ../_sass/pages/_portfolio.scss */
+/* line 174, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#mince .maturity p.bad {
   color: #802d00;
 }
-/* line 179, ../_sass/pages/_portfolio.scss */
+/* line 182, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#ionicmobile main .description {
   margin-top: 40px;
 }
-/* line 183, ../_sass/pages/_portfolio.scss */
+/* line 186, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#ionicmobile .extras .images {
   display: block;
   width: 101.19048%;
@@ -1646,7 +1663,7 @@ div#main-content #portfolio section#favorites article#ionicmobile .extras .image
 div#main-content #portfolio section#favorites article#ionicmobile .extras .images:after {
   clear: both;
 }
-/* line 187, ../_sass/pages/_portfolio.scss */
+/* line 190, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#ionicmobile .extras .images ul li {
   display: inline;
   float: left;
@@ -1656,13 +1673,18 @@ div#main-content #portfolio section#favorites article#ionicmobile .extras .image
   text-align: right;
   vertical-align: top;
 }
-/* line 193, ../_sass/pages/_portfolio.scss */
+/* line 196, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#ionicmobile .extras .images ul li:first-child {
   text-align: left;
 }
-/* line 202, ../_sass/pages/_portfolio.scss */
+/* line 205, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#bettyelaine .extras {
   text-align: center;
+}
+/* line 211, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#fear_in_programming .extras {
+  text-align: center;
+  vertical-align: baseline;
 }
 
 /* line 2, ../_sass/pages/_blog.scss */
