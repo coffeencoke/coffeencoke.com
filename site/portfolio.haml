@@ -29,34 +29,49 @@ nav: true
         Stay connected with me
 %h1 Favorites
 %section#favorites
-  %p These are my favorite projects
   %article
     %h2 Mince
-    %p
-      Mince is an object data persistence library written in ruby for ruby,
-      it provides an interface to allow you to write ruby apps using hashy_db,
-      which is an in memory hash database written in ruby, MongoDb,
-      or Amazon's DynamoDB.
-    %p
-      Mince has a simple API that can be implemented for any database, providing
-      an easy way to decouple your code from your selected database. Empowering
-      you to change databases for your needs. It also is built specifically to
-      separate responsibilities from database behavior and application specific
-      behavior.
-    %p
-      This can be used for any ruby application, even command line libraries.
-    %p
-      Mince provides APIs for basic needs, such as a way to configure databases,
-      an rspec shared example to define a contract of implementation of interfaces.
-      As well as more complex needs, such as mixins to provide standard behavior
-      for data models, and the same but for application specific models.
-    %p
-      There are a number of libraries that provide additional rich features for Mince.
-    %ul
-      %li MinceMigrator - A library that uses mince to run data migrations
-      %li HashyDb - A mince interface for an in-memory hash database written in ruby
-      %li MinceMongoDb - A mince interface for MongoDb
-      %li MinceDynamoDb - A mince interface for DynamoDb
+    %ul.categories
+      %li<>
+        %a{href: '#'}<> Code
+      %li<>
+        %a{href: '#'}<> Open Source
+      %li<>
+        %a{href: '#'}<> Side Project
+    .row
+      .description
+        %h3 Flexible Object Data Mapping Library
+        %p
+          For Ruby, supports in memory hash db, MongoDB, and Amazon’s DynamoDB
+        %p
+          Easy to write support for other databases
+        %p
+          Decouple your models from your database.
+      .image
+        %img{ src: '/images/uncle-bob-2012-ruby-midwest.png' }
+        %p
+          Inspired by 
+          %a{ href: '#' } Uncle Bob's 2012 Ruby Midwest Keynote
+      .maturity
+        %h3 Maturity
+        %p.good Survives prototyping to medium size applications
+        %p.bad Not yet recommended for enterprise size applications
+    %ul.links
+      %li<>
+        %a{ href: '#' }<> Read More
+      %li<>
+        %a{ href: '#' }<> Github
+      %li<>
+        %a{ href: '#' }<> API Docs
+      %li<>
+        %a{ href: '#' }<> HashyDB
+      %li<>
+        %a{ href: '#' }<> Mince Migrator
+      %li<>
+        %a{ href: '#' }<> Mince MongoDB
+      %li<>
+        %a{ href: '#' }<> Mince DynamoDB
+
   %article
     %h2 Fear In Programming
     %p

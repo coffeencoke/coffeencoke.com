@@ -1465,6 +1465,113 @@ div#main-content #portfolio section#sources article a:hover p {
   color: #847872;
   text-decoration: none;
 }
+/* line 72, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites {
+  display: inline;
+  float: left;
+  width: 98.80952%;
+  margin: 0 0.59524%;
+  padding: 50px 0;
+}
+/* line 77, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article h2 {
+  font-family: "NeoRetroFillRegular";
+  font-size: 32px;
+  display: inline-block;
+}
+/* line 83, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article ul.categories {
+  display: inline-block;
+}
+/* line 86, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article ul.categories li {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+/* line 90, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article ul.categories li a:link, div#main-content #portfolio section#favorites article ul.categories li a:visited, div#main-content #portfolio section#favorites article ul.categories li a:active {
+  font-family: "NeoRetroFillRegular";
+  font-size: 18px;
+  color: #555555;
+  vertical-align: bottom;
+  line-height: 30px;
+}
+/* line 100, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article p {
+  color: #555;
+}
+/* line 104, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article p, div#main-content #portfolio section#favorites article a:link, div#main-content #portfolio section#favorites article a:visited, div#main-content #portfolio section#favorites article a:active {
+  font-family: "ArsenalRegular";
+  font-size: 24px;
+}
+/* line 109, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .description {
+  display: inline;
+  float: left;
+  width: 48.80952%;
+  margin: 0 0.59524%;
+}
+/* line 112, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .description h3 {
+  font-family: "LeagueGothicRegular";
+  font-size: 32px;
+  padding-left: 50px;
+}
+/* line 118, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .description h3, div#main-content #portfolio section#favorites article .description p {
+  padding-left: 50px;
+}
+/* line 123, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .row {
+  *zoom: 1;
+}
+/* line 27, ../_sass/base/_grid.scss */
+div#main-content #portfolio section#favorites article .row:before, div#main-content #portfolio section#favorites article .row:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../_sass/base/_grid.scss */
+div#main-content #portfolio section#favorites article .row:after {
+  clear: both;
+}
+/* line 127, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .image, div#main-content #portfolio section#favorites article .maturity {
+  display: inline;
+  float: left;
+  width: 23.80952%;
+  margin: 0 0.59524%;
+  text-align: center;
+}
+/* line 133, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .maturity h3 {
+  font-family: "NeoRetroFillRegular";
+  font-size: 32px;
+  border-bottom: 5px solid #555;
+}
+/* line 139, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .maturity p {
+  padding-top: 20px;
+  font-family: "LeagueGothicRegular";
+  font-size: 28px;
+}
+/* line 144, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .maturity p.good {
+  color: #007d2c;
+}
+/* line 147, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .maturity p.bad {
+  color: #802d00;
+}
+/* line 153, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .links {
+  padding: 20px 0 40px 50px;
+}
+/* line 155, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article .links li {
+  display: inline-block;
+  padding: 0 15px;
+}
 
 /* line 2, ../_sass/pages/_blog.scss */
 #main-content #blog article {

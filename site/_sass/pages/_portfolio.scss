@@ -68,5 +68,96 @@ div#main-content #portfolio{
       }
     }
   }
+
+  section#favorites{
+    @include column(12);
+    padding: 50px 0;
+
+    article{
+      h2{
+        font-family: $neoRetroFill;
+        font-size: 32px;
+        display: inline-block;
+      }
+
+      ul.categories{
+        display: inline-block;
+
+        li{
+          display: inline-block;
+          margin-bottom: 20px;
+
+          a:link, a:visited, a:active{
+            font-family: $neoRetroFill;
+            font-size: 18px;
+            color: #555555;
+            vertical-align: bottom;
+            line-height: 30px;
+          }
+        }
+      }
+
+      p{
+        color: #555;
+      }
+
+      p, a:link, a:visited, a:active {
+        font-family: $arsenal;
+        font-size: 24px;
+      }
+
+      .description{
+        @include column(6,12);
+
+        h3{
+          font-family: $leagueGothic;
+          font-size: 32px;
+          padding-left: 50px;
+        }
+
+        h3, p{
+          padding-left: 50px;
+        }
+      }
+
+      .row{
+        @include clearfix;
+      }
+
+      .image, .maturity{
+        @include column(3, 12);
+        text-align: center;
+      }
+
+      .maturity{
+        h3 {
+          font-family: $neoRetroFill;
+          font-size: 32px;
+          border-bottom: 5px solid #555;
+        }
+
+        p{
+          padding-top: 20px;
+          font-family: $leagueGothic;
+          font-size: 28px;
+
+          &.good{
+            color: #007d2c;
+          }
+          &.bad{
+            color: #802d00;
+          }
+        }
+      }
+
+      .links{
+        padding: 20px 0 40px 50px;;
+        li{
+          display: inline-block;
+          padding: 0 15px;
+        }
+      }
+    }
+  }
 }
 
