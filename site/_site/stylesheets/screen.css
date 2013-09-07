@@ -281,7 +281,7 @@ header#main-header div nav ul li a:visited, header#main-header div nav ul li a:a
   filter: dropshadow(color=#ad3d00, offx=1, offy=1);
 }
 /* line 103, ../_sass/base/_layout.scss */
-header#main-header div nav ul li a:hover {
+header#main-header div nav ul li a:hover, header#main-header div nav ul li a.current {
   border-bottom: 5px solid black;
 }
 

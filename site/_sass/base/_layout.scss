@@ -100,7 +100,7 @@ header#main-header {
               filter: dropshadow(color=$red, offx=1, offy=1);
             }
 
-            &:hover{
+            &:hover, &.current{
               border-bottom: 5px solid black;
             }
           }
