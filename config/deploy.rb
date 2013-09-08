@@ -1,5 +1,5 @@
 set :application,       'coffeencoke.com'
-set :repository,        'public'
+set :repository,        'site/_site'
 set :scm,               :none
 set :deploy_via,        :copy
 set :copy_compression,  :gzip
@@ -25,6 +25,6 @@ namespace :deploy do
 
   desc 'Run jekyll to update site before uploading'
   task :update_jekyll do
-    %x(rm -rf _site/* && jekyll)
+    %x(cd site && rm -rf _site/* && jekyll build)
   end
 end
