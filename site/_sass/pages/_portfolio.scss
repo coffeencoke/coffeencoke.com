@@ -142,7 +142,6 @@ div#main-content #portfolio{
 
       nav.main{
         padding: 0 0 60px 50px;
-        @include visuallyHidden;
         
         ul{
           @include delimited-list;
@@ -178,25 +177,16 @@ div#main-content #portfolio{
       }
     }
 
-    article#ionicmobile{
+    article#ionicmobile {
       main .description{
         margin-top: 40px;
       }
+    }
+
+    article#ionicmobile, article#asynchrony{
       .extras{
-        .images{
-          @include row;
+        img{
           margin-bottom: 20px;
-
-          ul li{
-            @include column(3, 6);
-
-            display: inline-block;
-            text-align: right;
-            vertical-align: top;
-            &:first-child{
-              text-align: left;
-            }
-          }
         }
       }
     }

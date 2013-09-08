@@ -1583,16 +1583,8 @@ div#main-content #portfolio section#favorites article main .extras {
 /* line 143, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article nav.main {
   padding: 0 0 60px 50px;
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
 }
-/* line 147, ../_sass/pages/_portfolio.scss */
+/* line 146, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article nav.main ul {
   list-style-type: none;
 }
@@ -1614,7 +1606,7 @@ div#main-content #portfolio section#favorites article nav.main ul li:last-child:
 div#main-content #portfolio section#favorites article nav.main ul li.last:after {
   content: "";
 }
-/* line 154, ../_sass/pages/_portfolio.scss */
+/* line 153, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#mince .image, div#main-content #portfolio section#favorites article#mince .maturity {
   display: inline;
   float: left;
@@ -1622,66 +1614,39 @@ div#main-content #portfolio section#favorites article#mince .image, div#main-con
   margin: 0 1.19048%;
   text-align: center;
 }
-/* line 160, ../_sass/pages/_portfolio.scss */
+/* line 159, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#mince .maturity h3 {
   font-family: "NeoRetroFillRegular";
   font-size: 32px;
   border-bottom: 5px solid #555;
 }
-/* line 166, ../_sass/pages/_portfolio.scss */
+/* line 165, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#mince .maturity p {
   padding-top: 20px;
   font-family: "LeagueGothicRegular";
   font-size: 28px;
 }
-/* line 171, ../_sass/pages/_portfolio.scss */
+/* line 170, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#mince .maturity p.good {
   color: #007d2c;
 }
-/* line 174, ../_sass/pages/_portfolio.scss */
+/* line 173, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#mince .maturity p.bad {
   color: #802d00;
 }
-/* line 182, ../_sass/pages/_portfolio.scss */
+/* line 181, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#ionicmobile main .description {
   margin-top: 40px;
 }
-/* line 186, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article#ionicmobile .extras .images {
-  display: block;
-  width: 101.19048%;
-  margin: 0 -0.59524%;
-  *zoom: 1;
+/* line 188, ../_sass/pages/_portfolio.scss */
+div#main-content #portfolio section#favorites article#ionicmobile .extras img, div#main-content #portfolio section#favorites article#asynchrony .extras img {
   margin-bottom: 20px;
 }
-/* line 27, ../_sass/base/_grid.scss */
-div#main-content #portfolio section#favorites article#ionicmobile .extras .images:before, div#main-content #portfolio section#favorites article#ionicmobile .extras .images:after {
-  content: "";
-  display: table;
-}
-/* line 31, ../_sass/base/_grid.scss */
-div#main-content #portfolio section#favorites article#ionicmobile .extras .images:after {
-  clear: both;
-}
-/* line 190, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article#ionicmobile .extras .images ul li {
-  display: inline;
-  float: left;
-  width: 47.61905%;
-  margin: 0 1.19048%;
-  display: inline-block;
-  text-align: right;
-  vertical-align: top;
-}
-/* line 196, ../_sass/pages/_portfolio.scss */
-div#main-content #portfolio section#favorites article#ionicmobile .extras .images ul li:first-child {
-  text-align: left;
-}
-/* line 205, ../_sass/pages/_portfolio.scss */
+/* line 195, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#bettyelaine .extras {
   text-align: center;
 }
-/* line 211, ../_sass/pages/_portfolio.scss */
+/* line 201, ../_sass/pages/_portfolio.scss */
 div#main-content #portfolio section#favorites article#fear_in_programming .extras {
   text-align: center;
   vertical-align: baseline;
