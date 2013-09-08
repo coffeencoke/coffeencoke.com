@@ -15,9 +15,9 @@
         <ul>
           <li><a href='/'>Home</a></li>
           <li><a {% if page.page_id == 'portfolio' %} class='current' {% endif %} href='/portfolio.html'>Portfolio</a></li>
-          <li><a href='/blog.html'>Blog</a></li>
+          <li><a href='/blog'>Blog</a></li>
           <li><a href='/about.html'>About</a></li>
-          <li><a href='http://twitter.com/coffeencoke'>Twitter</a></li>
+          <li><a href='http://twitter.com/{{site.handle}}'>Twitter</a></li>
         </ul>
       </nav>
       {% endif %}
