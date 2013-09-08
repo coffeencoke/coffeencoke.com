@@ -2,15 +2,13 @@
 layout: default
 page_id: blog
 nav: yes
+index: true
 ---
 
-{% assign index = true %}
 <section class='posts'>
-{% for post in site.posts %}
-{% assign content = post.content %}
-  <article>
-    {% include article.html %}
-  </article>
+  {% for article in site.posts %}
+  {% assign content = article.content %}
+  {% include article.html %}
   {% endfor %}
 
   <footer>
