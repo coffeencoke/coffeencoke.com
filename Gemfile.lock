@@ -65,4 +65,4 @@ DEPENDENCIES
   compass (~> 0.12.2)
   jekyll (~> 1.1)
   jekyll-haml (= 0.1.1)
-  sass
+  sass (~> 3.2)
