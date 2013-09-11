@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Coffeencoke</title>
+<meta name="author" content="Matt Simpson">
+
+
+<meta name="description" content="
+  
+  
+  
+  
+    
+      
+      Mac Issue: AELWriter Permission denied
+      
+    
+    
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+Feb 7th, 2011
+    ...">
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/favicon.png" rel="icon">
+<link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+<body>
+  <header id='main-header'>
+    <div>
+      <h1><a href="/">Coffeencoke</a></h1>
+      
+        <h2><a href="/">Matt Simpson's blog</a></h2>
+      
+      
+      <nav>
+        <ul>
+          <li><a href='/'>Home</a></li>
+          <li><a  href='/portfolio.html'>Portfolio</a></li>
+          <li><a  class='current'  href='/blog'>Blog</a></li>
+          <li><a href='http://github.com/coffeencoke'>Github</a></li>
+          <li><a href='http://twitter.com/coffeencoke'>Twitter</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+  <div id='main-content'>
+    <div id='blog'>
+      <section class='posts'>
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2011/02/07/mac-issue-aelwriter-permission-denied/">
+      Mac Issue: AELWriter Permission denied
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li></li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2011-02-07T00:00:00-06:00" pubdate data-updated="true">Feb 7<span>th</span>, 2011</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content"><p>When I was inserting a new Product Serial Number for Adobe Aperture after migrating Aperture from another computer via that mac osx migration assistant.  Apperture will spin the dreadful spinning wheel of death and spit out this in the Console:</p>
+<pre>
+<div id="_mcePaste">2/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter[1230]) posix_spawn("/usr/sbin/AELWriter", ...): Permission denied</div>
+<div id="_mcePaste">2/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter[1230]) Exited with exit code: 1</div>
+<div id="_mcePaste">2/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter) Throttling respawn: Will start in 2 seconds</div>
+2/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter[1230]) posix_spawn("/usr/sbin/AELWriter", ...): Permission denied2/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter[1230]) Exited with exit code: 12/6/11 9:19:24 PM	com.apple.launchd[1]	com.apple.launchd	(com.apple.aelwriter) Throttling respawn: Will start in 2 seconds
+</pre>
+
+<p>
+The fix is found here:
+</p>
+<p>
+<a href='http://support.apple.com/kb/TS3519' target='_blank'>Apple Support Fix</a>
+</p>
+happy fixing.
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2010/11/23/mongodb-vs-postgresql/">
+      MongoDb vs PostgreSQL
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>Miscmongodb postgresql database</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2010-11-23T00:00:00-06:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2010</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content">Requestful Thinking
+
+Been having discussions about the use of MongoDB and PostgreSQL.  Has anyone come across any benchmarks for these 2.  We've been making a lot of benchmarks using MongoDB with a solution we need, the difference is not a magnitude off from other db's.  I love mongodb but also have had a love for sql oriented database in the past.
+
+I would love to hear what others feel about non sql based databases in certain application solutions.
+
+What are your thoughts on...
+
+<a href="http://railsgrammer.com/wp-content/uploads/2010/10/mongo-db-huge-logo.png"><img class="alignnone size-medium wp-image-48" title="mongo-db-huge-logo" src="http://railsgrammer.com/wp-content/uploads/2010/10/mongo-db-huge-logo-300x100.png" alt="" width="300" height="100" /></a>
+
+and
+
+<a href="http://railsgrammer.com/wp-content/uploads/2010/11/postgresql.jpg"><img class="alignnone size-medium wp-image-51" title="postgresql" src="http://railsgrammer.com/wp-content/uploads/2010/11/postgresql-300x103.jpg" alt="" width="300" height="103" /></a>
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2010/07/08/rails-3-finally/">
+      Rails 3 Finally
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>programmingrailsrails 3rubyruby 1.9Ruby on Rails</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2010-07-08T00:00:00-05:00" pubdate data-updated="true">Jul 8<span>th</span>, 2010</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content"><p>To setup a new rails 3 app with cucumber, no prototype and mysql database using ruby 1.9.2</p>
+<p>This guide assumes you have ruby 1.9.2, rubygems and bundler gem installed</p>
+<pre>[msimpson@dakota ~] $ mkdir rails3
+[msimpson@dakota ~] $ cd rails3
+[msimpson@dakota rails3] $ git clone git://github.com/rails/rails.git rails3 .
+[msimpson@dakota rails3] (master) $ ruby bin/rails new /path/to/my/new/app --dev -d mysql -J
+[msimpson@dakota rails3] $ cd /path/to/my/new/app</pre>
+</pre>
+<p>Open and edit Gemfile so that it looks like this:</p>
+<pre>source 'http://rubygems.org'
+
+gem 'rails', :path =&gt; '/Users/mattsimpson/Projects/_resources/Code/Rails3'
+gem 'arel',  :git =&gt; 'git://github.com/rails/arel.git'
+gem 'mysql'
+
+group :cucumber do
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'factory_girl'
+  gem 'webrat'
+  gem 'ruby-debug19'
+end</pre>
+<p>Install your gems</p>
+<pre>[msimpson@dakota rails3] $ bundle install</pre>
+<p>Install Cucumber with webrat and test unit</p>
+<pre>[msimpson@dakota rails3] $ rails generate cucumber:install --webrat --testunit</pre>
+<p>Open and edit config/database.yml and create your database by running the following:</p>
+<pre>[msimpson@dakota app] $ rake db:create:all</pre>
+<p>You are good to go!</p>
+<br />
+<br />
+<p>Originally I was having troubles with rake test and rake cucumber, but after recreating my rails app this way it all worked great.  Hope it works for you.</p>
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2010/07/07/rails-3-updates/">
+      Rails 3 Updates
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>gemsprogrammingrailsrails 3rubyruby 1.9Ruby on Railsrvmtroubleshooting</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2010-07-07T00:00:00-05:00" pubdate data-updated="true">Jul 7<span>th</span>, 2010</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content">In this I will explore and solve issues I had in upgrading rails 3 to the latest rails 3 version.
+
+Following the rails 3 update saga continues.  After taking a break to make some leaps in the design process on an application, I came back to programming the app.  After writing some cucumber tests I received a series of deprecated messages.  One thing I would like to note is that rails 3 is very good at letting you know what is going on and what you need to do.  Let's get started:
+
+My gemfile for cucumber looks like this:
+<pre>group :cucumber do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'spork'
+  gem 'launchy'    # So you can do Then show me the page
+  gem 'factory_girl'
+  gem 'webrat'
+end</pre>
+When I tried to run my cucumber test I got this message:  "undefined method `config' for nil:NilClass (NoMethodError)"
+
+So I updated my gems via bundle:
+<pre>
+<pre>[msimpson@dakota Code] $ bundle install</pre>
+</pre>
+and I got the message:
+<pre>No compatible versions could be found for required dependencies:
+Conflict on: "bundler":
+* bundler (0.9.25) activated by bundler (= 0.9.25, runtime)
+* bundler (&gt;= 1.0.0.beta.2, runtime) required by rails (&gt;= 0, runtime)
+All possible versions of origin requirements conflict.</pre>
+so I installed the new bundler
+<pre>[msimpson@dakota Code] $ sudo gem install bundler -v 1.0.0.beta.2</pre>
+reran the cucumbers and got this:
+<pre>
+<pre>    Rails 3 doesn't officially support Ruby 1.9.1 since recent stable
+    releases have segfaulted the test suite. Please upgrade to Ruby 1.9.2
+    before Rails 3 is released!
+    You're running
+      ruby 1.9.1p378 (2010-01-10 revision 26273) [i386-darwin10.3.0]</pre>
+so I noticed I needed to install the new ruby 1.9.2 release candidate.  Since I use rvm I had to update rvm, remove my old ruby 1.9.2, re-install it and reinstall bundler:
+<pre>[msimpson@dakota Code] $rvm update
+[msimpson@dakota Code] $rvm reload
+[msimpson@dakota Code] $rvm remove 1.9.2
+[msimpson@dakota Code] $rvm install 1.9.2
+[msimpson@dakota Code] $rvm use 1.9.2
+[msimpson@dakota Code] $sudo gem install bundler -v 1.0.0.beta.2
+[msimpson@dakota Code] $ bundle install</pre>
+I didn't get all the way through but I'm pretty sure I got closer ;), currently I'm working on getting cucumber to install and run.  Hope this helps, if anyone gets any further let me know.</pre>
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2010/05/25/rails-3-update/">
+      Rails 3 update
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>installprogrammingrailsrails 3rubyruby 1.9Ruby on Railsrvm</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2010-05-25T00:00:00-05:00" pubdate data-updated="true">May 25<span>th</span>, 2010</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content"><div id="_mcePaste">Took me a few tweeks to get rails 3 working on my mac.  Recently I've made some posts to get your setup ready for Rails 3 but have just recently, with the tweeks I'm going to share here, now got rails 3 working with mysql.</div>
+I've had to revert from ruby 1.9.2-preview to ruby 1.9.1 p378.
+<pre>[msimpson@dakota Code] (master) $ rvm install 1.9.1
+[msimpson@dakota Code] (master) $ rvm use 1.9.1
+<span style="font-family:Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif;line-height:19px;white-space:normal;font-size:13px;">Install rails 3 with the new ruby install</span>
+[msimpson@dakota Code] (master) $ sudo gem install rails --prerelease</pre>
+Create a new rails app using mysql
+<pre><span style="font-family:Consolas, Monaco, 'Courier New', Courier, monospace;line-height:18px;font-size:12px;white-space:pre;">[msimpson@dakota Code] (master) $ </span>rails myapp --edge -d mysql</pre>
+Now you will be able to create your db and start your app
+<pre style="font:normal normal normal 12px/18px Consolas, Monaco, 'Courier New', Courier, monospace;">[msimpson@dakota Code] (master) $ rake db:create:all
+[msimpson@dakota Code] (master) $ rails server</pre>
+<pre style="font:normal normal normal 12px/18px Consolas, Monaco, 'Courier New', Courier, monospace;"></pre>
+<pre style="font:normal normal normal 12px/18px Consolas, Monaco, 'Courier New', Courier, monospace;">Yay!!  Rails 3, here we go!</pre>
+</div>
+</article>
+
+  
+
+  <footer>
+    <ul>
+      
+      <li><a class="prev" href="/blog/pages/4">&larr; Older Posts</a></li>
+      
+      
+      <li><a class="next" href="/blog/pages/2">Newer Posts &rarr;</a></li>
+      
+      <li><a href="/blog/archives">Archived Posts</a></li>
+    </ul>
+  </footer>
+</section>
+
+    </div>
+  </div>
+  <footer id='main-footer'>
+  <div>
+    <section id='currentProfessionalInterests'>
+      <h1>Current Professional Interests</h1>
+      <article>
+        <h2>Presenting and Contributing</h2>
+        <p>To my local community here in St. Louis, Missouri.</p>
+      </article>
+      <article>
+        <h2>Working On A Project</h2>
+        <p>
+          <a href='http://twitter.com/asynchrony' title='Asynchrony Twitter'>@asynchrony</a>
+          by leading my team developing software.
+        </p>
+      </article>
+      <article>
+        <h2>Designing and Developing Software</h2>
+        <p>
+          For myself, the community, and other people.
+        </p>
+      </article>
+      <article>
+        <h2>Doing Side Work </h2>
+        <p>
+          for small businesses Needing software solutions.
+        </p>
+      </article>
+      <article>
+        <h2>Working on Entrepreneurial Ideas</h2>
+        <p>
+          of my own with my lovely wife, 
+          <a href='http://twitter.com/photosbybetty' title="Betty's Twitter">@photosbybetty</a>.
+        </p>
+      </article>
+    </section>
+    <section id='upcomingEvents'>
+      <h1>Upcoming Events</h1>
+      <article>
+        <h2>Presenting about Fear in Programming</h2>
+        <p>May of 2013 - STL Ruby Meetup</p>
+        <p>August of 2013 - Lambda Lounge</p>
+        <p>September of 2013 - Python Group</p>
+      </article>
+      <article>
+        <h2>Contact me</h2>
+        <p>
+          If you would like to talk about any of my professional interests.
+        </p>
+        <p>
+          By 
+          <a href='mailto:matt@railsgrammer.com'>Email</a>
+          or on
+          <a href='https://twitter.com/coffeencoke'>Twitter</a>
+        </p>
+      </article>
+    </section>
+    <section id='copyright'>
+      <p>
+        content of posts and pages on this site are Copyright &copy; 2013 Matt Simpson. 
+      </p>
+      <p>
+        this site proudly uses <a href="https://github.com/mojombo/jekyll">jekyll</a>, 
+        you can <a href="https://github.com/coffeencoke/coffeencoke.com">view the source on github</a>
+      </p>
+    </section>
+  </div>
+</footer>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9324092-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+</body>
+

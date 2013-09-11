@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Coffeencoke</title>
+<meta name="author" content="Matt Simpson">
+
+
+<meta name="description" content="
+  
+  
+  
+  
+    
+      
+      Starting Rails 3 with Ruby 1.9.2
+      
+    
+    
+      
+      gemsinstallrailsrubyRuby on Railsrvm
+      
+      
+
+
+...">
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/favicon.png" rel="icon">
+<link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+<body>
+  <header id='main-header'>
+    <div>
+      <h1><a href="/">Coffeencoke</a></h1>
+      
+        <h2><a href="/">Matt Simpson's blog</a></h2>
+      
+      
+      <nav>
+        <ul>
+          <li><a href='/'>Home</a></li>
+          <li><a  href='/portfolio.html'>Portfolio</a></li>
+          <li><a  class='current'  href='/blog'>Blog</a></li>
+          <li><a href='http://github.com/coffeencoke'>Github</a></li>
+          <li><a href='http://twitter.com/coffeencoke'>Twitter</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+  <div id='main-content'>
+    <div id='blog'>
+      <section class='posts'>
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2010/05/22/starting-rails-3-with-ruby-1-9-2/">
+      Starting Rails 3 with Ruby 1.9.2
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>gemsinstallrailsrubyRuby on Railsrvm</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2010-05-22T00:00:00-05:00" pubdate data-updated="true">May 22<span>nd</span>, 2010</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content"><div id="_mcePaste">First things first, if you are going to run rails 3 you may as well us ruby 1.9.x.  The problem however is that rails 3 currently does not work well with ruby 1.9.1 so you must first install and use ruby 1.9.2.</div>
+<div id="_mcePaste">I'm installing ruby 1.9.2 using RVM, ruby version manager.  You can read up on how to use this from me <a href="/2010/04/17/get-mac-osx-snow-leopard-edged-for-ruby-on-rails-3-0-part-1/" target="_blank">earlier blog post</a></div>
+<pre>[msimpson@dakota Code] (master) $ rvm install 1.9.2
+[msimpson@dakota Code] (master) $ rvm use 1.9.2</pre>
+<div id="_mcePaste">now if you go into irb you will see that you are using ruby 1.9.2 and you can use the new cool methods.</div>
+<pre>[msimpson@dakota Code] (master) $ irb
+&gt; RUBY_VERSION
+=&gt; "1.9.2"
+&gt; hash = { :first =&gt; "the first value", :second =&gt; "the second value" }
+=&gt; {:second=&gt;"the second value", :first=&gt;"the first value"}
+&gt; hash.each_with_index.collect{|array, index| "key: #{array[0]} | value: #{array[1]} | index: #{index}"}
+=&gt; ["key: second | value: the second value | index: 0", "key: first | value: the first value | index: 1"]</pre>
+<div id="_mcePaste">Install Rails 3</div>
+<pre>[msimpson@dakota Code] (master) $ sudo gem install rails --prerelease</pre>
+<div id="_mcePaste">Create a new rails 3 app strait from the rails 3 git repository so that you can always pull new updates as bugs get fixed</div>
+<pre>[msimpson@dakota Code] (master) $ rails . --edge</pre>
+<div id="_mcePaste">Obviously, you can specify the rails app name, but I was already in the directory I wanted to be in so I used .</div>
+<div id="_mcePaste"></div>
+<div>Now you are good to go!  Have fun and report any bugs you find with Rails 3, or fork it and fix it so you can contribute.</div>
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2010/04/26/linux-media-server-the-groundwork/">
+      Linux Media Server - The Groundwork
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>audiolinuxmac os xMediamediaprojectsservertoolsvideo</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2010-04-26T00:00:00-05:00" pubdate data-updated="true">Apr 26<span>th</span>, 2010</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content"><h2>What I'm Looking For</h2>
+<h3>Use</h3>
+<div id="_mcePaste">I want to have speakers and monitors / tv's throughout my house with access control points throughout it to play all varieties of media for that particular area.  These control points will be cost effective computers with small displays to control playback for the use of that area.  These control devices could be a desktop, laptop, iPhone, iPod, iPad, tablet, etc.  My most treasured audio and video software for my clients is iTunes and for photo is iphoto.</div>
+<h3>Management</h3>
+<div id="_mcePaste">I would like to be able to easily add and retrieve files to the central media server, which would include all types of video, photo and audio files.</div>
+<h3>Accessibility</h3>
+<div id="_mcePaste">I want to access the files for their particular use on all platforms, Windows, Mac OSX, Linux, iPhone, iPad, etc.</div>
+<h3>Growth</h3>
+<div id="_mcePaste">As technology advances and as the devices I acquire grow with the advancement I want the software to support new technologies.</div>
+<h2>Firefly</h2>
+<div id="_mcePaste"><em>Website: <a href="http://www.fireflymediaserver.org" target="_blank">http://www.fireflymediaserver.org</a></em></div>
+<h3>Features</h3>
+<div id="_mcePaste">
+<ul>
+	<li>Unix or Linux, Windows (Beta), and soon to support Mac OSX</li>
+	<li>OGG, FLAC, Apple Lossless, WMA (Beta) and streaming radio stations</li>
+	<li>Configurable for web access</li>
+	<li>Smart playlists (Beta), iTunes Playlists</li>
+	<li>iTunes</li>
+	<li>Active community</li>
+	<li>Open Source, it's free!</li>
+</ul>
+</div>
+<h3>Accommodation</h3>
+<div id="_mcePaste">This seems to be a great fit for serving audio files to the clients and it supports iTunes.  Beta version supports all thick client platforms, I do not see support for iPhone, iPod or iPad.</div>
+<h3>Draw backs / Things to consider</h3>
+<div id="_mcePaste">From glancing at the documentation and wiki Firefly seems to be strictly command line configured.  Which would be fine because I happen to be savvy in command line but would like a gui interface to manage the configuration more easily.  However there is a web based configuration interface, once it's installed and configured via command line.</div>
+<div id="_mcePaste">Remnants of dropping windows support is in the forums.</div>
+<h3>Above and Beyond</h3>
+<div id="_mcePaste">Firefly can be configured to stream over the web.</div>
+<h2>MediaTomb</h2>
+<div id="_mcePaste"><em>Website: <a href="http://mediatomb.cc" target="_blank">http://mediatomb.cc</a></em></div>
+<h3>Features</h3>
+<div id="_mcePaste">
+<div id="_mcePaste">
+<ul>
+	<li>Uses UPnP</li>
+	<li>mp3, ogg, flac, jpeg, etc. files.</li>
+	<li>Meta extraction</li>
+	<li>Thumbnail support</li>
+	<li>Both audio and video support</li>
+	<li>Automatic directory rescans</li>
+	<li>Plugin support</li>
+	<li>Web UI</li>
+	<li>Supports external URL's for internet sources</li>
+	<li>Custom scripting capabilities</li>
+	<li>Support for Linux, FreeBSD, Mac OS X</li>
+</ul>
+</div>
+</div>
+<h3>Accommodation</h3>
+<div id="_mcePaste">Serves audio and video files, allows plugin support for adding new file types as technology progresses, thumbnail support would be nice, automatic directory scans would make it easy to update and manage the files, custom scripting is a nice feature (since I'm a geek).</div>
+<h3>Draw backs / Things to consider</h3>
+<div id="_mcePaste">No support for Windows, which is fine since that was a minor requirement of mine.  Has a lot of dependencies.</div>
+<h3>Above and Beyond</h3>
+<div id="_mcePaste">Custom scripting would be very useful, you can create a script to present your files as Music, Audio, Podcast, Movies, Other Videos, Photos, non-playable files such as documents or pdf's.  You can even make a script to import a DVD.</div>
+I am looking forward to trying the two out, if you have any recommendations please throw them in the comments, I've decided to try these 2 out and if they do not satisfy I will look in to more options.
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2010/04/17/remove-all-your-ruby-gems/">
+      Remove All Your Ruby Gems
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>cleaninggemsOCDprogrammingrailsrubyRuby on Rails</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2010-04-17T00:00:00-05:00" pubdate data-updated="true">Apr 17<span>th</span>, 2010</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content"><div id="_mcePaste">When it gets to a point to wipe out all of your gems just because you feel cluttered and you want to start fresh, this is what I did.</div>
+<div id="_mcePaste">I had over 60 megabytes of gems and it was driving me kinda crazy because of my CDO.  So I wanted to remove all my gems and start fresh.</div>
+<div id="_mcePaste"></div>
+<pre>[msimpson@dakota test] $ sudo gem uninstall --all --ignore-dependencies `sudo gem list --no-versions`</pre>
+<div id="_mcePaste"></div>
+<div id="_mcePaste">Press return whenever prompted and you'll end up nothing :)  ahhhh feels nice.</div>
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2010/04/17/get-mac-osx-snow-leopard-edged-for-ruby-on-rails-3-0-part-1/">
+      Get Mac OSX Snow Leopard edged for Ruby on Rails 3.0 - part 1
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>cleaninggo fasterinstallmac os xprogrammingrailsrubyRuby on Railsupgrade</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2010-04-17T00:00:00-05:00" pubdate data-updated="true">Apr 17<span>th</span>, 2010</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content">First, why should you want to upgrade?
+<blockquote>Ruby 1.9 is a new series of Ruby. It is modern, faster, with clearer syntax, multilingualized, a much improved version of Ruby.</blockquote>
+<ol>
+	<li>1.8 has been used since 2003, I think it's time for a new version</li>
+	<li>Ruby 1.9 is is <a href="http://antoniocangiano.com/2007/12/03/the-great-ruby-shootout/" target="_blank">over 3 times faster</a> than ruby 1.8.6 see it for yourself</li>
+	<li>New methods</li>
+	<li>Better syntax</li>
+	<li>New classes</li>
+</ol>
+* read this <a href="http://eigenclass.org/hiki/Changes+in+Ruby+1.9" target="_blank">great read up</a> on ruby 1.9
+<h2>Install ruby 1.9.1 fresh</h2>
+<address>(to upgrade skip this and see below)</address>
+<h3>Download</h3>
+<pre>[msimpson@dakota ~] $ mkdir src
+[msimpson@dakota src] $ cd src
+[msimpson@dakota src] $ curl -Ov ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-p376.tar.gz
+[msimpson@dakota src] $ curl -Ov http://files.rubyforge.vm.bytemark.co.uk/rubygems/rubygems-1.3.6.tgz</pre>
+<h3>Unpack, Make and Install Ruby</h3>
+<pre>[msimpson@dakota src] $ tar -xzvf ruby-1.9.1-p376.tar.gz
+[msimpson@dakota src] $ cd ruby-1.9.1-p376
+[msimpson@dakota src] $ autoconf
+[msimpson@dakota src] $ ./configure --enable-shared --enable-pthread CFLAGS=-D_XOPEN_SOURCE=1 &amp;&amp; make &amp;&amp; sudo make install
+[msimpson@dakota src] $ cd ..</pre>
+<h3>Unpack and Install Rubygems</h3>
+<pre>[msimpson@dakota src] $ tar xzvf rubygems-1.3.6.tgz
+[msimpson@dakota src] $ cd rubygems-1.3.6
+[msimpson@dakota src] $ sudo /usr/local/bin/ruby setup.rb
+[msimpson@dakota src] $ cd ..</pre>
+<h2>Or to upgrade</h2>
+<h3>Download</h3>
+I use the rvm gem, it freaking rocks!  It manages the versions of ruby to use.
+<pre>gem install rvm
+rvm-install</pre>
+Follow the instructions at the end of the last command then close and open a new terminal.
+<h3>Install ruby 1.9.1 and use it</h3>
+<pre>[msimpson@dakota ~] $ rvm install ruby-1.9.1-p378
+[msimpson@dakota ~] $ rvm use 1.9.1</pre>
+<h3>Check to see that it is installed</h3>
+<pre>[msimpson@dakota ~] $ ruby -v
+ruby 1.9.1p378 (2010-01-10 revision 26273) [i386-darwin10.3.0]</pre>
+*check out the website for rvm to see what kinds of ruby you can install (ie jruby, 1.9.2, etc.)
+
+if all goes wrong down the road you can always switch to default
+<pre>[msimpson@dakota ~] $ rvm use default</pre>
+<h2>Play Around</h2>
+Now that you have ruby 1.9 installed you can use some pretty rad new methods.
+
+one of my favorites is Hash#each_with_index:
+<pre>[msimpson@dakota ~] $ rvm use 1.9.1
+[msimpson@dakota ~] $ irb
+ruby-1.9.1-p378 &gt; hash = {:name =&gt; 'matt', :verb =&gt; "loves", :noun =&gt; "ruby 1.9" }
+ =&gt; {:name=&gt;"matt", :verb=&gt;"loves", :noun=&gt;"ruby 1.9"}
+ruby-1.9.1-p378 &gt; hash.each_with_index{|value, index| print "index: #{index}, key: #{value[0]}, value: #{value[1]}\n" }
+index: 0, key: name, value: matt
+index: 1, key: verb, value: loves
+index: 2, key: noun, value: ruby 1.9
+ =&gt; {:name=&gt;"matt", :verb=&gt;"loves", :noun=&gt;"ruby 1.9"}</pre>
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2009/06/20/writing-a-business-plan/">
+      Writing a Business Plan
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>Businessplanningstartup</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2009-06-20T00:00:00-05:00" pubdate data-updated="true">Jun 20<span>th</span>, 2009</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content"><div style="border-style:none none solid;border-width:medium medium 1pt;padding:0 0 4pt;">
+<p class="MsoTitle">Notes on Writing a Business Plan</p>
+
+</div>
+<p class="MsoNormal">3 Main functions of a business plan:</p>
+<p class="MsoListParagraphCxSpFirst" style="text-indent:.25in;"><!--[if !supportLists]--><span><span>1.<span style="font-family:'Times New Roman';font-style:normal;font-variant:normal;font-weight:normal;font-size:7pt;line-height:normal;"> </span></span></span><!--[endif]-->A communications tool which conveys your ideas, research and plans to others.</p>
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:.25in;"><!--[if !supportLists]--><span><span>2.<span style="font-family:'Times New Roman';font-style:normal;font-variant:normal;font-weight:normal;font-size:7pt;line-height:normal;"> </span></span></span><!--[endif]-->A basis on which to manage your business.</p>
+<p class="MsoListParagraphCxSpLast" style="text-indent:.25in;"><!--[if !supportLists]--><span><span>3.<span style="font-family:'Times New Roman';font-style:normal;font-variant:normal;font-weight:normal;font-size:7pt;line-height:normal;"> </span></span></span><!--[endif]-->A yardstick by which you may measure progress and evaluate changes.</p>
+<p class="MsoNormal">Essential Elements:</p>
+<p class="MsoListParagraphCxSpFirst" style="text-indent:.25in;"><!--[if !supportLists]--><span><span>1.<span style="font-family:'Times New Roman';font-style:normal;font-variant:normal;font-weight:normal;font-size:7pt;line-height:normal;"> </span></span></span><!--[endif]-->Your business concept:<span> </span>Most important page.<span> </span>Presents a summary of your business idea.<span> </span>It tells why you think it will work, how it fits into the marketplace, what the future should hold.<span> </span>All based on your best research.</p>
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:.25in;"><!--[if !supportLists]--><span><span>2.<span style="font-family:'Times New Roman';font-style:normal;font-variant:normal;font-weight:normal;font-size:7pt;line-height:normal;"> </span></span></span><!--[endif]-->Your product or service: provide a complete description of what you plan to sell or rent.<span> </span>If possible, include an 8x10 photograph.<span> </span>Emphasize the basic product or service that will provide the bulk of your income.<span> </span>Explain advantages and benefits and anything about your products or services that will help “sell” your business concept to a complete stranger.<span> </span>If your product is still on the drawing board, explain when it will be available, including any test data you have.</p>
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:.25in;"><!--[if !supportLists]--><span><span>3.<span style="font-family:'Times New Roman';font-style:normal;font-variant:normal;font-weight:normal;font-size:7pt;line-height:normal;"> </span></span></span><!--[endif]-->Your market: Explain the big picture first.<span> </span>What is the total universe of your market?<span> </span>Is the industry growing or declining? Is anything happening now or expected to happen in the future that will impact your business?<span> </span>Who are your competitors?<span> </span>How successful are they, and why?<span> </span>Do they have any weaknesses?<span> </span>If so, will your business fill a need created by their weakness?<span> </span>Who will your customers be? Why will they buy your product or service?</p>
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:.25in;"><!--[if !supportLists]--><span><span>4.<span style="font-family:'Times New Roman';font-style:normal;font-variant:normal;font-weight:normal;font-size:7pt;line-height:normal;"> </span></span></span><!--[endif]-->Your marketing strategy:<span> </span>Describe how your product or service will be sold.<span> </span>Include pricing strategy, estimated sales and market share for each of the first three years.<span> </span>Add your advertising and public relations plans, plus your service and warranty policies.</p>
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:.25in;"><!--[if !supportLists]--><span><span>5.<span style="font-family:'Times New Roman';font-style:normal;font-variant:normal;font-weight:normal;font-size:7pt;line-height:normal;"> </span></span></span><!--[endif]-->Your production plans.<span> </span>Cover all the specifics, such as how, where and whom your product will be produced.<span> </span>What is the raw material?<span> </span>Is it readily available?<span> </span>What is the manufacturing process?<span> </span>What is your anticipated rate of production?<span> </span>Will you use union or non-union labor?</p>
+<p class="MsoListParagraphCxSpMiddle" style="text-indent:.25in;"><!--[if !supportLists]--><span><span>6.<span style="font-family:'Times New Roman';font-style:normal;font-variant:normal;font-weight:normal;font-size:7pt;line-height:normal;"> </span></span></span><!--[endif]-->Your personnel: Will yours be a sole proprietorship?<span> </span>A partnership? Corporation?<span> </span>If so, include an organizational chart.<span> </span>How many people are involved, and what are their skills?<span> </span>How well are they qualified? <span> </span>At what points in time will you add personnel?<span> </span>If you’re running a one-man show, explain convincingly how you have the necessary skills and talent to achieve your goals.</p>
+<p class="MsoListParagraphCxSpLast" style="text-indent:.25in;"><!--[if !supportLists]--><span><span>7.<span style="font-family:'Times New Roman';font-style:normal;font-variant:normal;font-weight:normal;font-size:7pt;line-height:normal;"> </span></span></span><!--[endif]-->Your financial plans:<span> </span>If yours is a new business, you won’t have the benefit of past history.<span> </span>As a bare minimum, you will need a personal financial statement.<span> </span>If your business is already established, include a financial statement for the business.<span> </span>Demonstrate how you plan to elevate existing figures from point A to point B.<span> </span>Ideally, you will be totally familiar with all of the financial details of your business, and will be able to consider line by line how you arrived at each figure.</p>
+</div>
+</article>
+
+  
+
+  <footer>
+    <ul>
+      
+      <li><a class="prev" href="/blog/pages/5">&larr; Older Posts</a></li>
+      
+      
+      <li><a class="next" href="/blog/pages/3">Newer Posts &rarr;</a></li>
+      
+      <li><a href="/blog/archives">Archived Posts</a></li>
+    </ul>
+  </footer>
+</section>
+
+    </div>
+  </div>
+  <footer id='main-footer'>
+  <div>
+    <section id='currentProfessionalInterests'>
+      <h1>Current Professional Interests</h1>
+      <article>
+        <h2>Presenting and Contributing</h2>
+        <p>To my local community here in St. Louis, Missouri.</p>
+      </article>
+      <article>
+        <h2>Working On A Project</h2>
+        <p>
+          <a href='http://twitter.com/asynchrony' title='Asynchrony Twitter'>@asynchrony</a>
+          by leading my team developing software.
+        </p>
+      </article>
+      <article>
+        <h2>Designing and Developing Software</h2>
+        <p>
+          For myself, the community, and other people.
+        </p>
+      </article>
+      <article>
+        <h2>Doing Side Work </h2>
+        <p>
+          for small businesses Needing software solutions.
+        </p>
+      </article>
+      <article>
+        <h2>Working on Entrepreneurial Ideas</h2>
+        <p>
+          of my own with my lovely wife, 
+          <a href='http://twitter.com/photosbybetty' title="Betty's Twitter">@photosbybetty</a>.
+        </p>
+      </article>
+    </section>
+    <section id='upcomingEvents'>
+      <h1>Upcoming Events</h1>
+      <article>
+        <h2>Presenting about Fear in Programming</h2>
+        <p>May of 2013 - STL Ruby Meetup</p>
+        <p>August of 2013 - Lambda Lounge</p>
+        <p>September of 2013 - Python Group</p>
+      </article>
+      <article>
+        <h2>Contact me</h2>
+        <p>
+          If you would like to talk about any of my professional interests.
+        </p>
+        <p>
+          By 
+          <a href='mailto:matt@railsgrammer.com'>Email</a>
+          or on
+          <a href='https://twitter.com/coffeencoke'>Twitter</a>
+        </p>
+      </article>
+    </section>
+    <section id='copyright'>
+      <p>
+        content of posts and pages on this site are Copyright &copy; 2013 Matt Simpson. 
+      </p>
+      <p>
+        this site proudly uses <a href="https://github.com/mojombo/jekyll">jekyll</a>, 
+        you can <a href="https://github.com/coffeencoke/coffeencoke.com">view the source on github</a>
+      </p>
+    </section>
+  </div>
+</footer>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9324092-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+</body>
+

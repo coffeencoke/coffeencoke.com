@@ -11,4 +11,8 @@ permalink: /blog/:year/:month/:day/:title/
 #pygments: false # default python pygments have been replaced by pygments.rb
 safe: false
 handle: coffeencoke
+
 date_format: "ordinal"
+
+paginate: 5
+paginate_path: "blog/pages/:num"

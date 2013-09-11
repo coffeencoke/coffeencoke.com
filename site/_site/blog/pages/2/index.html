@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Coffeencoke</title>
+<meta name="author" content="Matt Simpson">
+
+
+<meta name="description" content="
+  
+  
+  
+  
+    
+      
+      Versioning Your API's
+      
+    
+    
+      
+      apiDevelopmentefficiencymobileprocessprogrammingversioning
+     ...">
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/favicon.png" rel="icon">
+<link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+<body>
+  <header id='main-header'>
+    <div>
+      <h1><a href="/">Coffeencoke</a></h1>
+      
+        <h2><a href="/">Matt Simpson's blog</a></h2>
+      
+      
+      <nav>
+        <ul>
+          <li><a href='/'>Home</a></li>
+          <li><a  href='/portfolio.html'>Portfolio</a></li>
+          <li><a  class='current'  href='/blog'>Blog</a></li>
+          <li><a href='http://github.com/coffeencoke'>Github</a></li>
+          <li><a href='http://twitter.com/coffeencoke'>Twitter</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+  <div id='main-content'>
+    <div id='blog'>
+      <section class='posts'>
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2012/05/25/versioning-your-apis/">
+      Versioning Your API's
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>apiDevelopmentefficiencymobileprocessprogrammingversioning</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2012-05-25T00:00:00-05:00" pubdate data-updated="true">May 25<span>th</span>, 2012</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content">Versioning can be a random number or can be something that makes your release process fun.  The version format that I like to use, and have found works best, is Major.Minor.Patch (ie. 1.3.2).
+
+<h2>Major</h2>
+
+Significant enhancement, addition, or update that breaks backward compatibility with the previous major release.
+
+<h2>Minor</h2>
+
+Smaller enhancement, addition, or update that does not break backward compatibility with the current major release.
+
+<h2>Patch</h2>
+
+Bug fix.
+
+<hr />
+
+There are many reasons versioning is important, but just to name a few that have been real for me in the past are: Planning, and API's for mobile applications.
+
+A version number is a contract.  A contract that states, you, the client, using me, the library, can upgrade me as much as you want and I guarantee that I will not break your code as long as you stay within the same major release number.  That's as simple as it gets.
+
+Let's see an example perhaps?
+
+"Awesome API" is at version 1.0.0 and the "Great Mobile App" decides to use the "Awesome API".  Meanwhile, the developers of "Awesome API" are hard at work making it even more awesome.  They're receiving bug reports, enhancement requests, feature suggestions and are planning satisfying all of their customers.  There are a few rules that we must understand:
+
+1. Bugs must be fixed as soon as possible
+2. Enhancements should be released as soon as they are "feature" complete and shippable
+3. Some enhancements will break the current API.
+
+<strong>Major.Minor.Patch</strong> allows you to satisfy all three of those points.
+
+<h2>Planning</h2>
+
+While planning out what tasks, which I will refer to as stories, you and your team will be developing, often it gets a bit hairy.  By hairy, I mean, you have priorities, but how good are those priorities?  In the end it just seems a bit like eating an early breakfast.  And no, you're not really supposed to know what I mean by that, it's just the only way I can explain the feeling.
+
+When you have your stories categorized over a the 3 versioning types by creating milestones for each version type.  Let's say that you just released your application! Yay, good day, you are at 1.0.0.  As you plan for the next coming iterations of work, you will end up coming up with a pretty decent amount of stories.  The problem is that the developer sees bugs and knows that they NEED fixed, but the business team who mostly drive the priorities of the project think they can just move on to newer and better features without taking head to the bugs that have popped up, because there are no bugs right?  Right.
+
+So, by separating your stories into feature and bug, you now are able to clearly see how many bugs there are, how many are really important and you can come to an agreeable amount of bugs that need to be done.  It's easier to do a balanced approach.
+
+Current: 1.0.0
+Milestones: 1.0.1, 1.1.0, 2.0.0
+
+As you write issues, place them in these milestones.  Is this a bug? Is this an enhancement or addition?  Will this break the current API?
+
+<h2>API's for Clients</h2>
+
+Any client using your API needs to know if they can upgrade safely in case there are some bugs that have been fixed.  Providing this version format satisfies this concern.
+
+<h2>Inspiration</h2>
+
+<ul><li> experience</li>
+<li><a href='http://rubyrogues.com/037-rr-versioning-and-releases/'>Ruby Rogues</a></li></ul>
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2012/01/19/phone-gap-whitelist-rejection-error/">
+      Phone Gap Whitelist Rejection Error
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>apiDevelopmentiOSjavascriptmobilephone gapphoneGaprailsRuby on Rails</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2012-01-19T00:00:00-06:00" pubdate data-updated="true">Jan 19<span>th</span>, 2012</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content">My mobile app continues.  As I was testing my registration API through the iOS emulator I got the following error:
+<pre>MyApp [97185:15603] ERROR whitelist rejection: url='http://localhost:3000'</pre>
+After some quick google searching, I discovered that in order to make requests outside of the file system I had to add the host to the phone gap's plist file.  For my project this file is located at <code>/MyApp/PhoneGap.plist</code>.  You can either edit this file with a text editor or edit it in Xcode.  The end result for me to be able to hit localhost within the app looks like this:
+<pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+...
+&lt;key&gt;ExternalHosts&lt;/key&gt;
+&lt;array&gt;
+&lt;string&gt;localhost&lt;/string&gt;
+&lt;/array&gt;
+...</pre>
+After I made that change, I restarted my app through Xcode and the app was able to hit the rails server.
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2012/01/19/never-a-fun-error-access-control-allow-origin/">
+      Never a fun error: Access-Control-Allow-Origin
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>Developmentjavascriptmobilephone gapphoneGapprogramming</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2012-01-19T00:00:00-06:00" pubdate data-updated="true">Jan 19<span>th</span>, 2012</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content">If you are testing any javascript app against a web service and you run into the following error in your javascript console:
+
+XMLHttpRequest cannot load <a title="http://localhost:3000/" href="http://localhost:3000/" target="_blank">http://localhost:3000/</a>. Origin <a title="http://guru_weight.dev" href="http://guru_weight.dev/">http://myapp.dev</a> is not allowed by Access-Control-Allow-Origin.
+
+In this context it means that the host your are making the request from does not have permission to access the requested resource (<a href="http://www.w3.org/TR/cors/" target="_blank">it also means a lot of other things</a>).  After hunting you can do a at least 2 things:
+
+1. Add the host to the access list by adding to the request header (http://enable-cors.org/)
+
+2. Load the app using file:/// rather than the host.
+
+Because I was writing this app as a native mobile app for iOS, Android, etc. I found out that PhoneGap loads the html files using the file:/// protocol.  So now, when I am developing on my computer, as long as I use the file:/// protocol, I have no problem with access to my API.
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2011/11/06/cucumber-and-ios-one-step-at-a-time/">
+      Cucumber and iOS - one step at a time
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>CucumberinstalliOSprogrammingSeriesTDDTest Driven Developmenttools</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2011-11-06T00:00:00-05:00" pubdate data-updated="true">Nov 6<span>th</span>, 2011</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content">I have begun writing my first iOS application.  I come from a ruby background and for the past 2 years I have written everything test first starting with cucumber scenarios all the way down to unit tests.  The problem with starting a brand new language for me is I wanted to dive straight in to writing the production code.
+
+WRONG.
+
+That would not be test driven and the very fact that I wanted to do that made me throw out my core principles of writing solid quality software.
+
+So I started looking into how I could write Acceptance Tests or Integration tests to drive my development and ultimately drive my learning of how to write an iOS application.
+
+After browsing for a bit I found <a href="https://github.com/unboxed/icuke" target="_blank">iCuke</a> which was quite out of date.  If you look at the github page for this app it has not been touched since June 30, 2010! So I browsed a bit more and found <a href="https://github.com/moredip/Frank" target="_blank">Frank</a> which was updated a blazing 3 days ago!  Much better.
+
+So, keep in mind that I have absolutely zero amount of knowledge on how to write an iOS application.  The tutorial for setting up Frank for an iOS application was point blank easy.  Follow the guide at this tutorial and you'll be good to go.  There is also <a href="http://vimeo.com/27691115" target="_blank">this video</a> that steps through that guide so you can visually double check that you set it up correctly!
+
+How great is that!?
+
+So far I am very excited to work on this application, I was bummed thinking that I will not be able to apply my core principles of a software craftsman for a new language but having found Frank, I will be able to drive my learning by writing very high level test scenarios for what I want to learn.  One step at a time.
+
+The only addition I made is because I am from a ruby development background I used <a href="http://beginrescueend.com/" target="_blank">rvm</a> and <a href="http://gembundler.com/" target="_blank">bundler</a> to manage the gem.  The instruction in the tutorial is to run the following:
+
+<code>$ sudo gem install frank-cucumber</code>
+
+To do it the current way.  Use bundler (view the bundler website or view some of my bundler articles on how to get running with bundler).  The quick addition I made is to add a file named .rvmrc at the project root with the following content:
+
+<code>rvm use 1.9.2@my_great_ios_app --create</code>
+
+create a file named Gemfile with the following content:
+
+<code> source :rubygems
+</code><span style="font-family: monospace;">gem 'frank-cucumber'</span>
+
+open a new shell or cd out of the directory and back in to accept the rvmrc file
+
+<code> $ cd ..
+$ cd -
+</code>
+
+Read and approve the instructions to accept the rvmrc file.  Basically it will just create a gem set named my_great_ios_app within my ruby 1.9.2 installation.  After that, install the gems:
+
+<code>$ bundle install </code>
+
+Now that this is completed, you will not have any other gems for this project except what it needs and you will not have any gems for any other project except for what those projects need.  Excellent way to have multiple projects on multiple versions of ruby and still be able to manage the gems at the application level.
+
+Keep checking in to see more articles on how I am learning how to write an iOS application.  If you have any comments, questions or suggestions, please drop me a comment or email.  I'd love to hear from you.
+</div>
+</article>
+
+  
+  
+  <article>
+  <header>
+    <h1 class="entry-title">
+      <a href="/blog/2011/11/04/ruby-midwest-conf-day-1-part-1/">
+      Ruby Midwest Conf - Day 1 Part 1
+      </a>
+    </h1>
+    <ul class="meta">
+      
+      <li>efficiencyprogrammingrailsrubyRuby on Railsrvmtools</li>
+      
+      <li>
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2011-11-04T00:00:00-05:00" pubdate data-updated="true">Nov 4<span>th</span>, 2011</time></li>
+    </ul>
+  </header>
+
+  <div class="entry-content">So far the day has been filled with great pastries, excellent coffee, typically frustrated conference wifi, and fantastic talks about Ruby and craftsmanship.
+
+The day started off with the why you should not use sudo, for most things.  Your ruby development computer should be setup using a number of tools that should not be installed with sudo, simply because with most if the tools, they can’t.  Your development environment should be isolated in your profile, one step deeper though; isolated in your project.
+
+<strong>Use RVM .</strong>
+<strong> Ro</strong>
+
+RVM is a ruby version master (err, manager).  It allows you to install multiple versions of Ruby, JRuby, Rubinius, etc. on the same computer.  Further yet, it allows you to have completely separate gems for each project by using gemsets.
+
+<strong>The Ruby Safari
+Ola</strong>
+
+Ola did a great job throwing out some technical intricacies which really pushed me to get to know my language more.  As I develop using Ruby I use and reuse the same methods and classes.  His talk has encouraged me to look into deeper implementation of Ruby and to ‘play’ with creative patterns.
+
+One thing I particularly liked is commenting and writing Regular Expressions with group names.  However, the big bang from his talk for me was requiring a fake library.  I am constantly growing and learning (trying to) and one place I have been focusing on is speed of tests and design of tests, unit tests to be more specific.  With rails, it is very difficult to write true unit specs that are blazing fast.  More to come on this in future posts.
+</div>
+</article>
+
+  
+
+  <footer>
+    <ul>
+      
+      <li><a class="prev" href="/blog/pages/3">&larr; Older Posts</a></li>
+      
+      
+      <li><a class="next" href="/blog/index.html">Newer Posts &rarr;</a></li>
+      
+      <li><a href="/blog/archives">Archived Posts</a></li>
+    </ul>
+  </footer>
+</section>
+
+    </div>
+  </div>
+  <footer id='main-footer'>
+  <div>
+    <section id='currentProfessionalInterests'>
+      <h1>Current Professional Interests</h1>
+      <article>
+        <h2>Presenting and Contributing</h2>
+        <p>To my local community here in St. Louis, Missouri.</p>
+      </article>
+      <article>
+        <h2>Working On A Project</h2>
+        <p>
+          <a href='http://twitter.com/asynchrony' title='Asynchrony Twitter'>@asynchrony</a>
+          by leading my team developing software.
+        </p>
+      </article>
+      <article>
+        <h2>Designing and Developing Software</h2>
+        <p>
+          For myself, the community, and other people.
+        </p>
+      </article>
+      <article>
+        <h2>Doing Side Work </h2>
+        <p>
+          for small businesses Needing software solutions.
+        </p>
+      </article>
+      <article>
+        <h2>Working on Entrepreneurial Ideas</h2>
+        <p>
+          of my own with my lovely wife, 
+          <a href='http://twitter.com/photosbybetty' title="Betty's Twitter">@photosbybetty</a>.
+        </p>
+      </article>
+    </section>
+    <section id='upcomingEvents'>
+      <h1>Upcoming Events</h1>
+      <article>
+        <h2>Presenting about Fear in Programming</h2>
+        <p>May of 2013 - STL Ruby Meetup</p>
+        <p>August of 2013 - Lambda Lounge</p>
+        <p>September of 2013 - Python Group</p>
+      </article>
+      <article>
+        <h2>Contact me</h2>
+        <p>
+          If you would like to talk about any of my professional interests.
+        </p>
+        <p>
+          By 
+          <a href='mailto:matt@railsgrammer.com'>Email</a>
+          or on
+          <a href='https://twitter.com/coffeencoke'>Twitter</a>
+        </p>
+      </article>
+    </section>
+    <section id='copyright'>
+      <p>
+        content of posts and pages on this site are Copyright &copy; 2013 Matt Simpson. 
+      </p>
+      <p>
+        this site proudly uses <a href="https://github.com/mojombo/jekyll">jekyll</a>, 
+        you can <a href="https://github.com/coffeencoke/coffeencoke.com">view the source on github</a>
+      </p>
+    </section>
+  </div>
+</footer>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9324092-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+</body>
+
