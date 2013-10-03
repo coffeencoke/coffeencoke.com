@@ -1178,7 +1178,7 @@ div#main-content #home section article.intro h2:before {
 div#main-content #home section article.intro p {
   font-family: "NeoRetroFillRegular";
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 17px;
   text-transform: uppercase;
   line-height: 32px;
   width: 570px;
@@ -1190,7 +1190,7 @@ div#main-content #home section article.intro p.problems {
 /* line 29, ../_sass/pages/_home.scss */
 div#main-content #home section article.intro p.pixels {
   letter-spacing: .05em;
-  font-size: 16px;
+  font-size: 14px;
 }
 /* line 35, ../_sass/pages/_home.scss */
 div#main-content #home section article.intro ul {
