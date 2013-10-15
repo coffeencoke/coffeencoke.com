@@ -1800,80 +1800,91 @@ div#main-content #portfolio section#favorites article#fear_in_programming .extra
   font-size: 18px;
   color: #555555;
 }
-/* line 31, ../_sass/pages/_blog.scss */
+/* line 30, ../_sass/pages/_blog.scss */
+#main-content #blog article .entry-content {
+  padding-right: 10%;
+}
+/* line 32, ../_sass/pages/_blog.scss */
 #main-content #blog article .entry-content h2, #main-content #blog article .entry-content h3, #main-content #blog article .entry-content h4, #main-content #blog article .entry-content h5, #main-content #blog article .entry-content h6 {
   font-family: "LeagueGothicRegular";
 }
-/* line 35, ../_sass/pages/_blog.scss */
+/* line 36, ../_sass/pages/_blog.scss */
 #main-content #blog article .entry-content h2 {
   font-size: 32px;
   margin: 15px 0;
 }
-/* line 40, ../_sass/pages/_blog.scss */
+/* line 41, ../_sass/pages/_blog.scss */
 #main-content #blog article .entry-content h3 {
   font-size: 24px;
   margin: 10px 0;
 }
-/* line 45, ../_sass/pages/_blog.scss */
+/* line 46, ../_sass/pages/_blog.scss */
 #main-content #blog article .entry-content p, #main-content #blog article .entry-content ul li, #main-content #blog article .entry-content a:link, #main-content #blog article .entry-content a:visited, #main-content #blog article .entry-content a:active {
   font-family: "ArsenalRegular";
   font-size: 20px;
 }
-/* line 50, ../_sass/pages/_blog.scss */
+/* line 51, ../_sass/pages/_blog.scss */
 #main-content #blog article .entry-content ul {
   list-style: disc;
   padding: 0 0 0 40px;
 }
-/* line 55, ../_sass/pages/_blog.scss */
+/* line 56, ../_sass/pages/_blog.scss */
 #main-content #blog article .entry-content p {
   margin: 15px 0;
 }
-/* line 59, ../_sass/pages/_blog.scss */
+/* line 60, ../_sass/pages/_blog.scss */
 #main-content #blog article .entry-content a:hover {
   text-decoration: underline;
 }
-/* line 66, ../_sass/pages/_blog.scss */
+/* line 67, ../_sass/pages/_blog.scss */
 #main-content #blog .single-post article footer {
   margin: 20px 0;
 }
-/* line 69, ../_sass/pages/_blog.scss */
+/* line 70, ../_sass/pages/_blog.scss */
 #main-content #blog .single-post article footer .meta {
   margin: 10px 0;
 }
-/* line 75, ../_sass/pages/_blog.scss */
+/* line 76, ../_sass/pages/_blog.scss */
 #main-content #blog .posts article {
   padding-bottom: 25px;
   border-bottom: 1px solid #e3dcd1;
 }
-/* line 81, ../_sass/pages/_blog.scss */
+/* line 82, ../_sass/pages/_blog.scss */
 #main-content #blog footer ul li {
   display: inline-block;
   margin: 0 20px;
 }
 
-/* line 89, ../_sass/pages/_blog.scss */
+/* line 90, ../_sass/pages/_blog.scss */
 #main-content #blog-archives section {
   margin: 50px 0 0 0;
 }
-/* line 92, ../_sass/pages/_blog.scss */
+/* line 93, ../_sass/pages/_blog.scss */
 #main-content #blog-archives section:first-child {
   margin-top: 0;
 }
-/* line 97, ../_sass/pages/_blog.scss */
+/* line 98, ../_sass/pages/_blog.scss */
 #main-content #blog-archives section header h1 {
   font-family: "LeagueGothicRegular";
   font-size: 46px;
 }
-/* line 106, ../_sass/pages/_blog.scss */
+/* line 107, ../_sass/pages/_blog.scss */
 #main-content #blog-archives section article {
   margin: 10px 40px;
 }
-/* line 109, ../_sass/pages/_blog.scss */
+/* line 110, ../_sass/pages/_blog.scss */
 #main-content #blog-archives section article h2 a:link, #main-content #blog-archives section article h2 a:visited, #main-content #blog-archives section article h2 a:active {
   font-size: 18px;
   font-family: "NeoRetroFillRegular";
 }
-/* line 113, ../_sass/pages/_blog.scss */
+/* line 114, ../_sass/pages/_blog.scss */
 #main-content #blog-archives section article h2 a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  /* line 123, ../_sass/pages/_blog.scss */
+  #main-content #blog article header ul.meta li {
+    font-size: 12px;
+  }
 }
