@@ -47,7 +47,6 @@ div#main-content #home{
             color: #000;
             border-bottom: solid 4px #000;
             margin: 16px;
-            font-variant: small-caps;
 
             @include borderTransition(100ms, ease-in);
           }
