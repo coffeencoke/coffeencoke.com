@@ -1218,7 +1218,7 @@ div#main-content #home section article.intro ul li a:link, div#main-content #hom
   font-family: "LeagueGothicRegular";
   font-size: 40px;
   line-height: 70px;
-  padding: 0 5px;
+  padding: 0 15%;
   color: #000;
   border-bottom: solid 4px #000;
   margin: 16px;
@@ -1277,7 +1277,7 @@ div#main-content #home section article.feature img {
   }
   /* line 102, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro ul li a:link, div#main-content #home section article.intro ul li a:visited, div#main-content #home section article.intro ul li a:active {
-    margin: 8px;
+    margin: 22%;
     padding: 0;
   }
   /* line 109, ../_sass/pages/_home.scss */
