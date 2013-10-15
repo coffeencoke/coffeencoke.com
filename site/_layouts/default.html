@@ -10,17 +10,15 @@
       {% if site.subtitle %}
         <h2><a href="/">{{ site.subtitle }}</a></h2>
       {% endif %}
-      {% if page.nav %}
       <nav>
         <ul>
-          <li><a href='/'>Home</a></li>
+          <li><a {% if page.page_id == 'home' %} class='current' {% endif %} href='/'>Home</a></li>
           <li><a {% if page.page_id == 'portfolio' %} class='current' {% endif %} href='/portfolio.html'>Portfolio</a></li>
           <li><a {% if page.page_id == 'blog' %} class='current' {% endif %} href='/blog'>Blog</a></li>
           <li><a href='http://github.com/{{site.handle}}'>Github</a></li>
           <li><a href='http://twitter.com/{{site.handle}}'>Twitter</a></li>
         </ul>
       </nav>
-      {% endif %}
     </div>
   </header>
   <div id='main-content'>

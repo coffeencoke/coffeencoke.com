@@ -52,7 +52,7 @@ As my wife and I continue in the path of our careers together, I want to intenti
 
 I have a strong knowledge of how to develop good software, how things should be designed, and how code should be designed. But most of that is from experiences, and by thinking through past decisions and applying it to future decisions.
 
-However, I do not have the depth of a computer science degree when it comes to understanding algorithms and data structures. So I want to grow in that.
+This is an area that I am continuing to grow in.
 
 ### Other Languages
 

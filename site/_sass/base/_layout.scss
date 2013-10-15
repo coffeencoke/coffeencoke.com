@@ -61,6 +61,7 @@ header#main-header {
     @include column(12);
 
     h1{
+      display: inline-block;
       a:link, a:visited, a:active{
         font-family: $leagueGothic;
         color: #000;
@@ -68,6 +69,7 @@ header#main-header {
       }
     }
     h2{
+      display: inline-block;
       vertical-align: top;
       margin-top: 30px;
       a:link, a:visited, a:active{
@@ -213,9 +215,11 @@ footer#main-footer {
 }
 
 @include tabletLandscape {
-  header#main-header div nav ul li a{
-    &:link, &:visited, &:active {
-      font-size: 20px;
+  header#main-header div nav ul {
+    li a{
+      &:link, &:visited, &:active {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -228,6 +232,7 @@ footer#main-footer {
 
       ul{
         text-align: left;
+        margin-top: 15px;
 
         li a{
           &:link, &:visited, &:active{
@@ -240,6 +245,9 @@ footer#main-footer {
 }
 
 @include tabletPortrait {
+  header#main-header div nav ul {
+    margin-top: 15px;
+  }
   footer#main-footer > div{
     section#upcomingEvents, section#currentProfessionalInterests {
       @include column(12, 12);

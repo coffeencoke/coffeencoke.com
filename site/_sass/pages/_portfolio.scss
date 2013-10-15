@@ -27,8 +27,9 @@ div#main-content #portfolio{
     text-align: center;
 
     article{
-      width: 25%;
+      width: 24%;
       margin: 0;
+      display: inline-block;
 
       a{
         position: relative;
@@ -206,3 +207,99 @@ div#main-content #portfolio{
   }
 }
 
+@include tabletPortrait {
+  div#main-content #portfolio section#sources article a{
+    &:link, &:visited, &:active{
+      padding: 40px 3%;
+
+      h2{
+        font-size: 28px;
+      }
+      p{
+        font-size: 22px;
+      }
+    }
+  }
+  div#main-content #portfolio section#favorites article{
+    main .description, main .extras{
+      @include column(12, 12);
+    }
+
+    main .extras{
+      margin-top: 15px;
+    }
+
+    main .extras > *{
+      padding-left: 50px;
+    }
+
+    &#mince .maturity {
+      padding-left: 0;
+      width: 35%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  header#main-header{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  div#main-content #portfolio section#sources {
+    text-align: left;
+    padding-left: 20px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+
+    article{
+      width: auto;
+
+      a{
+        &:link, &:visited, &:active{
+          padding: 10px 10px;
+
+          h2{
+            font-size: 20px;
+            border-bottom: none;
+          }
+          p{
+            @include visuallyHidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include phoneLandscape{
+  div#main-content #portfolio section#sources {
+    padding-left: 0;
+    text-align: center;
+    article a{
+      &:link, &:visited, &:active{
+        h2{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  div#main-content #portfolio section#favorites article{
+    main .description, main .extras{
+      @include column(12, 12);
+    }
+
+    main .extras{
+      margin-top: 15px;
+    }
+
+    main .extras > *{
+      padding-left: 0px;
+    }
+
+    &#mince .image, &#mince .maturity {
+      margin-top: 15px;
+      @include column(12, 12);
+    }
+  }
+}
