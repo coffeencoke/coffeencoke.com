@@ -15,7 +15,6 @@ tags:
 - ruby
 - ruby 1.9
 - Ruby on Rails
-- server
 - servers
 - unicorn
 status: publish
@@ -46,7 +45,7 @@ meta:
   location /myapp/ {
     try_files $uri @unicorn_proxy;
   }
- 
+
   location @unicorn_proxy {
     proxy_pass http://unix:/home/coffeencoke/apps/myapp/current/tmp/sockets/unicorn.sock;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -61,7 +60,7 @@ meta:
 <pre>MyApp::Application.routes.draw do
   scope '/myapp' do
     root :to => 'registrations#new'
-    
+
     # other routes are always inside this block
     # ...
   end
@@ -73,11 +72,11 @@ end
 <p><code>/myapp/registrations/new</code>, instead of <code>/registrations/new</code> The problem however, is that when I am developing I do not want to write dependencies on this path structure, in case the application some day is not in a sub domain, also because it's annoying. Therefor, I created a module and included it into the routes file and used it like so:</p>
 
 <pre>require_relative '../lib/route_scoper'
- 
+
 MyApp::Application.routes.draw do
   scope RouteScoper.root do
     root :to => 'registrations#new'
-    
+
     # other routes are always inside this block
     # ...
   end
@@ -87,7 +86,7 @@ end
 <p>the module looks like this:</p>
 
 <pre>require 'rails/application'
- 
+
 module RouteScoper
   def self.root
     Rails.application.config.root_directory
@@ -102,7 +101,7 @@ end
 <pre>MyApp::Application.configure do
   # Contains configurations for the production environment
   # ...
-  
+
   # Serve the application at /myapp
   config.root_directory = '/myapp'
 end

@@ -13,7 +13,7 @@ tags:
 - Continuous Integration
 - Test Driven Development
 - Ruby
-- Servers
+- servers
 ---
 
 ## Life Changing
@@ -76,7 +76,7 @@ Just some ideas of what you could start working on, that almost every project ne
 * Jenkins
 * Demo Server
 * QA Servers
-* Disposable Environment 
+* Disposable Environment
 * Custom Git server (w/ssh keys! Say goodbye to netrc files, what’s that?!)
 
 **Automation** - Begin automating workstation and server configuration for all of those things.
@@ -92,14 +92,14 @@ Just some ideas of what you could start working on, that almost every project ne
 Life **IS** hard, but the benefit is so worth it.
 
 * Slow Start
-* High learning curve 
-* Organizational Momentum 
+* High learning curve
+* Organizational Momentum
 * Ruby
 * Chef Paradigms
-* Windows automation 
+* Windows automation
 * Idempotence
 
-All of these things cause it difficult to begin using chef and to commit.  Without committing fully, you end up with a crappy process. 
+All of these things cause it difficult to begin using chef and to commit.  Without committing fully, you end up with a crappy process.
 
 ## More To Come
 
