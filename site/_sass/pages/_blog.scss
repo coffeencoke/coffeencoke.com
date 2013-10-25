@@ -1,4 +1,4 @@
-@import "compass/css3/transition";
+@import "compass/typography/lists/inline-list";
 
 #main-content #blog{
   article{
@@ -30,7 +30,7 @@
 
           &.tags{
             ul{
-              comma-list;
+              @include delimited-list();
             }
           }
         }
@@ -113,7 +113,7 @@
         }
       }
     }
-    
+
     article {
       margin: 10px 40px;
       h2 a{
@@ -132,5 +132,5 @@
 @include phoneLandscape {
   #main-content #blog article header ul.meta li{
     font-size: 12px;
-  } 
+  }
 }
