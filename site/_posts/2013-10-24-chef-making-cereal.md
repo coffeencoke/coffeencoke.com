@@ -5,7 +5,7 @@ excerpt: I've decided it was time for a new blog with a new name. By starting a 
 tags:
 - Bash
 - Development
-- Go Faster
+- go faster
 - Efficiency
 - Process
 - Tools
