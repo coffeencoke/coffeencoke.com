@@ -33,6 +33,10 @@ Music is a huge part in my life.  I play drums, guitar, piano (primary) and I s
 
 I hope you enjoy this blog, I feel contributing back to the community of the internet is an amazing privilege and I am so glad that the internet has become as powerful of a tool as it has.  I have learned much from it, and only hope to contribute a smidgen of knowledge back.
 
+<del>
 Feel free to check out my personal blog at <a title="My personal blog" href="http://www.coffeencoke.com" target="_blank">Coffee n' Coke</a> where I ramble about my life, culture, friendships and my walk with christ.
+</del> 
+
+coffeencoke is now my only blog.
 
 Thanks and enjoy

@@ -7,7 +7,13 @@
     </h1>
     <ul class="meta">
       {% if article.tags %}
-      <li>{{ article.tags }}</li>
+      <li class='tags'>
+        <ul>
+          {% for tag in article.tags %}
+          <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </li>
       {% endif %}
       <li>{% include post/date.html %}{{ time }}</li>
     </ul>

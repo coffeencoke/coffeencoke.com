@@ -1,3 +1,5 @@
+@import "compass/css3/transition";
+
 #main-content #blog{
   article{
     margin: 0 10px 40px;
@@ -20,10 +22,18 @@
         }
       }
 
-      ul.meta li{
-        font-family: $neoRetroFill;
-        font-size: 18px;
-        color: #555555;
+      ul.meta {
+        li{
+          font-family: $neoRetroFill;
+          font-size: 18px;
+          color: #555555;
+
+          &.tags{
+            ul{
+              comma-list;
+            }
+          }
+        }
       }
     }
 

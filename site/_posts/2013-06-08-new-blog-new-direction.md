@@ -2,7 +2,12 @@
 layout: post
 title: New Blog, New Tools, New Direction
 excerpt: I've decided it was time for a new blog with a new name. By starting a new blog, I have some new tools that you should look in to. Reliable hosting for my blog for free, using Github! New direction for my blog, focusing on Computer Science, Other Languages, Community, and Business.
-tags: Code, opensource, Community, Business, Design
+tags: 
+- Code
+- opensource
+- Community 
+- Business
+- Design
 ---
 
 ## New Blog
