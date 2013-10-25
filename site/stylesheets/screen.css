@@ -1845,67 +1845,128 @@ div#main-content #portfolio section#favorites article#fear_in_programming .extra
   font-family: "ArsenalRegular";
   font-size: 20px;
 }
-/* line 61, ../_sass/pages/_blog.scss */
+/* line 60, ../_sass/pages/_blog.scss */
+#main-content #blog article .entry-content p strong, #main-content #blog article .entry-content ul li strong, #main-content #blog article .entry-content a:link strong, #main-content #blog article .entry-content a:visited strong, #main-content #blog article .entry-content a:active strong {
+  font-family: "ArsenalBold";
+}
+/* line 64, ../_sass/pages/_blog.scss */
+#main-content #blog article .entry-content p em, #main-content #blog article .entry-content ul li em, #main-content #blog article .entry-content a:link em, #main-content #blog article .entry-content a:visited em, #main-content #blog article .entry-content a:active em {
+  font-family: "ArsenalItalic";
+}
+/* line 69, ../_sass/pages/_blog.scss */
 #main-content #blog article .entry-content ul {
   list-style: disc;
   padding: 0 0 0 40px;
 }
-/* line 66, ../_sass/pages/_blog.scss */
+/* line 74, ../_sass/pages/_blog.scss */
 #main-content #blog article .entry-content p {
   margin: 15px 0;
 }
-/* line 70, ../_sass/pages/_blog.scss */
+/* line 78, ../_sass/pages/_blog.scss */
 #main-content #blog article .entry-content a:hover {
   text-decoration: underline;
 }
-/* line 77, ../_sass/pages/_blog.scss */
+/* line 85, ../_sass/pages/_blog.scss */
 #main-content #blog .single-post article footer {
   margin: 20px 0;
 }
-/* line 80, ../_sass/pages/_blog.scss */
+/* line 88, ../_sass/pages/_blog.scss */
 #main-content #blog .single-post article footer .meta {
   margin: 10px 0;
 }
-/* line 86, ../_sass/pages/_blog.scss */
+/* line 94, ../_sass/pages/_blog.scss */
 #main-content #blog .posts article {
   padding-bottom: 25px;
   border-bottom: 1px solid #e3dcd1;
 }
-/* line 92, ../_sass/pages/_blog.scss */
+/* line 100, ../_sass/pages/_blog.scss */
 #main-content #blog footer ul li {
   display: inline-block;
   margin: 0 20px;
 }
 
-/* line 100, ../_sass/pages/_blog.scss */
-#main-content #blog-archives section {
+/* line 108, ../_sass/pages/_blog.scss */
+#main-content #blog_archive h1, #main-content #blog_tags h1 {
+  font-size: 52px;
+  font-family: "LeagueGothicRegular";
+}
+/* line 112, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section, #main-content #blog_tags section {
   margin: 50px 0 0 0;
 }
-/* line 103, ../_sass/pages/_blog.scss */
-#main-content #blog-archives section:first-child {
-  margin-top: 0;
-}
-/* line 108, ../_sass/pages/_blog.scss */
-#main-content #blog-archives section header h1 {
-  font-family: "LeagueGothicRegular";
-  font-size: 46px;
+/* line 115, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud, #main-content #blog_tags section.tag-cloud {
+  padding-right: 10%;
 }
 /* line 117, ../_sass/pages/_blog.scss */
-#main-content #blog-archives section article {
+#main-content #blog_archive section.tag-cloud a, #main-content #blog_tags section.tag-cloud a {
+  font-family: "NeoRetroFillRegular";
+  padding: 0 10px;
+}
+/* line 122, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud .set-1, #main-content #blog_tags section.tag-cloud .set-1 {
+  font-size: 14px;
+}
+/* line 122, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud .set-2, #main-content #blog_tags section.tag-cloud .set-2 {
+  font-size: 18px;
+}
+/* line 122, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud .set-3, #main-content #blog_tags section.tag-cloud .set-3 {
+  font-size: 22px;
+}
+/* line 122, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud .set-4, #main-content #blog_tags section.tag-cloud .set-4 {
+  font-size: 26px;
+}
+/* line 122, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud .set-5, #main-content #blog_tags section.tag-cloud .set-5 {
+  font-size: 30px;
+}
+/* line 122, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud .set-6, #main-content #blog_tags section.tag-cloud .set-6 {
+  font-size: 34px;
+}
+/* line 122, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud .set-7, #main-content #blog_tags section.tag-cloud .set-7 {
+  font-size: 38px;
+}
+/* line 122, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud .set-8, #main-content #blog_tags section.tag-cloud .set-8 {
+  font-size: 42px;
+}
+/* line 122, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud .set-9, #main-content #blog_tags section.tag-cloud .set-9 {
+  font-size: 46px;
+}
+/* line 122, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section.tag-cloud .set-10, #main-content #blog_tags section.tag-cloud .set-10 {
+  font-size: 50px;
+}
+/* line 126, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section:first-child, #main-content #blog_tags section:first-child {
+  margin-top: 0;
+}
+/* line 131, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section header h1, #main-content #blog_tags section header h1 {
+  font-size: 46px;
+}
+/* line 139, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section article, #main-content #blog_tags section article {
   margin: 10px 40px;
 }
-/* line 120, ../_sass/pages/_blog.scss */
-#main-content #blog-archives section article h2 a:link, #main-content #blog-archives section article h2 a:visited, #main-content #blog-archives section article h2 a:active {
+/* line 142, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section article h2 a:link, #main-content #blog_archive section article h2 a:visited, #main-content #blog_archive section article h2 a:active, #main-content #blog_tags section article h2 a:link, #main-content #blog_tags section article h2 a:visited, #main-content #blog_tags section article h2 a:active {
   font-size: 18px;
   font-family: "NeoRetroFillRegular";
 }
-/* line 124, ../_sass/pages/_blog.scss */
-#main-content #blog-archives section article h2 a:hover {
+/* line 146, ../_sass/pages/_blog.scss */
+#main-content #blog_archive section article h2 a:hover, #main-content #blog_tags section article h2 a:hover {
   text-decoration: underline;
 }
 
 @media (min-width: 400px) and (max-width: 600px) {
-  /* line 133, ../_sass/pages/_blog.scss */
+  /* line 155, ../_sass/pages/_blog.scss */
   #main-content #blog article header ul.meta li {
     font-size: 12px;
   }

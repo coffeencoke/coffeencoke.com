@@ -10,7 +10,7 @@
       <li class='tags'>
         <ul>
           {% for tag in article.tags %}
-          <li>{{ tag }}</li>
+          <li><a href="/blog/tags/{{ tag }}.html">{{ tag }}</a></li>
           {% endfor %}
         </ul>
       </li>

@@ -56,6 +56,14 @@
       p, ul li, a:link, a:visited, a:active{
         font-family: $arsenal;
         font-size: 20px;
+
+        strong{
+          font-family: $arsenalBold;
+        }
+
+        em{
+          font-family: $arsenalItalic;
+        }
       }
 
       ul {
@@ -96,9 +104,24 @@
   }
 }
 
-#main-content #blog-archives{
+#main-content #blog_archive, #main-content #blog_tags{
+  h1{
+    font-size: 52px;
+    font-family: $leagueGothic;
+  }
   section{
     margin: 50px 0 0 0;
+
+    &.tag-cloud{
+      padding-right: 10%;
+      a{
+        font-family: $neoRetroFill;
+        padding: 0 10px;
+      }
+      @for $i from 1 through 10 {
+        .set-#{$i}{ font-size: 10px + ($i*4); }
+      }
+    }
 
     &:first-child{
       margin-top: 0;
@@ -106,7 +129,6 @@
 
     header{
       h1{
-        font-family: $leagueGothic;
         font-size: 46px;
 
         &:first-child{

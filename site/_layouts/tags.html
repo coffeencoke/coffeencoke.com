@@ -1,13 +1,12 @@
 ---
 layout: default
-title: Blog Archive
-page_id: blog_archive
+title: Blog Tags
+page_id: blog_tags
 ---
 
-<h1>All Posts</h1>
-<p><a href='/blog/tags'>view all tags</a></p>
-
-{% for article in site.posts reverse %}
+<h1>Posts of the '{{ page.tag }}' tagliture</h1>
+<p><a href='/blog/tags'>view all tags</a> or <a href='/blog/archives'>view archived posts</a></p>
+{% for article in page.posts reverse %}
 {% capture this_year %}{{ article.date | date: "%Y" }}{% endcapture %}
 {% unless year == this_year %}
 {% assign year = this_year %}

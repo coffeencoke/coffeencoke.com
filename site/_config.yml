@@ -17,3 +17,6 @@ date_format: "ordinal"
 
 paginate: 5
 paginate_path: "blog/pages/:num"
+
+tag_page_layout: tags
+tag_page_dir: blog/tags
