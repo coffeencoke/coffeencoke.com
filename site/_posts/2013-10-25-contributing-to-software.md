@@ -33,5 +33,6 @@ For my projects, all I care about are the following:
 2. Update documentation along with your changes.  This may need to happen after the pull request is merged in.
 3. Split your pull requests up in smaller units of work so we can pick and choose what we want to merge, and what we want to improve.
 4. Always make your pull request improve the code
+5. Add yourself to the contribution list
 
 That's all I have, enjoy.
