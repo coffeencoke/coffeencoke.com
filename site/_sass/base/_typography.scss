@@ -157,3 +157,14 @@ $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace 
 $heading-font-family: $neoRetroFill, "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif !default;
 $header-title-font-family: $leagueGothic !default;
 $header-subtitle-font-family: $leagueGothic !default;
+
+ol{
+  list-style: decimal;
+  margin: 0 40px;
+
+  li{
+    font-family: $arsenal;
+    font-size: 20px;
+    line-height: 140%;
+  }
+}

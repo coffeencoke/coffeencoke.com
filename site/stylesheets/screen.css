@@ -169,6 +169,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
+/* line 161, ../_sass/base/_typography.scss */
+ol {
+  list-style: decimal;
+  margin: 0 40px;
+}
+/* line 165, ../_sass/base/_typography.scss */
+ol li {
+  font-family: "ArsenalRegular";
+  font-size: 20px;
+  line-height: 140%;
+}
+
 /* line 41, ../_sass/base/_grid.scss */
 body {
   width: 100%;
