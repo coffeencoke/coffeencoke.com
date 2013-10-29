@@ -1,3 +1,21 @@
+----
+layout: post
+title: Introduction to software source control
+tags:
+- DFDW
+- git
+- efficiency
+- go faster
+- continuous integration
+- tools
+- troubleshooting
+- terminal
+- versioning
+- tutorials
+- opensource
+- command line
+----
+
 ## never lose a thing, hack away safely!
 
 If you develop software, whether it's a basic web page, Wordpress site, Drupal, PHP, Ruby on Rails, Java, Erlang, or even lolcode; You will eventually lose your work, or completely screw up your work and will have a very difficult, frustrating time getting back to a quality state.
@@ -26,6 +44,7 @@ Please enjoy these, and seriously commit yourself to learning this tool!  It wil
 * The best starter tutorial I've seen for Git: <http://try.github.io/levels/1/challenges/1>
 * Variety of resources: <http://try.github.io/wrap_up>
 * Great videos for all levels of learning git: <http://git-scm.com/videos>
+* Github for your computer: <http://mac.github.com/> There's also github for windows, but eh to windows. And you can use this with any git repository, you don't have to use Github.
 
 ## Wrap Up
 
