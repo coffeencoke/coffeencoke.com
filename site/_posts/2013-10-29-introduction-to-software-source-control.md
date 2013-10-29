@@ -1,4 +1,4 @@
-----
+---
 layout: post
 title: Introduction to software source control
 tags:
@@ -14,7 +14,7 @@ tags:
 - tutorials
 - opensource
 - command line
-----
+---
 
 ## never lose a thing, hack away safely!
 
