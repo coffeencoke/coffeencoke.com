@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to software source control
 tags:
-- DFDW
+- DWDF
 - git
 - efficiency
 - go faster

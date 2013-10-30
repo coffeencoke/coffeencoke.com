@@ -22,7 +22,7 @@ I wish to provide you with three examples for a series of topics.  If you commit
 
 *Please realize that my day job emphasizes on very complex software development, but I have experience in design, UX / Front End development, and I will try to present these topics in a way that you can appreciate*
 
-1. Introduction to Software Source Control - never lose a thing, hack away safely.
+1. [Introduction to Software Source Control - never lose a thing, hack away safely.](/blog/2013/10/29/introduction-to-software-source-control/)
 2. Develop Locally - keep production happy
 3. Deploy With Ease - No more hacking around with production servers
 4. Automate Your Deployments - Ship your work more efficiently
@@ -44,3 +44,7 @@ Extras that I don't want to commit to right now are
 * SSL Certificates
 
 Check back in to see the first post to introduce to this series, "Introduction to Software Source Control - never lose a thing, hack away safely".  Or [follow me on twitter](https://twitter.com/coffeencoke) to get updated.
+
+## Update
+
+* Added link to [first post of series.](http://coffeencoke.com/blog/2013/10/29/introduction-to-software-source-control/)
