@@ -1,3 +1,15 @@
+---
+layout: post
+title: Elevator Programming Problem
+tags:
+- development
+- interviewing
+- code
+- tutorials
+- ruby
+- programming
+---
+
 I often like to do exercises on my own to continue developing the skill of designing solutions and thinking through problems, and edge cases. I also do this so that I can use these exercises for when I give interviews for others. One problem that I really like, is the Elevator problem. 
 
 This problem develops or reveals abilities for the following:
@@ -11,7 +23,6 @@ This problem develops or reveals abilities for the following:
 
 All good items to look for when interviewing a candidate.
 
-
 ## The Problem Statement
 
 Given an API to an elevator driver which controls the following basic functions of an elevator, write a Restful API to program the a set of user scenarios.
@@ -22,51 +33,53 @@ These scenarios are from the user's perspective.  Each and every assertion can b
 
 ### Scenario 1: Open the door
 
-```
+{% highlight cucumber %}
 Given the elevator is on the same floor
 When I call for the elevator
 Then the door opens so I can walk into the elevator
-```
+{% endhighlight %}
 
 ### Scenario 2: Call the elevator
 
-```
+{% highlight cucumber %}
 Given the elevator is on a different floor
 When I call for the elevator
 Then the door opens so I can walk into the elevator
-```
+{% endhighlight %}
 
 ### Scenario 3: Go to a floor
 
-```
+{% highlight cucumber %}
 Given I am on an elevator
 When I tell the elevator to go to my desired floor
 Then the door opens on my desired floor
 And the door closes after I've left the elevator
-```
+{% endhighlight %}
 
 ### Scenario 4: Call an elevator that is on the move
 
-```
+{% highlight cucumber %}
 Given the elevator is on the move going down
 When I call for the elevator to go up
 Then the elevator finishes its current job
 And comes to me
 And the door opens so I can walk into the elevator
-```
+{% endhighlight %}
 
 ## Elevator Driver APIs
 
 There are four API methods for the `ElevatorDriver`.
 
-* `ElevatorDriver.elevator`
-* `ElevatorDriver.go_to_floor(floor_number)`
-* `ElevatorDriver.open_door`
-* `ElevatorDriver.close_door`
-* `ElevatorDriver::Elevator#current_floor`
-* `ElevatorDriver::Elevator#state`
+{% highlight ruby %}
+ElevatorDriver.go_to_floor(floor_number)
+ElevatorDriver.open_door
+ElevatorDriver.close_door
+elevator = ElevatorDriver.elevator
+elevator.current_floor
+elevator.state
+{% endhighlight %}
 
-### `ElevatorDriver.elevator`
+### Getting an elevator
 
 Show details of the elevator. Returns an `ElevatorDriver::Elevator` object.
 
@@ -75,32 +88,31 @@ Show details of the elevator. Returns an `ElevatorDriver::Elevator` object.
 
 #### Example
 
-```
+{% highlight ruby %}
 elevator = ElevatorDriver.elevator    # => ElevatorDriver::Elevator instance
 elevator.current_floor                # => 6
 elevator.state                        # => :stagnant
-```
+{% endhighlight %}
 
-### `ElevatorDriver.go_to_floor`
+### Tell the elevator to go to a floor
 
 Tells the elevator to go to the given floor. Returns nothing. By default is synchronous, but can be given arguments to make it asynchronous. If the elevator is already in progress, this will force the elevator to stop its current action, and go to the floor that is given.
 
 Arguments:
 
 * `floor_number`, The floor for the elevator to go to.
-* `async`, takes any of the following:
-  * `true`, returns immediately.
-  * `Lambda`, `Proc`, `Block`, used as a callback, after the elevator arrives at the given floor.
-  
+* `async`, defaults to false, can be set to true.  When true, performs the method asynchronously, returns immediately.
+* `Lambda`, `Proc`, `Block`, used as a callback after the elevator arrives at the given floor.
+
 #### Example
 
-```
+{% highlight ruby %}
 # Returns true after the elevator has arrived at floor 6.
 ElevatorDriver::Elevator.go_to_floor(6) 
 
 # Go to floor 7
 # Returns immediately
-ElevatorDriver::Elevator.go_to_floor(7, async: true)
+ElevatorDriver::Elevator.go_to_floor(7, true)
 
 # Sends the elevator to the 5th floor
 # Returns immediately
@@ -114,7 +126,7 @@ ElevatorDriver::Elevator.go_to_floor(5, &proc)
 ElevatorDriver::Elevator.go_to_floor(5) do 
   puts "Block: #{message}"
 end
-```
+{% endhighlight %}
 
 ### Open door
 
@@ -122,9 +134,9 @@ This will tell the elevator and the elevator shaft to open its doors. *This is a
 
 #### Example
 
-```
+{% highlight ruby %}
 ElevatorDriver.open_door
-```
+{% endhighlight %}
 
 ### Close door
 
@@ -132,9 +144,9 @@ This will tell the elevator and the elevator shaft to close its doors. *This is 
 
 #### Example
 
-```
+{% highlight ruby %}
 ElevatorDriver.close_door
-```
+{% endhighlight %}
 
 ## Working Through The Problem
 
@@ -146,10 +158,10 @@ The first thing here is that we know we have to create a restful endpoint to all
 
 When the user presses the button to call the elevator, that button is going to make a Restful request, over HTTP (for this exercise). Because the request will change the state of the elevator, and because the object, that we want to make the request to, is known, this request should be a `PUT` request type, which might look like so:
 
-```
+{% highlight ruby %}
 PUT /elevator 
 data: elevator[floor]=1
-```
+{% endhighlight %}
 
 I like to use an endpoint that clearly describes the object that we are making a request to, in this case `elevator`, I also like to isolate the parameters that are being used to manipulate the elevator, that is why there is a namespace in the data for the elevator's floor.
 
@@ -157,32 +169,32 @@ The implementation of this endpoint should contain some sort of routing and cont
 
 `config/routes.rb`:
 
-```
+{% highlight ruby %}
 resource :elevator, only: :update
-```
+{% endhighlight %}
 
 `app/controllers/elevators_controller.rb`:
 
-```
+{% highlight ruby %}
 class ElevatorsController < ActionController::Base
   def update
     elevator = $elevator
     elevator.call_to_floor(params[:elevator][:floor])
   end
 end
-```
+{% endhighlight %}
 
 Because we now know that we need a global variable `$elevator` available to the controller, we should add that to the initialization of the application for now. As our application grows, this can grow as well, but for now, an in memory variable will suffice.
 
 `config/initializers/elevator.rb`:
 
-```
+{% highlight ruby %}
 $elevator = Elevator.new
-```
+{% endhighlight %}
 
 This shows us that we need an `Elevator` class. The only API that this class has for now, is the `#call_to_floor` method, So let's add that to `app/models/elevator.rb`:
 
-```
+{% highlight ruby %}
 class Elevator
   def call_to_floor(floor_number)
     driver.open_door
@@ -194,7 +206,7 @@ class Elevator
     ::ElevatorDriver
   end
 end
-```
+{% endhighlight %}
 
 The only implementation we need for now, is to open the door, because in the first scenario, the elevator is already on my floor.
 
@@ -216,7 +228,7 @@ This implementation lives in the `Elevator` class alone:
 
 `app/models/elevator.rb` changes to the following:
 
-```
+{% highlight ruby %}
 class Elevator
   def call_to_floor(floor_number)
     go_to_floor(floor_number)
@@ -241,7 +253,7 @@ class Elevator
     ::ElevatorDriver
   end
 end
-```
+{% endhighlight %}
 
 By adding the methods `#go_to_floor`, `#on_floor?`, `#elevator`, we have provided the functionality to call the elevator in a synchronous way, and then to open the door when the elevator arrives.
 
@@ -255,10 +267,10 @@ Beautifully, the implementation for this is already complete from our current wo
 
 So you can still use the following call:
 
-```
+{% highlight ruby %}
 PUT /elevator 
 data: elevator[floor]=5
-```
+{% endhighlight %}
 
 However, we do not yet have the following line in the scenario:
 
@@ -268,18 +280,18 @@ Therefor, we need to make the door close after a while of waiting. Since this sc
 
 So let's change the `Elevator#call_to_floor` method and add the appropriate new methods to the `Elevator` class:
 
-```
-  def call_to_floor(floor_number)
-    go_to_floor(floor_number)
-    driver.open_door
-    sleep 5
-    driver.close_door
-  end
-```
+{% highlight ruby %}
+def call_to_floor(floor_number)
+  go_to_floor(floor_number)
+  driver.open_door
+  sleep 5
+  driver.close_door
+end
+{% endhighlight %}
 
 ## Wrap It Up
 
-Now, I think there's obviously some work that could be done to push out how long to sleep, but I don't think it's necessary to do that for the first three scenarios.
+Now, I think there's obviously some work that could be done to push out how long to sleep when closing the door, but I don't think it's necessary to do that for these first three scenarios.
 
 I'm going to leave the fourth scenario up to you to play around with, see what you can get out of it, and learn from your decisions.
 
@@ -293,4 +305,6 @@ What's great about this exercise, is that its complexity can easily continue to 
 6. Having the elevators rest at an efficient location, ie. When an elevator has not been in use for a full minute, it should rest in the middle of the floors, or if it's the end of a workday, the elevator should rest near the most populated office.
 7. Machine learning, ie. Have the elevator learn about patterns of use, and anticipate for those patterns.
 
-I'd love to hear what some interview exercises you like, and what you think about this one. Let me know what you think on [twitter](http://twitter.com/coffeencoke). Thanks for reading!
+I'd love to hear from you about what you think of this exercise, and how you might improve it, or how it challenged you.  Also, if you have some good exercises, it would be great to hear about that too.
+
+Let me know what you think on [twitter](http://twitter.com/coffeencoke). Thanks for reading!
