@@ -210,6 +210,14 @@ pre, code, pre *, code * {
   background: transparent;
 }
 
+/* line 208, ../_sass/base/_typography.scss */
+blockquote {
+  margin-left: 50px;
+  border-left: 4px solid #ccc;
+  padding: 10px 50px 10px 10px;
+  color: #666;
+}
+
 /* line 41, ../_sass/base/_grid.scss */
 body {
   width: 100%;
