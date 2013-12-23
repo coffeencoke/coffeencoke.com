@@ -320,7 +320,7 @@ header#main-header div nav ul li {
 }
 /* line 93, ../_sass/base/_layout.scss */
 header#main-header div nav ul li a:visited, header#main-header div nav ul li a:active, header#main-header div nav ul li a:link {
-  font-size: 34px;
+  font-size: 2.5em;
   font-family: "LeagueGothicRegular";
   color: black;
   padding: 6px 6px 2px;
