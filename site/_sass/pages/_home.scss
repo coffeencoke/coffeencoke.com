@@ -104,22 +104,20 @@ div#main-content #home{
         }
 
         p, p.pixels, p.problems{
-          width: 340px;
-          font-size: 18px;
+          width: 300px;
+          font-size: 14px;
         }
 
         p.problems{
-          font-size: 20px;
+          font-size: 16px;
         }
 
         ul{
-          margin-top: 10px;
-          width: 350px;
+          text-align: center;
+          width: 300px;
 
-          li a{
-            &:link, a:visited, a:active{
-              width: 125px;
-            }
+          li{
+            display: block;
           }
         }
       }
@@ -162,13 +160,11 @@ div#main-content #home{
 
         ul{
           margin-top: 10px;
-          width: 320px;
+          width: 300px;
+          text-align: center;
 
-          li a{
-            &:link, a:visited, a:active{
-              width: 105px;
-              font-size: 32px;
-            }
+          li {
+            display: block;
           }
         }
       }

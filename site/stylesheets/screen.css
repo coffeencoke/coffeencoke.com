@@ -1109,74 +1109,74 @@ div#main-content #home section article.feature img {
   }
   /* line 106, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro p, div#main-content #home section article.intro p.pixels, div#main-content #home section article.intro p.problems {
-    width: 340px;
-    font-size: 18px;
+    width: 300px;
+    font-size: 14px;
   }
   /* line 111, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro p.problems {
-    font-size: 20px;
+    font-size: 16px;
   }
   /* line 115, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro ul {
-    margin-top: 10px;
-    width: 350px;
+    text-align: center;
+    width: 300px;
   }
-  /* line 120, ../_sass/pages/_home.scss */
-  div#main-content #home section article.intro ul li a:link, div#main-content #home section article.intro ul li a a:visited, div#main-content #home section article.intro ul li a a:active {
-    width: 125px;
+  /* line 119, ../_sass/pages/_home.scss */
+  div#main-content #home section article.intro ul li {
+    display: block;
   }
-  /* line 127, ../_sass/pages/_home.scss */
+  /* line 125, ../_sass/pages/_home.scss */
   div#main-content #home section article.feature {
     text-align: center;
   }
-  /* line 129, ../_sass/pages/_home.scss */
+  /* line 127, ../_sass/pages/_home.scss */
   div#main-content #home section article.feature img {
     margin-top: 30px;
     width: 80%;
   }
 }
 @media (max-width: 400px) {
-  /* line 141, ../_sass/pages/_home.scss */
+  /* line 139, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro, div#main-content #home section article.feature {
     display: inline;
     float: left;
     width: 98.80952%;
     margin: 0 0.59524%;
   }
-  /* line 145, ../_sass/pages/_home.scss */
+  /* line 143, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro {
     padding-top: 0;
   }
-  /* line 148, ../_sass/pages/_home.scss */
+  /* line 146, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro h2 {
     width: 300px;
     background-size: 300px auto;
     margin-bottom: 10px;
   }
-  /* line 154, ../_sass/pages/_home.scss */
+  /* line 152, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro p, div#main-content #home section article.intro p.pixels, div#main-content #home section article.intro p.problems {
     width: 300px;
     font-size: 14px;
   }
-  /* line 159, ../_sass/pages/_home.scss */
+  /* line 157, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro p.problems {
     font-size: 16px;
   }
-  /* line 163, ../_sass/pages/_home.scss */
+  /* line 161, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro ul {
     margin-top: 10px;
-    width: 320px;
+    width: 300px;
+    text-align: center;
   }
-  /* line 168, ../_sass/pages/_home.scss */
-  div#main-content #home section article.intro ul li a:link, div#main-content #home section article.intro ul li a a:visited, div#main-content #home section article.intro ul li a a:active {
-    width: 105px;
-    font-size: 32px;
+  /* line 166, ../_sass/pages/_home.scss */
+  div#main-content #home section article.intro ul li {
+    display: block;
   }
-  /* line 176, ../_sass/pages/_home.scss */
+  /* line 172, ../_sass/pages/_home.scss */
   div#main-content #home section article.feature {
     text-align: center;
   }
-  /* line 178, ../_sass/pages/_home.scss */
+  /* line 174, ../_sass/pages/_home.scss */
   div#main-content #home section article.feature img {
     margin-top: 30px;
     width: 80%;
