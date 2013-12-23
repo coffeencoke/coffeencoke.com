@@ -6,6 +6,13 @@ index: true
 ---
 
 <section class='posts'>
+  <header>
+    <ul>
+      <li><a href="/blog/archives">Archived Posts</a></li>
+      <li><a href="/blog/tags">View by Tags</a></li>
+    </ul>
+  </header>
+
   {% for article in paginator.posts %}
   {% assign content = article.content %}
   {% include article.html %}

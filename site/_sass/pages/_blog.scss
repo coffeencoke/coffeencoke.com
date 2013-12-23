@@ -1,6 +1,20 @@
 @import "compass/typography/lists/inline-list";
 
 #main-content #blog{
+  padding-top: 30px;
+
+  .posts > header {
+    padding: 0 10px 30px;
+
+    ul li{
+      display: inline-block;
+      padding: 0 20px;
+
+      &:first-child{
+        padding-left: 0;
+      }
+    }
+  }
   article{
     margin: 0 10px 40px;
 
