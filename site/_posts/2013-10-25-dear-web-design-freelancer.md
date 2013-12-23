@@ -23,7 +23,7 @@ I wish to provide you with three examples for a series of topics.  If you commit
 *Please realize that my day job emphasizes on very complex software development, but I have experience in design, UX / Front End development, and I will try to present these topics in a way that you can appreciate*
 
 1. [Introduction to Software Source Control - never lose a thing, hack away safely.](/blog/2013/10/29/introduction-to-software-source-control/)
-2. Develop Locally - keep production happy
+2. [Develop Locally - keep production happy](/blog/2013/12/22/develop-locally-keep-production-happy/)
 3. Deploy With Ease - No more hacking around with production servers
 4. Automate Your Deployments - Ship your work more efficiently
 5. Control Your Quality - Develop in peace, demonstrate with flexibility, test before production, and be at peace.
@@ -47,4 +47,5 @@ Check back in to see the first post to introduce to this series, "Introduction t
 
 ## Update
 
-* Added link to [first post of series.](http://coffeencoke.com/blog/2013/10/29/introduction-to-software-source-control/)
+* Added link to [first post of series.](/blog/2013/10/29/introduction-to-software-source-control/) on 10/29/2013
+* Added link to [article about developing locally](/blog/2013/12/22/develop-locally-keep-production-happy/) on 12/22/2013
