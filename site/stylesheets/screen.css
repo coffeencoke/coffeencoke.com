@@ -998,7 +998,7 @@ div#main-content #home section article.intro h2 {
   background: url("/images/home-heading-text.png") top left no-repeat;
   width: 360px;
   height: 111px;
-  margin: 0 auto 35px;
+  margin: 0 auto 50px;
 }
 /* line 61, ../_sass/base/_utilities.scss */
 div#main-content #home section article.intro h2:before {
@@ -1027,9 +1027,8 @@ div#main-content #home section article.intro p.pixels {
 }
 /* line 35, ../_sass/pages/_home.scss */
 div#main-content #home section article.intro ul {
-  margin-top: 60px;
-  margin: 60px auto 0;
-  width: 670px;
+  margin: 30px auto 0;
+  width: 570px;
 }
 /* line 39, ../_sass/pages/_home.scss */
 div#main-content #home section article.intro ul li {
@@ -1038,12 +1037,12 @@ div#main-content #home section article.intro ul li {
 /* line 42, ../_sass/pages/_home.scss */
 div#main-content #home section article.intro ul li a:link, div#main-content #home section article.intro ul li a:visited, div#main-content #home section article.intro ul li a:active {
   font-family: "LeagueGothicRegular";
-  font-size: 40px;
-  line-height: 70px;
-  padding: 0 15%;
+  font-size: 2.8em;
+  line-height: 150%;
+  padding: 0 10px;
   color: #000;
   border-bottom: solid 4px #000;
-  margin: 16px;
+  margin: 17px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1072,20 +1071,26 @@ div#main-content #home section article.feature img {
   width: 100%;
 }
 
-@media (min-width: 979px) and (max-width: 1199px) {
-  /* line 76, ../_sass/pages/_home.scss */
-  div#main-content #home section article.intro ul {
-    width: 500px;
-    margin-top: 20px;
+@media (min-width: 600px) and (max-width: 979px) {
+  /* line 75, ../_sass/pages/_home.scss */
+  div#main-content #home section article.intro, div#main-content #home section article.feature {
+    display: inline;
+    float: left;
+    width: 98.80952%;
+    margin: 0 0.59524%;
+  }
+  /* line 79, ../_sass/pages/_home.scss */
+  div#main-content #home section article.feature {
+    text-align: center;
   }
   /* line 81, ../_sass/pages/_home.scss */
-  div#main-content #home section article.intro ul li a:link, div#main-content #home section article.intro ul li a:visited, div#main-content #home section article.intro ul li a:active {
-    margin: 4px;
-    padding: 0 20px;
+  div#main-content #home section article.feature img {
+    margin-top: 50px;
+    width: 80%;
   }
 }
-@media (min-width: 600px) and (max-width: 979px) {
-  /* line 94, ../_sass/pages/_home.scss */
+@media (min-width: 400px) and (max-width: 600px) {
+  /* line 93, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro, div#main-content #home section article.feature {
     display: inline;
     float: left;
@@ -1093,113 +1098,85 @@ div#main-content #home section article.feature img {
     margin: 0 0.59524%;
   }
   /* line 97, ../_sass/pages/_home.scss */
-  div#main-content #home section article.intro ul {
-    width: 570px;
-    margin-top: 20px;
-  }
-  /* line 102, ../_sass/pages/_home.scss */
-  div#main-content #home section article.intro ul li a:link, div#main-content #home section article.intro ul li a:visited, div#main-content #home section article.intro ul li a:active {
-    margin: 22%;
-    padding: 0;
-  }
-  /* line 109, ../_sass/pages/_home.scss */
-  div#main-content #home section article.feature {
-    text-align: center;
-  }
-  /* line 111, ../_sass/pages/_home.scss */
-  div#main-content #home section article.feature img {
-    margin-top: 30px;
-    width: 80%;
-  }
-}
-@media (min-width: 400px) and (max-width: 600px) {
-  /* line 123, ../_sass/pages/_home.scss */
-  div#main-content #home section article.intro, div#main-content #home section article.feature {
-    display: inline;
-    float: left;
-    width: 98.80952%;
-    margin: 0 0.59524%;
-  }
-  /* line 127, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro {
     padding-top: 0;
   }
-  /* line 130, ../_sass/pages/_home.scss */
+  /* line 100, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro h2 {
     width: 300px;
     background-size: 300px auto;
     margin-bottom: 10px;
   }
-  /* line 136, ../_sass/pages/_home.scss */
+  /* line 106, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro p, div#main-content #home section article.intro p.pixels, div#main-content #home section article.intro p.problems {
     width: 340px;
     font-size: 18px;
   }
-  /* line 141, ../_sass/pages/_home.scss */
+  /* line 111, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro p.problems {
     font-size: 20px;
   }
-  /* line 145, ../_sass/pages/_home.scss */
+  /* line 115, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro ul {
     margin-top: 10px;
     width: 350px;
   }
-  /* line 150, ../_sass/pages/_home.scss */
+  /* line 120, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro ul li a:link, div#main-content #home section article.intro ul li a a:visited, div#main-content #home section article.intro ul li a a:active {
     width: 125px;
   }
-  /* line 157, ../_sass/pages/_home.scss */
+  /* line 127, ../_sass/pages/_home.scss */
   div#main-content #home section article.feature {
     text-align: center;
   }
-  /* line 159, ../_sass/pages/_home.scss */
+  /* line 129, ../_sass/pages/_home.scss */
   div#main-content #home section article.feature img {
     margin-top: 30px;
     width: 80%;
   }
 }
 @media (max-width: 400px) {
-  /* line 171, ../_sass/pages/_home.scss */
+  /* line 141, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro, div#main-content #home section article.feature {
     display: inline;
     float: left;
     width: 98.80952%;
     margin: 0 0.59524%;
   }
-  /* line 175, ../_sass/pages/_home.scss */
+  /* line 145, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro {
     padding-top: 0;
   }
-  /* line 178, ../_sass/pages/_home.scss */
+  /* line 148, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro h2 {
     width: 300px;
     background-size: 300px auto;
     margin-bottom: 10px;
   }
-  /* line 184, ../_sass/pages/_home.scss */
+  /* line 154, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro p, div#main-content #home section article.intro p.pixels, div#main-content #home section article.intro p.problems {
     width: 300px;
     font-size: 14px;
   }
-  /* line 189, ../_sass/pages/_home.scss */
+  /* line 159, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro p.problems {
     font-size: 16px;
   }
-  /* line 193, ../_sass/pages/_home.scss */
+  /* line 163, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro ul {
     margin-top: 10px;
     width: 320px;
   }
-  /* line 198, ../_sass/pages/_home.scss */
+  /* line 168, ../_sass/pages/_home.scss */
   div#main-content #home section article.intro ul li a:link, div#main-content #home section article.intro ul li a a:visited, div#main-content #home section article.intro ul li a a:active {
     width: 105px;
     font-size: 32px;
   }
-  /* line 206, ../_sass/pages/_home.scss */
+  /* line 176, ../_sass/pages/_home.scss */
   div#main-content #home section article.feature {
     text-align: center;
   }
-  /* line 208, ../_sass/pages/_home.scss */
+  /* line 178, ../_sass/pages/_home.scss */
   div#main-content #home section article.feature img {
     margin-top: 30px;
     width: 80%;

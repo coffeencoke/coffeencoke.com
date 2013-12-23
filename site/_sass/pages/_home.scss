@@ -11,7 +11,7 @@ div#main-content #home{
         @include imageReplacement('/images/home-heading-text.png');
         width: 360px;
         height: 111px;
-        margin: 0 auto 35px;
+        margin: 0 auto 50px;
       }
 
       p{
@@ -33,20 +33,20 @@ div#main-content #home{
       }
 
       ul {
-        margin-top: 60px;
-        margin: 60px auto 0;
-        width: 670px;
+        margin: 30px auto 0;
+        width: 570px;
+
         li{
           display: inline-block;
 
           a:link, a:visited, a:active{
             font-family: $leagueGothic;
-            font-size: 40px;
-            line-height: 70px;
-            padding: 0 15%;
+            font-size: 2.8em;
+            line-height: 150%;
+            padding: 0 10px;
             color: #000;
             border-bottom: solid 4px #000;
-            margin: 16px;
+            margin: 17px;
 
             @include borderTransition(100ms, ease-in);
           }
@@ -69,47 +69,17 @@ div#main-content #home{
   }
 }
 
-
-@include tabletLandscape {
-  div#main-content { 
-    #home section article.intro {
-      ul{
-        width: 500px;
-        margin-top: 20px;
-
-        li {
-          a:link, a:visited, a:active{
-            margin: 4px;
-            padding: 0 20px;
-          }
-        }
-      }
-    }
-  }
-}
-
 @include tabletPortrait {
   div#main-content {
     #home section {
       article.intro, article.feature  {
         @include column(12, 12);
       }
-      article.intro ul{
-        width: 570px;
-        margin-top: 20px;
-
-        li {
-          a:link, a:visited, a:active{
-            margin: 22%;
-            padding: 0;
-          }
-        }
-      }
 
       article.feature {
         text-align: center;
         img{
-          margin-top: 30px;
+          margin-top: 50px;
           width: 80%;
         }
       }
